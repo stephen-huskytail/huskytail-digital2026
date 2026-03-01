@@ -91,6 +91,7 @@ const NICHE_CONTENT: Record<string, {
   stats: { label: string; value: string }[];
   faqs: { q: string; a: string }[];
   everestQuote: string;
+  benefits: { title: string; description: string }[];
 }> = {
   plumber: {
     headline: "Stop Losing Emergency Calls to Your Competitors",
@@ -121,6 +122,14 @@ const NICHE_CONTENT: Record<string, {
         a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.",
       },
     ],
+    benefits: [
+      { title: "Get Found by Homeowners Ready to Call", description: "Be there when they need you most. Your future customers are already searching — we make sure you show up right where and when they are ready to act. Using advanced SEO tactics and localized targeting, we connect you with the high-intent folks in your area who are eager to book, call, or visit." },
+      { title: "Boost Trust with Optimized Reviews & Reputation", description: "Turn happy customers into powerful marketing. Strong reviews build trust faster than any sales pitch. We help you generate, manage, and showcase glowing reviews across major platforms — building credibility that drives more clicks, more calls, and more business." },
+      { title: "Rank Higher in the Map Pack Where It Counts", description: "Top spot on the map = more foot traffic and calls. The Google Map Pack is prime digital real estate. We help you claim it. By optimizing your listings, citations, and location signals, we boost your visibility exactly where people are searching — leading to more calls, directions, and walk-ins." },
+      { title: "Stand Out with Smart, AI-Powered Content", description: "Say the right things to the right people — automatically. We combine data-driven insights with AI-crafted content to tell your story in a way that gets noticed. From service pages to blog posts, your content will attract, engage, and convert — all while reinforcing your local authority." },
+      { title: "Drive More Leads Without Paying for Every Click", description: "Why rent traffic when you can own it? Stop relying solely on paid ads to bring in leads. Our SEO strategies help you build long-term, cost-effective visibility that keeps traffic flowing without draining your ad budget. Get more ROI with less spend." },
+      { title: "Dominate Voice & Mobile Search", description: "Show up when they say Hey Siri... Voice and mobile searches are exploding — especially for local intent. We make sure your plumbing business is optimized for how real people search on the go, helping you win more attention (and conversions) from voice assistants and smartphones alike." },
+    ],
   },
   dentist: {
     headline: "Your Dental Practice Deserves to Be the First One Patients Find",
@@ -150,6 +159,14 @@ const NICHE_CONTENT: Record<string, {
         q: `How much does dental SEO cost in Las Vegas?`,
         a: `Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.`,
       },
+    ],
+    benefits: [
+      { title: "Get Found by Patients Ready to Schedule", description: "Be there when they need you most. Your future patients are already searching - we make sure you show up right where and when they are ready to book. Using advanced SEO tactics and localized targeting, we connect you with high-intent folks in your area who are eager to schedule, call, or visit your practice." },
+      { title: "Boost Trust with Optimized Reviews & Reputation", description: "Turn happy patients into powerful marketing. Strong reviews build trust faster than any sales pitch. We help you generate, manage, and showcase glowing reviews across major platforms - building credibility that drives more clicks, more calls, and more new patient appointments." },
+      { title: "Rank Higher in the Map Pack Where It Counts", description: "Top spot on the map = more patient calls and appointments. The Google Map Pack is prime digital real estate for healthcare. We help you claim it. By optimizing your listings, citations, and location signals, we boost your visibility exactly where patients are searching - leading to more calls and new patient bookings." },
+      { title: "Stand Out with Smart, AI-Powered Content", description: "Say the right things to the right patients - automatically. We combine data-driven insights with AI-crafted content to tell your practice story in a way that gets noticed. From service pages to blog posts about procedures, your content will attract, engage, and convert - all while reinforcing your local authority." },
+      { title: "Drive More Patient Leads Without Paying for Every Click", description: "Why rent traffic when you can own it? Stop relying solely on paid ads to bring in new patients. Our SEO strategies help you build long-term, cost-effective visibility that keeps patient traffic flowing without draining your ad budget. Get more ROI with less spend." },
+      { title: "Dominate Voice & Mobile Search", description: "Show up when they say Hey Siri... Voice and mobile searches are exploding - especially for local healthcare intent. We make sure your dental practice is optimized for how real patients search on the go, helping you win more attention (and appointments) from voice assistants and smartphones alike." },
     ],
   },
 };
@@ -411,6 +428,39 @@ export default async function NicheCityPage({ params }: Props) {
                   Claim Your Free Audit →
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What You Get — Benefits Section */}
+        <section className="py-20 px-4 bg-[#0A0F1E] text-white border-t-4 border-[#C8A84B]">
+          <div className="max-w-6xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-black mb-4">
+                What You Get with HuskyTail Digital {page.industryName} Services. No Fluff.
+              </h2>
+              <p className="text-xl text-[#C8A84B] font-semibold mb-2">
+                Guarantee First Page Google Maps rankings in 90 days or Stop Paying Until You Do!
+              </p>
+              <p className="text-lg text-gray-300 italic">
+                "Lead the Pack for only $197/month" - Everest
+              </p>
+            </div>
+
+            {/* Benefits Grid */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {content.benefits.map((benefit, idx) => (
+                <div key={idx} className="flex gap-4">
+                  <div className="flex-shrink-0 text-3xl">🐾</div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-2 text-white">{benefit.title}</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      <span className="italic text-[#C8A84B] font-semibold">First part.</span> {benefit.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
