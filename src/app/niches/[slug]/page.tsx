@@ -29,13 +29,24 @@ interface NicheCity {
   cityName: string;
 }
 
-// --- Sample pages only — 4 for audit ---
-// After approval, replace with full combinatorial generation
+// --- Phase 1: Dentist in all Las Vegas Valley cities ---
 const SAMPLE_PAGES: NicheCity[] = [
-  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "henderson", cityName: "Henderson" },
+  // Dentist pages (Phase 1)
   { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
   { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "henderson", cityName: "Henderson" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "paradise", cityName: "Paradise" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "spring-valley", cityName: "Spring Valley" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "north-las-vegas", cityName: "North Las Vegas" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "summerlin", cityName: "Summerlin" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "anthem", cityName: "Anthem" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "green-valley", cityName: "Green Valley" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "boulder-city", cityName: "Boulder City" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "mesquite", cityName: "Mesquite" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "pahrump", cityName: "Pahrump" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "laughlin", cityName: "Laughlin" },
+  
+  // Phase 2: Plumber in Las Vegas (sample)
+  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
 ];
 
 // Temporarily disabled to prevent Next.js prerender caching during development
