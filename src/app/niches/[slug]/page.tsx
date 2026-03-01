@@ -463,9 +463,7 @@ export default async function NicheCityPage({ params }: Props) {
               <h2 className="text-3xl md:text-4xl font-black mb-4">
                 What You Get with HuskyTail Digital {page.industryName} Services. No Fluff.
               </h2>
-              <p className="text-xl text-[#C8A84B] font-semibold mb-2">
-                Guarantee First Page Google Maps rankings in 90 days or Stop Paying Until You Do!
-              </p>
+
               <p className="text-lg text-gray-300 italic">
                 "Lead the Pack for only $197/month" - Everest
               </p>
