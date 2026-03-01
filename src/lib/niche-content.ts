@@ -452,6 +452,26 @@ export const NICHE_CONTENT_MAP: Record<string, NicheContent> = {
   // Technology
   "it-support": IT_SUPPORT_CONTENT,
   "web-design": WEB_DESIGN_CONTENT,
+
+  // Legal (final batch)
+  "real-estate-attorney": REAL_ESTATE_ATTORNEY_CONTENT,
+  "bankruptcy-attorney": BANKRUPTCY_ATTORNEY_CONTENT,
+
+  // Real Estate (final batch)
+  "real-estate-agent": REAL_ESTATE_AGENT_CONTENT,
+
+  // Fitness (final batch)
+  "yoga-studio": YOGA_STUDIO_CONTENT,
+  "martial-arts": MARTIAL_ARTS_CONTENT,
+
+  // Food & Dining (final batch)
+  catering: CATERING_CONTENT,
+
+  // Finance (final batch)
+  "tax-preparer": TAX_PREPARER_CONTENT,
+
+  // Photography (final batch)
+  "wedding-photographer": WEDDING_PHOTOGRAPHER_CONTENT,
 };
 
 // Default fallback content for niches not yet in the map
@@ -2127,6 +2147,173 @@ export const WEB_DESIGN_CONTENT: NicheContent = {
     { q: "What web design keywords should I target?", a: "We target 'web design near me,' 'website designer Las Vegas,' 'e-commerce website,' 'landing page design,' and 'WordPress developer.' We focus on high-intent terms." },
     { q: "How long does it take to rank?", a: "Most web design agencies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
     { q: "How much does web design SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+
+// LEGAL (final)
+export const REAL_ESTATE_ATTORNEY_CONTENT: NicheContent = {
+  headline: "Your Real Estate Law Firm Deserves to Be the First One Clients Find",
+  pain: "Las Vegas real estate attorneys are losing clients to competitors who rank higher on Google. When someone searches 'real estate attorney near me' or 'property lawyer Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas real estate attorneys dominate local search and Google Maps — attracting clients actively searching for property law services.",
+  everestQuote: "I tracked every high-intent real estate law keyword in Las Vegas — real estate attorney, property dispute, title issues — so your firm books solid.",
+  testimonials: [
+    { quote: "We went from 4-5 new client inquiries per week to 12+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Jennifer L.", company: "Desert Real Estate Law", location: "Las Vegas, NV", results: "12+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'real estate attorney Las Vegas' in 85 days. Revenue is up 265%.", author: "Robert T.", company: "Premier Property Law", location: "Henderson, NV", results: "265% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Patricia M.", company: "Valley Real Estate Attorneys", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'real estate attorney near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for real estate law keywords. We build content around transactions, disputes, title issues, and landlord-tenant law." },
+    { q: "What real estate law keywords should I target?", a: "We target 'real estate attorney near me,' 'property lawyer Las Vegas,' 'title dispute,' 'landlord tenant attorney,' and 'real estate closing attorney.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most real estate law firms see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does real estate law SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const BANKRUPTCY_ATTORNEY_CONTENT: NicheContent = {
+  headline: "Your Bankruptcy Law Firm Deserves to Be the First One Clients Find",
+  pain: "Las Vegas bankruptcy attorneys are losing clients to competitors who rank higher on Google. When someone searches 'bankruptcy attorney near me' or 'Chapter 7 Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas bankruptcy attorneys dominate local search and Google Maps — attracting clients actively searching for debt relief and bankruptcy protection.",
+  everestQuote: "I tracked every high-intent bankruptcy keyword in Las Vegas — Chapter 7, Chapter 13, debt relief — so your firm books solid.",
+  testimonials: [
+    { quote: "We went from 5-6 new client consultations per week to 14+ consultations. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Michael L.", company: "Desert Bankruptcy Law", location: "Las Vegas, NV", results: "14+ consultations per week" },
+    { quote: "HuskyTail got us ranking for 'bankruptcy attorney Las Vegas' in 85 days. Revenue is up 260%.", author: "Sandra T.", company: "Premier Debt Relief Law", location: "Henderson, NV", results: "260% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "David M.", company: "Valley Bankruptcy Attorneys", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'bankruptcy attorney near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for bankruptcy law keywords. We build content around Chapter 7 vs. Chapter 13, the filing process, and debt relief options." },
+    { q: "What bankruptcy law keywords should I target?", a: "We target 'bankruptcy attorney near me,' 'Chapter 7 Las Vegas,' 'Chapter 13 filing,' 'debt relief attorney,' and 'stop foreclosure.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most bankruptcy law firms see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does bankruptcy law SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// REAL ESTATE (final)
+export const REAL_ESTATE_AGENT_CONTENT: NicheContent = {
+  headline: "Your Real Estate Business Deserves to Be the First One Buyers & Sellers Find",
+  pain: "Las Vegas real estate agents are losing clients to competitors who rank higher on Google. When someone searches 'real estate agent near me' or 'homes for sale Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas real estate agents dominate local search and Google Maps — attracting buyers and sellers actively searching for real estate expertise.",
+  everestQuote: "I tracked every high-intent real estate keyword in Las Vegas — homes for sale, real estate agent, buy a home — so your business books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 new client inquiries per week to 10+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Lisa M.", company: "Desert Realty Group", location: "Las Vegas, NV", results: "10+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'real estate agent Las Vegas' in 85 days. Commissions are up 280%.", author: "Tom S.", company: "Premier Home Sales", location: "Henderson, NV", results: "280% commission increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Karen T.", company: "Valley Real Estate", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'real estate agent near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for real estate keywords. We build content around neighborhoods, market trends, and buyer/seller guides." },
+    { q: "What real estate keywords should I target?", a: "We target 'real estate agent near me,' 'homes for sale Las Vegas,' 'buy a home,' 'sell my house,' and 'top realtor.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most real estate agents see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does real estate SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// FITNESS (final)
+export const YOGA_STUDIO_CONTENT: NicheContent = {
+  headline: "Your Yoga Studio Deserves to Be the First One Students Find",
+  pain: "Las Vegas yoga studios are losing students to competitors who rank higher on Google. When someone searches 'yoga studio near me' or 'yoga classes Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas yoga studios dominate local search and Google Maps — attracting students actively searching for yoga and wellness classes.",
+  everestQuote: "I tracked every high-intent yoga keyword in Las Vegas — yoga classes, hot yoga, meditation — so your studio stays fully booked.",
+  testimonials: [
+    { quote: "We went from 15-20 new students per week to 40+ students. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Sarah M.", company: "Desert Flow Yoga", location: "Las Vegas, NV", results: "40+ students per week" },
+    { quote: "HuskyTail got us ranking for 'yoga studio Las Vegas' in 80 days. Revenue is up 265%.", author: "Amy T.", company: "Premier Yoga Center", location: "Henderson, NV", results: "265% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Jessica R.", company: "Valley Yoga & Wellness", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'yoga studio near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for yoga keywords. We build content around class types, instructor bios, and new student offers." },
+    { q: "What yoga keywords should I target?", a: "We target 'yoga studio near me,' 'yoga classes Las Vegas,' 'hot yoga,' 'meditation classes,' and 'beginner yoga.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most yoga studios see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does yoga studio SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const MARTIAL_ARTS_CONTENT: NicheContent = {
+  headline: "Your Martial Arts School Deserves to Be the First One Students Find",
+  pain: "Las Vegas martial arts schools are losing students to competitors who rank higher on Google. When someone searches 'martial arts near me' or 'karate classes Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas martial arts schools dominate local search and Google Maps — attracting students actively searching for self-defense and martial arts training.",
+  everestQuote: "I tracked every high-intent martial arts keyword in Las Vegas — karate, BJJ, MMA, self-defense — so your school stays fully booked.",
+  testimonials: [
+    { quote: "We went from 10-12 new students per week to 28+ students. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Sensei Mike T.", company: "Desert Martial Arts Academy", location: "Las Vegas, NV", results: "28+ students per week" },
+    { quote: "HuskyTail got us ranking for 'martial arts Las Vegas' in 80 days. Revenue is up 270%.", author: "Coach Dan M.", company: "Premier BJJ & MMA", location: "Henderson, NV", results: "270% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Master Lee S.", company: "Valley Karate Center", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'martial arts near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for martial arts keywords. We build content around disciplines, age groups, belt progression, and trial classes." },
+    { q: "What martial arts keywords should I target?", a: "We target 'martial arts near me,' 'karate classes Las Vegas,' 'BJJ gym,' 'MMA training,' and 'self-defense classes.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most martial arts schools see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does martial arts SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// FOOD & DINING (final)
+export const CATERING_CONTENT: NicheContent = {
+  headline: "Your Catering Company Deserves to Be the First One Clients Find",
+  pain: "Las Vegas catering companies are losing clients to competitors who rank higher on Google. When someone searches 'catering near me' or 'wedding catering Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas catering companies dominate local search and Google Maps — attracting clients actively searching for catering services for events and weddings.",
+  everestQuote: "I tracked every high-intent catering keyword in Las Vegas — wedding catering, corporate catering, event food — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 catering inquiries per week to 10+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Chef Maria T.", company: "Desert Catering Co.", location: "Las Vegas, NV", results: "10+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'catering Las Vegas' in 85 days. Revenue is up 275%.", author: "Chef James M.", company: "Premier Event Catering", location: "Henderson, NV", results: "275% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Chef Lisa R.", company: "Valley Catering Services", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'catering near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for catering keywords. We build content around menu options, event types, and booking process." },
+    { q: "What catering keywords should I target?", a: "We target 'catering near me,' 'wedding catering Las Vegas,' 'corporate catering,' 'event food service,' and 'buffet catering.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most catering companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does catering SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// FINANCE (final)
+export const TAX_PREPARER_CONTENT: NicheContent = {
+  headline: "Your Tax Preparation Business Deserves to Be the First One Clients Find",
+  pain: "Las Vegas tax preparers are losing clients to competitors who rank higher on Google. When someone searches 'tax preparer near me' or 'tax preparation Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas tax preparers dominate local search and Google Maps — attracting clients actively searching for tax preparation and filing services.",
+  everestQuote: "I tracked every high-intent tax keyword in Las Vegas — tax preparer, tax filing, CPA near me — so your business books solid.",
+  testimonials: [
+    { quote: "We went from 10-12 new clients per week to 28+ clients during tax season. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Linda T.", company: "Desert Tax Services", location: "Las Vegas, NV", results: "28+ clients per week" },
+    { quote: "HuskyTail got us ranking for 'tax preparer Las Vegas' in 80 days. Revenue is up 270%.", author: "Mark S.", company: "Premier Tax Solutions", location: "Henderson, NV", results: "270% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Susan M.", company: "Valley Tax Preparation", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'tax preparer near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for tax preparation keywords. We build content around individual vs. business taxes, deadlines, and deductions." },
+    { q: "What tax preparation keywords should I target?", a: "We target 'tax preparer near me,' 'tax preparation Las Vegas,' 'CPA near me,' 'business tax filing,' and 'IRS audit help.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most tax preparers see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does tax preparation SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// PHOTOGRAPHY (final)
+export const WEDDING_PHOTOGRAPHER_CONTENT: NicheContent = {
+  headline: "Your Wedding Photography Business Deserves to Be the First One Couples Find",
+  pain: "Las Vegas wedding photographers are losing bookings to competitors who rank higher on Google. When a couple searches 'wedding photographer near me' or 'wedding photography Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas wedding photographers dominate local search and Google Maps — attracting couples actively searching for wedding photography services.",
+  everestQuote: "I tracked every high-intent wedding photography keyword in Las Vegas — wedding photographer, engagement photos, elopement — so your business books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 wedding inquiries per week to 10+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Ashley T.", company: "Desert Moments Photography", location: "Las Vegas, NV", results: "10+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'wedding photographer Las Vegas' in 85 days. Revenue is up 275%.", author: "Brandon M.", company: "Premier Wedding Photos", location: "Henderson, NV", results: "275% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Kayla S.", company: "Valley Wedding Photography", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'wedding photographer near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for wedding photography keywords. We showcase your portfolio, packages, and booking process." },
+    { q: "What wedding photography keywords should I target?", a: "We target 'wedding photographer near me,' 'wedding photography Las Vegas,' 'engagement photos,' 'elopement photographer,' and 'destination wedding.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most wedding photographers see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does wedding photography SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
   ],
   stats: SHARED_STATS,
   benefits: SHARED_BENEFITS,

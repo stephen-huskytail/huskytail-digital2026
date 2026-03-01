@@ -162,6 +162,32 @@ const NICHES = [
   // Technology
   { slug: "it-support", name: "IT Support Companies", industry: "Technology", industrySlug: "technology" },
   { slug: "web-design", name: "Web Design Agencies", industry: "Technology", industrySlug: "technology" },
+
+  // Healthcare (final batch - new only)
+  // urgent-care, plastic-surgeon, pediatrician, orthodontist already added above
+
+  // Home Services (final batch - new only)
+  // hvac, roofer, painter, locksmith, pest-control already added above
+
+  // Legal (final batch)
+  { slug: "real-estate-attorney", name: "Real Estate Attorneys", industry: "Legal", industrySlug: "legal" },
+  { slug: "bankruptcy-attorney", name: "Bankruptcy Attorneys", industry: "Legal", industrySlug: "legal" },
+
+  // Real Estate (final batch)
+  { slug: "real-estate-agent", name: "Real Estate Agents", industry: "Real Estate", industrySlug: "real-estate" },
+
+  // Fitness (final batch)
+  { slug: "yoga-studio", name: "Yoga Studios", industry: "Fitness", industrySlug: "fitness" },
+  { slug: "martial-arts", name: "Martial Arts Schools", industry: "Fitness", industrySlug: "fitness" },
+
+  // Food & Dining (final batch)
+  { slug: "catering", name: "Catering Companies", industry: "Food & Dining", industrySlug: "food-dining" },
+
+  // Finance (final batch)
+  { slug: "tax-preparer", name: "Tax Preparers", industry: "Finance", industrySlug: "finance" },
+
+  // Photography (final batch)
+  { slug: "wedding-photographer", name: "Wedding Photographers", industry: "Photography", industrySlug: "photography" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>
