@@ -13,7 +13,7 @@ const ASSETS = {
   everestGrass: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-happy_7a210c0c.webp",
   everestSitting: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-sitting_f142456e.webp",
   everestLeap: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-mid-leap-v2-LkVUzVyqddX8JgNZHz8xJx.webp",
-  everestHero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-hero_e34b0707.webp",
+  everestHero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-laptop-hero_e59b3ae9.webp",
 };
 
 // Disable all caching during development — switch to ISR (revalidate = 600) for production
