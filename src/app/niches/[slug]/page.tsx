@@ -577,25 +577,6 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 90-Day Guarantee */}
-        <section className="py-20 px-4 bg-white">
-          <div className="max-w-3xl mx-auto">
-            {/* 90-Day Guarantee block */}
-            <div className="bg-[#0A0F1E]/5 border border-[#C8A84B]/30 rounded-2xl p-8 text-left">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">🛡️</span>
-                <h3 className="text-xl font-bold text-[#0A0F1E]">Guarantee: First Page Google Maps Rankings in 90 Days or Stop Paying Until You Do</h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We are confident in our process. If you are not seeing first-page Google Maps rankings within 90 days, you stop paying until you do. That is it. No excuses. No fine print.
-              </p>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                No lock-in. No contracts. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ Section — Accordion */}
         <section className="py-20 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
