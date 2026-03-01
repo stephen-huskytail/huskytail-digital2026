@@ -463,6 +463,25 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
+        {/* 90-Day Guarantee */}
+        <section className="py-20 px-4 bg-[#0A0F1E] text-white">
+          <div className="max-w-3xl mx-auto">
+            {/* 90-Day Guarantee block */}
+            <div className="bg-white/5 border border-[#C8A84B]/20 rounded-2xl p-8 text-left">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🛡️</span>
+                <h3 className="text-xl font-bold text-[#C8A84B]">Guarantee: First Page Google Maps Rankings in 90 Days or Stop Paying Until You Do</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                We are confident in our process. If you are not seeing first-page Google Maps rankings within 90 days, you stop paying until you do. That is it. No excuses. No fine print.
+              </p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                No lock-in. No contracts. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works — Step 1 / 2 / 3 */}
         <section className="py-20 px-4 bg-[#0A0F1E] text-white">
           <div className="max-w-5xl mx-auto">
@@ -628,24 +647,9 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 90-Day Guarantee + Final CTA */}
+        {/* Final CTA */}
         <section className="py-20 px-4 bg-[#0A0F1E] text-white">
           <div className="max-w-3xl mx-auto text-center">
-
-            {/* 90-Day Guarantee block */}
-            <div className="bg-white/5 border border-[#C8A84B]/20 rounded-2xl p-8 mb-12 text-left">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">🛡️</span>
-                <h3 className="text-xl font-bold text-[#C8A84B]">Guarantee: First Page Google Maps Rankings in 90 Days or Stop Paying Until You Do</h3>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4">
-                We are confident in our process. If you are not seeing first-page Google Maps rankings within 90 days, you stop paying until you do. That is it. No excuses. No fine print.
-              </p>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                No lock-in. No contracts. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
-              </p>
-            </div>
-
             {/* Final CTA */}
             <div className="text-5xl mb-6">🐾</div>
             <h2 className="text-3xl md:text-4xl font-black mb-4">
