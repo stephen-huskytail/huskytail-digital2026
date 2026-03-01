@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare SEO Las Vegas | Medical Practice SEO | HuskyTail Digital",
+  title: "Healthcare SEO Las Vegas | Medical Practice SEO",
   description:
     "SEO for healthcare practices in Las Vegas, NV. Dentists, chiropractors, specialists, and medical clinics — we help you rank on Google, fill your schedule, and grow your practice. Free audit.",
   alternates: {

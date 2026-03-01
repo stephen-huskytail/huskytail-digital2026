@@ -364,6 +364,69 @@ export default function HealthcareSEOPage() {
           </div>
         </section>
 
+        {/* ── Social Proof / Testimonials ── */}
+        <section className="bg-white py-14 md:py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-sm font-semibold text-[#C8A84B] uppercase tracking-widest mb-2">Real Results. Real Practices.</p>
+              <h2 className="text-2xl md:text-3xl font-black text-[#0A0F1E]">
+                Las Vegas Healthcare Practices That Now Own Their Market
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  result: "Page 3 → #1 in 90 Days",
+                  specialty: "General Dentist",
+                  city: "Henderson, NV",
+                  quote: "We went from invisible to fully booked. The phone literally does not stop ringing. Best investment we've made in the practice.",
+                  name: "Dr. M.R.",
+                  icon: "🦷",
+                },
+                {
+                  result: "3× More New Patients",
+                  specialty: "Chiropractor",
+                  city: "Las Vegas, NV",
+                  quote: "Within 60 days we were ranking for every major keyword in our area. Stephen's team understood our niche immediately — no hand-holding required.",
+                  name: "Dr. K.T.",
+                  icon: "🦴",
+                },
+                {
+                  result: "Map Pack in 45 Days",
+                  specialty: "Med Spa",
+                  city: "Summerlin, NV",
+                  quote: "I was skeptical about SEO after wasting money on agencies that over-promised. HuskyTail was different — transparent, strategic, and fast.",
+                  name: "S.L., Owner",
+                  icon: "💆",
+                },
+              ].map((t) => (
+                <div key={t.name} className="bg-gray-50 rounded-2xl border border-gray-100 p-6 flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-3xl">{t.icon}</span>
+                    <div>
+                      <div className="font-black text-[#C8A84B] text-lg leading-tight">{t.result}</div>
+                      <div className="text-xs text-gray-400 font-medium">{t.specialty} · {t.city}</div>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-[#C8A84B] text-sm">★</span>
+                    ))}
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed italic flex-1 mb-4">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <p className="text-xs font-bold text-[#0A0F1E]">{t.name}</p>
+                </div>
+              ))}
+            </div>
+            {/* Trust note */}
+            <p className="text-center text-xs text-gray-400 mt-6">
+              * Initials used to protect patient privacy. Results vary based on market, competition, and starting point.
+            </p>
+          </div>
+        </section>
+
         {/* ── Why Healthcare SEO Matters ── */}
         <section className="bg-white py-16 md:py-20 px-4">
           <div className="max-w-6xl mx-auto">
