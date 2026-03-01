@@ -13,6 +13,7 @@ const ASSETS = {
   everestGrass: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-happy_7a210c0c.webp",
   everestSitting: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-sitting_f142456e.webp",
   everestLeap: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-mid-leap-v2-LkVUzVyqddX8JgNZHz8xJx.webp",
+  everestHeroTech: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-hero-tech-be7Q7t3ptzABFb73FvYgNA.webp",
 };
 
 // ISR revalidation
@@ -288,8 +289,8 @@ export default async function NicheCityPage({ params }: Props) {
               <div className="relative w-[380px] h-[420px]">
                 <div className="absolute inset-0 rounded-2xl bg-[#C8A84B]/10 blur-2xl scale-90" />
                 <Image
-                  src={ASSETS.everestSitting}
-                  alt={`${page.nicheName} SEO ${page.cityName} — HuskyTail Digital mascot Everest`}
+                  src={ASSETS.everestHeroTech}
+                  alt={`${page.nicheName} SEO ${page.cityName} — HuskyTail Digital AI-powered mascot Everest`}
                   fill
                   className="object-contain object-bottom drop-shadow-2xl"
                   priority
