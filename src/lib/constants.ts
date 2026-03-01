@@ -20,52 +20,60 @@ export const CITIES = [
 
 export const INDUSTRIES = [
   {
-    name: "Legal",
-    slug: "legal",
-    icon: "Scale",
-    niches: ["Attorneys","Law Firms","Personal Injury","Criminal Defense","Family Law","Divorce Lawyers","Bankruptcy","Immigration","Estate Planning","Corporate Law","DUI Lawyers","Workers Comp"],
-  },
-  {
     name: "Healthcare",
     slug: "healthcare",
+    urlPath: "healthcare-seo",
     icon: "Heart",
-    niches: ["Dentists","Chiropractors","Med Spas","Plastic Surgeons","Veterinarians","Optometrists","Dermatologists","Orthodontists","Physical Therapists","Psychologists","Urgent Care","Pediatricians"],
+    niches: ["Dentist","Chiropractor","Optometrist","Orthodontist","Dermatologist","Therapist","Pediatrician","Plastic Surgeon","Urgent Care","Physical Therapist","Podiatrist","Cardiologist","Gastroenterologist","Neurologist","Psychiatrist","Veterinarian","Oral Surgeon","OB-GYN","Weight Loss Clinic","Addiction Treatment","Med Spa"],
   },
   {
     name: "Home Services",
     slug: "home-services",
+    urlPath: "home-services-seo",
     icon: "Home",
-    niches: ["Plumbers","Roofers","HVAC","Electricians","Landscapers","Painters","General Contractors","Pest Control","Window Installers","Flooring","Pool Services","Garage Door Repair"],
+    niches: ["Plumber","Electrician","HVAC","Roofer","Painter","Locksmith","Landscaper","Cleaning Service","Pest Control","Pool Service","Garage Door","Flooring","Window Treatment","Handyman","Remodeling","Solar","Moving Company","Junk Removal","Fence Company","Tree Service","Appliance Repair","Carpet Cleaning","General Contractor","Concrete Contractor"],
+  },
+  {
+    name: "Legal",
+    slug: "legal",
+    urlPath: "legal-seo",
+    icon: "Scale",
+    niches: ["Attorney","Personal Injury","Family Law","Criminal Defense","Immigration","Real Estate Attorney","Bankruptcy Attorney","DUI Attorney","Estate Planning Attorney","Workers' Comp Attorney","Business Attorney"],
   },
   {
     name: "Beauty & Wellness",
     slug: "beauty-wellness",
+    urlPath: "beauty-wellness-seo",
     icon: "Sparkles",
-    niches: ["Salons","Spas","Gyms","Fitness Centers","Yoga Studios","Barbers","Nail Salons","Massage Therapists","Tanning Salons","Tattoo Shops","Weight Loss Centers","Nutritionists"],
+    niches: ["Hair Salon","Spa","Nail Salon","Barber","Tattoo Shop","Lash Studio","Massage Therapist","Microblading","Gym","Personal Trainer","Yoga Studio","Martial Arts","Pilates Studio","Dance Studio","Weight Loss Clinic"],
   },
   {
-    name: "Food & Drink",
-    slug: "food-drink",
-    icon: "UtensilsCrossed",
-    niches: ["Restaurants","Bars","Coffee Shops","Cafes","Food Trucks","Caterers","Bakeries","Breweries","Wineries","Nightclubs","Pizza Places","Food Delivery Services"],
-  },
-  {
-    name: "Real Estate",
-    slug: "real-estate",
-    icon: "Building",
-    niches: ["Agents","Brokers","Property Management","Home Inspectors","Mortgage Brokers","Title Companies","Appraisers","Staging Services","Real Estate Lawyers","Commercial Real Estate","Rental Agencies","Flippers"],
-  },
-  {
-    name: "Auto & Repair",
-    slug: "auto-repair",
+    name: "Automotive",
+    slug: "automotive",
+    urlPath: "automotive-seo",
     icon: "Car",
-    niches: ["Auto Repair","Detailers","Tire Shops","Body Shops","Dealerships","Towing Services","Windshield Repair","Car Washes","Mechanics","RV Repair","Motorcycle Shops","Transmission Specialists"],
+    niches: ["Mechanic","Auto Body","Car Dealership","Towing","Auto Detailing","Window Tinting","Tire Shop"],
   },
   {
     name: "Professional Services",
     slug: "professional-services",
+    urlPath: "professional-services-seo",
     icon: "Briefcase",
-    niches: ["Accountants","Insurance Agents","Marketing Agencies","Consultants","Financial Advisors","IT Services","Graphic Designers","Photographers","Event Planners","Cleaning Services","Security Companies","HR Services"],
+    niches: ["Accountant","Financial Advisor","Mortgage Broker","Insurance Agent","Tax Preparer","Realtor","Property Manager","Real Estate Agent","Home Inspector","IT Support","Web Design"],
+  },
+  {
+    name: "Events & Entertainment",
+    slug: "events-entertainment",
+    urlPath: "events-entertainment-seo",
+    icon: "Calendar",
+    niches: ["Event Planner","Wedding Venue","Wedding Planner","Florist","Limo Service","Photographer","Wedding Photographer","Videographer","Catering"],
+  },
+  {
+    name: "Family Services",
+    slug: "family-services",
+    urlPath: "family-services-seo",
+    icon: "Users",
+    niches: ["Daycare","Tutoring","Driving School","Pet Groomer","Dog Trainer"],
   },
 ];
 
@@ -196,7 +204,7 @@ export const TESTIMONIALS = [
 ];
 
 export const NAV_CITIES = CITIES.map(c => ({ label: c.name, href: `/${c.slug}-seo` }));
-export const NAV_INDUSTRIES = INDUSTRIES.map(i => ({ label: i.name, href: `/${i.slug}-seo` }));
+export const NAV_INDUSTRIES = INDUSTRIES.map(i => ({ label: i.name, href: `/${i.urlPath}` }));
 export const NAV_BLOG_CATS = [
   { label: "Local SEO Tips", href: "/blog/local-seo-tips" },
   { label: "AI-Powered SEO", href: "/blog/ai-powered-seo" },
