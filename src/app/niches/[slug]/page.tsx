@@ -387,7 +387,7 @@ export default async function NicheCityPage({ params }: Props) {
                   Free {page.nicheName} SEO Audit
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  See exactly where your {page.nicheName.toLowerCase()} business stands against your top 3 competitors in {page.cityName}. No pitch. No pressure. Just clarity.
+                  See exactly where your {page.nicheSlug === 'dentist' ? 'dental practice' : page.nicheName.toLowerCase() + ' business'} stands against your top 3 competitors in {page.cityName}. No pitch. No pressure. Just clarity.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
@@ -421,9 +421,9 @@ export default async function NicheCityPage({ params }: Props) {
               <h2 className="text-3xl md:text-4xl font-black">
                 How We Get Your {page.nicheName} Business to Page 1
               </h2>
-              <p className="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
+                <p className="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
                 No guesswork. No fluff. Three focused steps that move the needle in {page.cityName}.
-              </p>
+                </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 relative">
@@ -434,7 +434,7 @@ export default async function NicheCityPage({ params }: Props) {
                 {
                   step: "01",
                   title: "Free Audit & Strategy Call",
-                  description: `We dig into your ${page.nicheName.toLowerCase()} business in ${page.cityName} — your Google Business Profile, competitors, keyword gaps, and quick wins. You leave with a clear picture of exactly where you stand and what it takes to rank.`,
+                  description: `We dig into your ${page.nicheSlug === 'dentist' ? 'dental practice' : page.nicheName.toLowerCase() + ' business'} in ${page.cityName} — your Google Business Profile, competitors, keyword gaps, and quick wins. You leave with a clear picture of exactly where you stand and what it takes to rank.`,
                   icon: "🔍",
                   cta: "Book Your Free Audit",
                   ctaHref: "/free-audit",
@@ -442,7 +442,7 @@ export default async function NicheCityPage({ params }: Props) {
                 {
                   step: "02",
                   title: "We Build & Optimize",
-                  description: `Our team executes the full local SEO playbook — GBP optimization, citation cleanup, AI-powered content, and review strategy — all tailored specifically to ${page.nicheName.toLowerCase()} practices in the ${page.cityName} market.`,
+                  description: `Our team executes the full local SEO playbook — GBP optimization, citation cleanup, AI-powered content, and review strategy — all tailored specifically to ${page.nicheSlug === 'dentist' ? 'dental' : page.nicheName.toLowerCase()} practices in the ${page.cityName} market.`,
                   icon: "⚙️",
                   cta: null,
                   ctaHref: null,
