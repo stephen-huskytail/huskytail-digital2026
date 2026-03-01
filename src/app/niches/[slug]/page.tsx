@@ -12,8 +12,7 @@ const ASSETS = {
   everestRock: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-on-rock_02e2029b.webp",
   everestGrass: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-happy_7a210c0c.webp",
   everestSitting: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-sitting_f142456e.webp",
-  everestLeap: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-mid-leap-v2-LkVUzVyqddX8JgNZHz8xJx.webp",
-  everestHero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-laptop-hero_1d6a852a.webp",
+  everestHero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-hero-laptop-custom-GWAPJnTMR8wBRQzmkAEHZy.webp",
 };
 
 // Disable all caching during development — switch to ISR (revalidate = 600) for production
@@ -265,8 +264,8 @@ export default async function NicheCityPage({ params }: Props) {
         {/* Hero Section */}
         <section className="text-white overflow-hidden relative bg-[#0A0F1E]" style={{
           backgroundImage: `url('${ASSETS.everestHero}')`,
-          backgroundSize: 'auto',
-          backgroundPosition: 'right center',
+          backgroundSize: '60%',
+          backgroundPosition: 'right 20% center',
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'scroll',
         }}>
