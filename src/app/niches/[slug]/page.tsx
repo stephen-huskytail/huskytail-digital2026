@@ -66,19 +66,19 @@ const NICHES = [
   { slug: "attorney", name: "Attorney", industry: "Legal", industrySlug: "legal" },
   
   // Real Estate
-  { slug: "realtor", name: "Realtor", industry: "Real Estate", industrySlug: "real-estate" },
+  { slug: "realtor", name: "Realtor", industry: "Real Estate", industrySlug: "professional-services" },
   
   // Automotive
   { slug: "mechanic", name: "Auto Mechanic", industry: "Automotive", industrySlug: "automotive" },
   
   // Finance
-  { slug: "accountant", name: "Accountant", industry: "Finance", industrySlug: "finance" },
+  { slug: "accountant", name: "Accountant", industry: "Finance", industrySlug: "professional-services" },
   
   // Beauty
-  { slug: "salon", name: "Hair Salon", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "salon", name: "Hair Salon", industry: "Beauty", industrySlug: "beauty-wellness" },
   
   // Other
-  { slug: "photographer", name: "Photographer", industry: "Other Services", industrySlug: "other-services" },
+  { slug: "photographer", name: "Photographer", industry: "Other Services", industrySlug: "events-entertainment" },
   
   // Healthcare (additional)
   { slug: "pediatrician", name: "Pediatrician", industry: "Healthcare", industrySlug: "healthcare" },
@@ -96,18 +96,18 @@ const NICHES = [
   { slug: "family-law", name: "Family Law Attorney", industry: "Legal", industrySlug: "legal" },
   
   // Real Estate (additional)
-  { slug: "property-manager", name: "Property Manager", industry: "Real Estate", industrySlug: "real-estate" },
+  { slug: "property-manager", name: "Property Manager", industry: "Real Estate", industrySlug: "professional-services" },
   
   // Beauty (additional)
-  { slug: "spa", name: "Spa", industry: "Beauty", industrySlug: "beauty" },
-  { slug: "nail-salon", name: "Nail Salon", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "spa", name: "Spa", industry: "Beauty", industrySlug: "beauty-wellness" },
+  { slug: "nail-salon", name: "Nail Salon", industry: "Beauty", industrySlug: "beauty-wellness" },
   
   // Food & Restaurant
-  { slug: "restaurant", name: "Restaurant", industry: "Food & Dining", industrySlug: "food-dining" },
+  { slug: "restaurant", name: "Restaurant", industry: "Food & Dining", industrySlug: "events-entertainment" },
   
   // Fitness
-  { slug: "gym", name: "Gym", industry: "Fitness", industrySlug: "fitness" },
-  { slug: "personal-trainer", name: "Personal Trainer", industry: "Fitness", industrySlug: "fitness" },
+  { slug: "gym", name: "Gym", industry: "Fitness", industrySlug: "beauty-wellness" },
+  { slug: "personal-trainer", name: "Personal Trainer", industry: "Fitness", industrySlug: "beauty-wellness" },
   
   // Automotive (additional)
   { slug: "auto-body", name: "Auto Body", industry: "Automotive", industrySlug: "automotive" },
@@ -127,15 +127,15 @@ const NICHES = [
   { slug: "immigration-lawyer", name: "Immigration Attorney", industry: "Legal", industrySlug: "legal" },
   
   // Finance (additional)
-  { slug: "financial-advisor", name: "Financial Advisor", industry: "Finance", industrySlug: "finance" },
-  { slug: "mortgage-broker", name: "Mortgage Broker", industry: "Finance", industrySlug: "finance" },
-  { slug: "insurance-agent", name: "Insurance Agent", industry: "Finance", industrySlug: "finance" },
+  { slug: "financial-advisor", name: "Financial Advisor", industry: "Finance", industrySlug: "professional-services" },
+  { slug: "mortgage-broker", name: "Mortgage Broker", industry: "Finance", industrySlug: "professional-services" },
+  { slug: "insurance-agent", name: "Insurance Agent", industry: "Finance", industrySlug: "professional-services" },
   
   // Education
-  { slug: "tutoring", name: "Tutoring", industry: "Education", industrySlug: "education" },
+  { slug: "tutoring", name: "Tutoring", industry: "Education", industrySlug: "family-services" },
   
   // Events & Entertainment
-  { slug: "event-planner", name: "Event Planner", industry: "Events", industrySlug: "events" },
+  { slug: "event-planner", name: "Event Planner", industry: "Events", industrySlug: "events-entertainment" },
 
   // Healthcare (batch 4)
   { slug: "cardiologist", name: "Cardiologist", industry: "Healthcare", industrySlug: "healthcare" },
@@ -153,15 +153,15 @@ const NICHES = [
   { slug: "towing", name: "Towing", industry: "Automotive", industrySlug: "automotive" },
 
   // Beauty (batch 3)
-  { slug: "barber", name: "Barbershop", industry: "Beauty", industrySlug: "beauty" },
-  { slug: "tattoo-shop", name: "Tattoo Shop", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "barber", name: "Barbershop", industry: "Beauty", industrySlug: "beauty-wellness" },
+  { slug: "tattoo-shop", name: "Tattoo Shop", industry: "Beauty", industrySlug: "beauty-wellness" },
 
   // Education (additional)
-  { slug: "driving-school", name: "Driving School", industry: "Education", industrySlug: "education" },
+  { slug: "driving-school", name: "Driving School", industry: "Education", industrySlug: "family-services" },
 
   // Technology
-  { slug: "it-support", name: "IT Support", industry: "Technology", industrySlug: "technology" },
-  { slug: "web-design", name: "Web Design", industry: "Technology", industrySlug: "technology" },
+  { slug: "it-support", name: "IT Support", industry: "Technology", industrySlug: "professional-services" },
+  { slug: "web-design", name: "Web Design", industry: "Technology", industrySlug: "professional-services" },
 
   // Healthcare (final batch - new only)
   // urgent-care, plastic-surgeon, pediatrician, orthodontist already added above
@@ -174,20 +174,20 @@ const NICHES = [
   { slug: "bankruptcy-attorney", name: "Bankruptcy Attorney", industry: "Legal", industrySlug: "legal" },
 
   // Real Estate (final batch)
-  { slug: "real-estate-agent", name: "Real Estate Agent", industry: "Real Estate", industrySlug: "real-estate" },
+  { slug: "real-estate-agent", name: "Real Estate Agent", industry: "Real Estate", industrySlug: "professional-services" },
 
   // Fitness (final batch)
-  { slug: "yoga-studio", name: "Yoga Studio", industry: "Fitness", industrySlug: "fitness" },
-  { slug: "martial-arts", name: "Martial Arts", industry: "Fitness", industrySlug: "fitness" },
+  { slug: "yoga-studio", name: "Yoga Studio", industry: "Fitness", industrySlug: "beauty-wellness" },
+  { slug: "martial-arts", name: "Martial Arts", industry: "Fitness", industrySlug: "beauty-wellness" },
 
   // Food & Dining (final batch)
-  { slug: "catering", name: "Catering", industry: "Food & Dining", industrySlug: "food-dining" },
+  { slug: "catering", name: "Catering", industry: "Food & Dining", industrySlug: "events-entertainment" },
 
   // Finance (final batch)
-  { slug: "tax-preparer", name: "Tax Preparer", industry: "Finance", industrySlug: "finance" },
+  { slug: "tax-preparer", name: "Tax Preparer", industry: "Finance", industrySlug: "professional-services" },
 
   // Photography (final batch)
-  { slug: "wedding-photographer", name: "Wedding Photographer", industry: "Photography", industrySlug: "photography" },
+  { slug: "wedding-photographer", name: "Wedding Photographer", industry: "Photography", industrySlug: "events-entertainment" },
 
   // ---- EXPANSION BATCH ----
   // Healthcare (new specialties)
@@ -217,31 +217,31 @@ const NICHES = [
   { slug: "carpet-cleaning", name: "Carpet Cleaning", industry: "Home Services", industrySlug: "home-services" },
 
   // Construction (new industry)
-  { slug: "general-contractor", name: "General Contractor", industry: "Construction", industrySlug: "construction" },
-  { slug: "concrete-contractor", name: "Concrete Contractor", industry: "Construction", industrySlug: "construction" },
+  { slug: "general-contractor", name: "General Contractor", industry: "Construction", industrySlug: "home-services" },
+  { slug: "concrete-contractor", name: "Concrete Contractor", industry: "Construction", industrySlug: "home-services" },
 
   // Beauty & Wellness (new services)
-  { slug: "lash-studio", name: "Lash Studio", industry: "Beauty", industrySlug: "beauty" },
-  { slug: "massage-therapist", name: "Massage Therapist", industry: "Beauty", industrySlug: "beauty" },
-  { slug: "microblading", name: "Microblading", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "lash-studio", name: "Lash Studio", industry: "Beauty", industrySlug: "beauty-wellness" },
+  { slug: "massage-therapist", name: "Massage Therapist", industry: "Beauty", industrySlug: "beauty-wellness" },
+  { slug: "microblading", name: "Microblading", industry: "Beauty", industrySlug: "beauty-wellness" },
 
   // Fitness (new categories)
-  { slug: "pilates-studio", name: "Pilates Studio", industry: "Fitness", industrySlug: "fitness" },
-  { slug: "dance-studio", name: "Dance Studio", industry: "Fitness", industrySlug: "fitness" },
+  { slug: "pilates-studio", name: "Pilates Studio", industry: "Fitness", industrySlug: "beauty-wellness" },
+  { slug: "dance-studio", name: "Dance Studio", industry: "Fitness", industrySlug: "beauty-wellness" },
 
   // Events & Entertainment (Vegas-specific)
-  { slug: "wedding-venue", name: "Wedding Venue", industry: "Events", industrySlug: "events" },
-  { slug: "wedding-planner", name: "Wedding Planner", industry: "Events", industrySlug: "events" },
-  { slug: "florist", name: "Florist", industry: "Events", industrySlug: "events" },
-  { slug: "limo-service", name: "Limo Service", industry: "Events", industrySlug: "events" },
+  { slug: "wedding-venue", name: "Wedding Venue", industry: "Events", industrySlug: "events-entertainment" },
+  { slug: "wedding-planner", name: "Wedding Planner", industry: "Events", industrySlug: "events-entertainment" },
+  { slug: "florist", name: "Florist", industry: "Events", industrySlug: "events-entertainment" },
+  { slug: "limo-service", name: "Limo Service", industry: "Events", industrySlug: "events-entertainment" },
 
   // New Industries
-  { slug: "daycare", name: "Daycare", industry: "Childcare", industrySlug: "childcare" },
-  { slug: "senior-care", name: "Senior Care", industry: "Senior Care", industrySlug: "senior-care" },
-  { slug: "pet-groomer", name: "Pet Groomer", industry: "Pet Services", industrySlug: "pet-services" },
-  { slug: "dog-trainer", name: "Dog Trainer", industry: "Pet Services", industrySlug: "pet-services" },
-  { slug: "videographer", name: "Videographer", industry: "Photography", industrySlug: "photography" },
-  { slug: "home-inspector", name: "Home Inspector", industry: "Real Estate", industrySlug: "real-estate" },
+  { slug: "daycare", name: "Daycare", industry: "Childcare", industrySlug: "family-services" },
+  { slug: "senior-care", name: "Senior Care", industry: "Senior Care", industrySlug: "family-services" },
+  { slug: "pet-groomer", name: "Pet Groomer", industry: "Pet Services", industrySlug: "family-services" },
+  { slug: "dog-trainer", name: "Dog Trainer", industry: "Pet Services", industrySlug: "family-services" },
+  { slug: "videographer", name: "Videographer", industry: "Photography", industrySlug: "events-entertainment" },
+  { slug: "home-inspector", name: "Home Inspector", industry: "Real Estate", industrySlug: "professional-services" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>

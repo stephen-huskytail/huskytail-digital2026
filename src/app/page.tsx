@@ -13,14 +13,14 @@ export const metadata: Metadata = {
 };
 
 const INDUSTRY_ICONS: Record<string, string> = {
-  legal: "⚖️",
   healthcare: "🏥",
   "home-services": "🔧",
+  legal: "⚖️",
   "beauty-wellness": "💅",
-  "food-drink": "🍽️",
-  "real-estate": "🏠",
-  "auto-repair": "🚗",
+  automotive: "🚗",
   "professional-services": "💼",
+  "events-entertainment": "🎉",
+  "family-services": "👨‍👩‍👧",
 };
 
 export default function HomePage() {
@@ -432,7 +432,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {INDUSTRIES.map((industry) => (
-              <HoverLink key={industry.slug} href={`/industries/${industry.slug}`}>
+              <HoverLink key={industry.slug} href={`/${industry.urlPath}`}>
                 <div
                   className="rounded-xl p-6 text-center transition-all duration-200"
                   style={{
