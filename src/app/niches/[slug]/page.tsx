@@ -423,8 +423,8 @@ export default async function NicheCityPage({ params }: Props) {
                 <span>{page.cityName}, Nevada · {page.industryName}</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-                {page.nicheName} SEO in<br />
-                <span className="text-[#C8A84B]">{page.cityName}, NV</span>
+                <span className="block">{page.nicheName} SEO</span>
+                <span className="block text-[#C8A84B]">{page.cityName}, NV</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-4 font-semibold">
                 {content.headline}

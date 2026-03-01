@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/XwegoxlTucekNaXJ.webp" alt="HuskyTail Digital" width={40} height={40} className="h-10 w-10" />
+              <Image src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/XwegoxlTucekNaXJ.webp" alt="HuskyTail Digital" width={180} height={44} className="h-11 w-auto" />
             </Link>
             <p className="text-husky-white/60 text-sm font-inter leading-relaxed mb-4">
               Built on Strategy. Backed by Clarity. No Fluff.
