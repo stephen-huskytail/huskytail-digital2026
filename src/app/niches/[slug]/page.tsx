@@ -486,20 +486,25 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 90-Day Guarantee */}
-        <section className="py-20 px-4 bg-[#0A0F1E] text-white">
-          <div className="max-w-3xl mx-auto">
-            {/* 90-Day Guarantee block */}
-            <div className="bg-white/5 border border-[#C8A84B]/20 rounded-2xl p-8 text-left">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">🛡️</span>
-                <h3 className="text-xl font-bold text-[#C8A84B]">Guarantee: First Page Google Maps Rankings in 90 Days or Stop Paying Until You Do</h3>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-4">
-                We are confident in our process. If you are not seeing first-page Google Maps rankings within 90 days, you stop paying until you do. That is it. No excuses. No fine print.
+        {/* Everest Mid-Page Quote Block — Visual Break */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            {/* Everest mid-leap illustration */}
+            <div className="shrink-0 w-56 h-56 md:w-80 md:h-80 relative">
+              <Image
+                src={ASSETS.everestRock}
+                alt="Everest the Husky — HuskyTail Digital Chief Distraction Officer"
+                fill
+                className="object-contain drop-shadow-[0_0_20px_rgba(0,209,255,0.4)]"
+                sizes="320px"
+              />
+            </div>
+            <div>
+              <p className="text-lg md:text-xl text-[#0A0F1E] font-medium leading-relaxed italic mb-3">
+                &ldquo;{content.everestQuote}&rdquo;
               </p>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                No lock-in. No contracts. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
+              <p className="text-[#C8A84B] font-bold text-sm">
+                — Everest, Chief Distraction Officer · HuskyTail Digital
               </p>
             </div>
           </div>
@@ -568,30 +573,6 @@ export default async function NicheCityPage({ params }: Props) {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Everest Mid-Page Quote Block — Visual Break */}
-        <section className="py-16 px-4 bg-white">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
-            {/* Everest mid-leap illustration */}
-            <div className="shrink-0 w-56 h-56 md:w-80 md:h-80 relative">
-              <Image
-                src={ASSETS.everestRock}
-                alt="Everest the Husky — HuskyTail Digital Chief Distraction Officer"
-                fill
-                className="object-contain drop-shadow-[0_0_20px_rgba(0,209,255,0.4)]"
-                sizes="320px"
-              />
-            </div>
-            <div>
-              <p className="text-lg md:text-xl text-[#0A0F1E] font-medium leading-relaxed italic mb-3">
-                &ldquo;{content.everestQuote}&rdquo;
-              </p>
-              <p className="text-[#C8A84B] font-bold text-sm">
-                — Everest, Chief Distraction Officer · HuskyTail Digital
-              </p>
             </div>
           </div>
         </section>
