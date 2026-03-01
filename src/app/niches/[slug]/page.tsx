@@ -262,8 +262,8 @@ export default async function NicheCityPage({ params }: Props) {
       <main className="border-t-0" style={{ paddingTop: 'var(--desktop-nav-height, 80px)' }}>
 
         {/* Hero Section */}
-        <section className="text-white overflow-hidden relative bg-[#0A0F1E]" style={{
-          backgroundImage: `url('${ASSETS.everestHero}')`,
+        <section className="text-white overflow-hidden relative" style={{
+          background: `linear-gradient(to right, #0A0F1E 0%, #0A0F1E 50%, rgba(10, 15, 30, 0.7) 100%), url('${ASSETS.everestHero}')`,
           backgroundSize: 'auto 100%',
           backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat',
