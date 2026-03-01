@@ -188,6 +188,60 @@ const NICHES = [
 
   // Photography (final batch)
   { slug: "wedding-photographer", name: "Wedding Photographers", industry: "Photography", industrySlug: "photography" },
+
+  // ---- EXPANSION BATCH ----
+  // Healthcare (new specialties)
+  { slug: "oral-surgeon", name: "Oral Surgeons", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "obgyn", name: "OB-GYN Practices", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "weight-loss-clinic", name: "Weight Loss Clinics", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "addiction-treatment", name: "Addiction Treatment Centers", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "med-spa", name: "Med Spas", industry: "Healthcare", industrySlug: "healthcare" },
+
+  // Legal (new practice areas)
+  { slug: "dui-attorney", name: "DUI Attorneys", industry: "Legal", industrySlug: "legal" },
+  { slug: "estate-planning-attorney", name: "Estate Planning Attorneys", industry: "Legal", industrySlug: "legal" },
+  { slug: "workers-comp-attorney", name: "Workers' Compensation Attorneys", industry: "Legal", industrySlug: "legal" },
+  { slug: "business-attorney", name: "Business Attorneys", industry: "Legal", industrySlug: "legal" },
+
+  // Automotive (new services)
+  { slug: "auto-detailing", name: "Auto Detailing Shops", industry: "Automotive", industrySlug: "automotive" },
+  { slug: "window-tinting", name: "Window Tinting Shops", industry: "Automotive", industrySlug: "automotive" },
+  { slug: "tire-shop", name: "Tire Shops", industry: "Automotive", industrySlug: "automotive" },
+
+  // Home Services (new trades)
+  { slug: "moving-company", name: "Moving Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "junk-removal", name: "Junk Removal Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "fence-company", name: "Fence Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "tree-service", name: "Tree Service Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "appliance-repair", name: "Appliance Repair Services", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "carpet-cleaning", name: "Carpet Cleaning Companies", industry: "Home Services", industrySlug: "home-services" },
+
+  // Construction (new industry)
+  { slug: "general-contractor", name: "General Contractors", industry: "Construction", industrySlug: "construction" },
+  { slug: "concrete-contractor", name: "Concrete Contractors", industry: "Construction", industrySlug: "construction" },
+
+  // Beauty & Wellness (new services)
+  { slug: "lash-studio", name: "Lash Studios", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "massage-therapist", name: "Massage Therapists", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "microblading", name: "Microblading Studios", industry: "Beauty", industrySlug: "beauty" },
+
+  // Fitness (new categories)
+  { slug: "pilates-studio", name: "Pilates Studios", industry: "Fitness", industrySlug: "fitness" },
+  { slug: "dance-studio", name: "Dance Studios", industry: "Fitness", industrySlug: "fitness" },
+
+  // Events & Entertainment (Vegas-specific)
+  { slug: "wedding-venue", name: "Wedding Venues", industry: "Events", industrySlug: "events" },
+  { slug: "wedding-planner", name: "Wedding Planners", industry: "Events", industrySlug: "events" },
+  { slug: "florist", name: "Florists", industry: "Events", industrySlug: "events" },
+  { slug: "limo-service", name: "Limo & Transportation Services", industry: "Events", industrySlug: "events" },
+
+  // New Industries
+  { slug: "daycare", name: "Daycares & Childcare Centers", industry: "Childcare", industrySlug: "childcare" },
+  { slug: "senior-care", name: "Senior Care Agencies", industry: "Senior Care", industrySlug: "senior-care" },
+  { slug: "pet-groomer", name: "Pet Groomers", industry: "Pet Services", industrySlug: "pet-services" },
+  { slug: "dog-trainer", name: "Dog Trainers", industry: "Pet Services", industrySlug: "pet-services" },
+  { slug: "videographer", name: "Videographers", industry: "Photography", industrySlug: "photography" },
+  { slug: "home-inspector", name: "Home Inspectors", industry: "Real Estate", industrySlug: "real-estate" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>
