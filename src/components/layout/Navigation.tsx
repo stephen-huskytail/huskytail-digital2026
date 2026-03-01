@@ -127,12 +127,7 @@ export default function Navigation() {
     <>
       {/* ===== DESKTOP NAV ===== */}
       <header
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block border-b-0 border-t-0",
-          scrolled
-            ? "bg-deep-navy/98 backdrop-blur-md"
-            : "bg-deep-navy"
-        )}
+        className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block border-b-0 border-t-0 bg-deep-navy"
         style={{ height: "var(--desktop-nav-height)" }}
       >
         {/* Three-zone layout: logo | centered nav | CTA */}
