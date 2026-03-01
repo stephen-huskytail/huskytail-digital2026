@@ -1,7 +1,4 @@
 {
-  "security": {
-    "attackChallengeMode": false
-  },
   "env": {
     "NEXT_IGNORE_VULNERABILITY_CHECK": "1"
   }
