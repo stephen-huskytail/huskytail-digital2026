@@ -430,6 +430,31 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Why Local Matters — Social Proof Stats */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-black text-[#0A0F1E] mb-4 text-center">
+              Why {page.cityName} {page.nicheName} Need Local SEO Now
+            </h2>
+            <p className="text-lg text-gray-500 text-center mb-12 max-w-2xl mx-auto">
+              The Las Vegas Valley is one of the most competitive local markets in the country. Here is what the data says.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { stat: "76%", label: "of local searches result in a business visit within 24 hours", source: "Google" },
+                { stat: "88%", label: "of consumers trust online reviews as much as personal recommendations", source: "BrightLocal" },
+                { stat: "70%", label: "of clicks go to the top 3 Google Maps results — the 3-Pack", source: "Moz" },
+              ].map((item) => (
+                <div key={item.stat} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
+                  <div className="text-5xl font-black text-[#C8A84B] mb-3">{item.stat}</div>
+                  <p className="text-gray-600 mb-2 leading-relaxed">{item.label}</p>
+                  <p className="text-xs text-gray-400">Source: {item.source}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* What You Get — Benefits Section */}
         <section className="py-20 px-4 bg-[#0A0F1E] text-white border-t-4 border-[#C8A84B]">
           <div className="max-w-6xl mx-auto">
@@ -549,8 +574,8 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Everest Mid-Page Quote Block */}
-        <section className="py-16 px-4 bg-[#0A0F1E]">
+        {/* Everest Mid-Page Quote Block — Visual Break */}
+        <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
             {/* Everest mid-leap illustration */}
             <div className="shrink-0 w-56 h-56 md:w-80 md:h-80 relative">
@@ -563,7 +588,7 @@ export default async function NicheCityPage({ params }: Props) {
               />
             </div>
             <div>
-              <p className="text-lg md:text-xl text-white font-medium leading-relaxed italic mb-3">
+              <p className="text-lg md:text-xl text-[#0A0F1E] font-medium leading-relaxed italic mb-3">
                 &ldquo;{content.everestQuote}&rdquo;
               </p>
               <p className="text-[#C8A84B] font-bold text-sm">
@@ -573,27 +598,21 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Why Local Matters */}
-        <section className="py-20 px-4 bg-gray-50">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black text-[#0A0F1E] mb-4 text-center">
-              Why {page.cityName} {page.nicheName} Need Local SEO Now
-            </h2>
-            <p className="text-lg text-gray-500 text-center mb-12 max-w-2xl mx-auto">
-              The Las Vegas Valley is one of the most competitive local markets in the country. Here is what the data says.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { stat: "76%", label: "of local searches result in a business visit within 24 hours", source: "Google" },
-                { stat: "88%", label: "of consumers trust online reviews as much as personal recommendations", source: "BrightLocal" },
-                { stat: "70%", label: "of clicks go to the top 3 Google Maps results — the 3-Pack", source: "Moz" },
-              ].map((item) => (
-                <div key={item.stat} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
-                  <div className="text-5xl font-black text-[#C8A84B] mb-3">{item.stat}</div>
-                  <p className="text-gray-600 mb-2 leading-relaxed">{item.label}</p>
-                  <p className="text-xs text-gray-400">Source: {item.source}</p>
-                </div>
-              ))}
+        {/* 90-Day Guarantee */}
+        <section className="py-20 px-4 bg-white">
+          <div className="max-w-3xl mx-auto">
+            {/* 90-Day Guarantee block */}
+            <div className="bg-[#0A0F1E]/5 border border-[#C8A84B]/30 rounded-2xl p-8 text-left">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🛡️</span>
+                <h3 className="text-xl font-bold text-[#0A0F1E]">Guarantee: First Page Google Maps Rankings in 90 Days or Stop Paying Until You Do</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We are confident in our process. If you are not seeing first-page Google Maps rankings within 90 days, you stop paying until you do. That is it. No excuses. No fine print.
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                No lock-in. No contracts. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
+              </p>
             </div>
           </div>
         </section>
