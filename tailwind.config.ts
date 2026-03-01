@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "ice-blue": "#A5D8FF",
-        "deep-navy": "#0A2540",
+        "deep-navy": "#0a0f1e",
         "electric-blue": "#00D1FF",
         "husky-white": "#F8FAFC",
         "warm-gold": "#FFD700",
