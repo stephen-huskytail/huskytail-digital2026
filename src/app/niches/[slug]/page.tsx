@@ -1,11 +1,12 @@
-import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { CITIES } from "@/lib/constants";
 import FAQAccordion from "@/components/FAQAccordion";
+import { getNicheContent, NICHE_CONTENT_MAP } from "@/lib/niche-content";
 
 // CDN assets
 const ASSETS = {
@@ -82,93 +83,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// --- Niche-specific content ---
-const NICHE_CONTENT: Record<string, {
-  headline: string;
-  pain: string;
-  solution: string;
-  stats: { label: string; value: string }[];
-  faqs: { q: string; a: string }[];
-  everestQuote: string;
-  benefits: { title: string; description: string }[];
-}> = {
-  plumber: {
-    headline: "Stop Losing Emergency Calls to Your Competitors",
-    pain: "When a pipe bursts at 2am, homeowners grab their phone and search 'plumber near me.' If you're not in the top 3 results on Google Maps, that call goes to your competitor. Every. Single. Time.",
-    solution: "We get Las Vegas plumbers to the top of Google Maps and local search — so when someone needs a plumber fast, they find you first. Our AI-powered local SEO system is built specifically for home service businesses in the Las Vegas Valley.",
-    stats: [
-      { label: "Avg. increase in Google Maps calls", value: "312%" },
-      { label: "Time to first page ranking", value: "60–90 days" },
-      { label: "Emergency calls captured", value: "24/7" },
-      { label: "Client retention rate", value: "94%" },
-    ],
-    everestQuote: "I tracked down every emergency plumbing keyword in Las Vegas so your phone rings first — not your competitor's.",
-    faqs: [
-      {
-        q: "How long does it take to rank my plumbing business on Google Maps?",
-        a: "Most of our plumbing clients see measurable movement in Google Maps rankings within 60–90 days. Full dominance of the 3-Pack typically takes 4–6 months depending on your current GBP health and competition level in your service area.",
-      },
-      {
-        q: "Do I need a website to rank on Google Maps?",
-        a: "You need a Google Business Profile, but a strong website dramatically accelerates your rankings. We optimize both together — your GBP and your website work as a unified local SEO system.",
-      },
-      {
-        q: "What makes HuskyTail different from other SEO agencies for plumbers?",
-        a: "We specialize exclusively in local SEO for Las Vegas Valley businesses. We don't take on clients in other markets. That means every strategy, every tactic, and every piece of content we create is built for the Las Vegas local search landscape — not recycled from a national template.",
-      },
-      {
-        q: "How much does plumber SEO cost in Las Vegas?",
-        a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.",
-      },
-    ],
-    benefits: [
-      { title: "Get Found by Homeowners Ready to Call", description: "Be there when they need you most. Your future customers are already searching — we make sure you show up right where and when they are ready to act. Using advanced SEO tactics and localized targeting, we connect you with the high-intent folks in your area who are eager to book, call, or visit." },
-      { title: "Boost Trust with Optimized Reviews & Reputation", description: "Turn happy customers into powerful marketing. Strong reviews build trust faster than any sales pitch. We help you generate, manage, and showcase glowing reviews across major platforms — building credibility that drives more clicks, more calls, and more business." },
-      { title: "Rank Higher in the Map Pack Where It Counts", description: "Top spot on the map = more foot traffic and calls. The Google Map Pack is prime digital real estate. We help you claim it. By optimizing your listings, citations, and location signals, we boost your visibility exactly where people are searching — leading to more calls, directions, and walk-ins." },
-      { title: "Stand Out with Smart, AI-Powered Content", description: "Say the right things to the right people — automatically. We combine data-driven insights with AI-crafted content to tell your story in a way that gets noticed. From service pages to blog posts, your content will attract, engage, and convert — all while reinforcing your local authority." },
-      { title: "Drive More Leads Without Paying for Every Click", description: "Why rent traffic when you can own it? Stop relying solely on paid ads to bring in leads. Our SEO strategies help you build long-term, cost-effective visibility that keeps traffic flowing without draining your ad budget. Get more ROI with less spend." },
-      { title: "Dominate Voice & Mobile Search", description: "Show up when they say Hey Siri... Voice and mobile searches are exploding — especially for local intent. We make sure your plumbing business is optimized for how real people search on the go, helping you win more attention (and conversions) from voice assistants and smartphones alike." },
-    ],
-  },
-  dentist: {
-    headline: "Your Dental Practice Deserves to Be the First One Patients Find",
-    pain: `Las Vegas has hundreds of dental practices competing for the same patients. When someone searches 'dentist near me' or 'emergency dentist Las Vegas,' the practices in the Google Maps 3-Pack get 70% of the clicks. If you're not there, you're invisible.`,
-    solution: `We help Las Vegas dental practices dominate local search and Google Maps — attracting high-value patients who are actively searching for a dentist right now. Our AI-powered SEO system is built specifically for healthcare practices in the Las Vegas Valley.`,
-    stats: [
-      { label: "Avg. increase in new patient inquiries", value: "287%" },
-      { label: "Time to Google Maps 3-Pack", value: "60–90 days" },
-      { label: "Procedures targeted", value: "Implants & More" },
-      { label: "Client retention rate", value: "94%" },
-    ],
-    everestQuote: `I sniffed out every high-value dental keyword in Las Vegas — implants, Invisalign, emergency visits — so your practice fills the schedule, not your competitor's.`,
-    faqs: [
-      {
-        q: `How do I get my dental practice into the Google Maps 3-Pack?`,
-        a: `The Google Maps 3-Pack is determined by three factors: relevance, distance, and prominence. We optimize all three — your Google Business Profile, your website's local signals, and your online reputation — to push your practice into the top 3 for your most valuable search terms.`,
-      },
-      {
-        q: `What dental search terms should I be targeting in Las Vegas?`,
-        a: `We target high-intent keywords like 'emergency dentist Las Vegas,' 'implants Las Vegas,' 'teeth whitening near me,' and niche-specific terms like 'Invisalign specialist Las Vegas.' We focus on terms that bring patients ready to book — not just traffic.`,
-      },
-      {
-        q: `How is HuskyTail different from dental marketing agencies?`,
-        a: `Most dental marketing agencies are generalists. We specialize exclusively in Las Vegas Valley local SEO. Every strategy is built for your specific market — not a national template. We know the local search landscape and the local competition. Plus, we operate month-to-month with no contracts.`,
-      },
-      {
-        q: `How much does dental SEO cost in Las Vegas?`,
-        a: `Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.`,
-      },
-    ],
-    benefits: [
-      { title: "Get Found by Patients Ready to Schedule", description: "Be there when they need you most. Your future patients are already searching - we make sure you show up right where and when they are ready to book. Using advanced SEO tactics and localized targeting, we connect you with high-intent folks in your area who are eager to schedule, call, or visit your practice." },
-      { title: "Boost Trust with Optimized Reviews & Reputation", description: "Turn happy patients into powerful marketing. Strong reviews build trust faster than any sales pitch. We help you generate, manage, and showcase glowing reviews across major platforms - building credibility that drives more clicks, more calls, and more new patient appointments." },
-      { title: "Rank Higher in the Map Pack Where It Counts", description: "Top spot on the map = more patient calls and appointments. The Google Map Pack is prime digital real estate for healthcare. We help you claim it. By optimizing your listings, citations, and location signals, we boost your visibility exactly where patients are searching - leading to more calls and new patient bookings." },
-      { title: "Stand Out with Smart, AI-Powered Content", description: "Say the right things to the right patients - automatically. We combine data-driven insights with AI-crafted content to tell your practice story in a way that gets noticed. From service pages to blog posts about procedures, your content will attract, engage, and convert - all while reinforcing your local authority." },
-      { title: "Drive More Patient Leads Without Paying for Every Click", description: "Why rent traffic when you can own it? Stop relying solely on paid ads to bring in new patients. Our SEO strategies help you build long-term, cost-effective visibility that keeps patient traffic flowing without draining your ad budget. Get more ROI with less spend." },
-      { title: "Dominate Voice & Mobile Search", description: "Show up when they say Hey Siri... Voice and mobile searches are exploding - especially for local healthcare intent. We make sure your dental practice is optimized for how real patients search on the go, helping you win more attention (and appointments) from voice assistants and smartphones alike." },
-    ],
-  },
-};
+// Niche content is now imported from niche-content.ts
+// This allows us to maintain all content in a single, centralized data file
 
 export default async function NicheCityPage({ params }: Props) {
   const resolved = await params;
@@ -176,28 +92,11 @@ export default async function NicheCityPage({ params }: Props) {
   const page = parsePage(slug);
   if (!page) notFound();
 
-  const content = NICHE_CONTENT[page.nicheSlug] ?? {
-    headline: `${page.nicheName} SEO in ${page.cityName} — Get Found First`,
-    pain: `${page.cityName} ${page.nicheName.toLowerCase()} are losing clients to competitors who rank higher on Google. Every day you're not on page 1 is revenue walking out the door.`,
-    solution: `HuskyTail Digital helps ${page.cityName} ${page.nicheName.toLowerCase()} dominate local search and Google Maps with AI-powered SEO built specifically for the Las Vegas Valley.`,
-    stats: [
-      { label: "Avg. increase in local calls", value: "300%+" },
-      { label: "Time to first page ranking", value: "60–90 days" },
-      { label: "Client retention rate", value: "94%" },
-      { label: "Pages ranked per client", value: "50+" },
-    ],
-    everestQuote: `I tracked down every local keyword for ${page.nicheName.toLowerCase()} in ${page.cityName} so your business shows up first — every time.`,
-    faqs: [
-      {
-        q: `How long does it take to rank my ${page.nicheName.toLowerCase()} business in ${page.cityName}?`,
-        a: `Most clients see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months depending on competition in your specific niche and location.`,
-      },
-      {
-        q: `What makes HuskyTail Digital different for ${page.nicheName.toLowerCase()} SEO?`,
-        a: `We specialize exclusively in Las Vegas Valley local SEO. Every strategy is built for your specific market — not a national template. We know the local search landscape and the local competition.`,
-      },
-    ],
-  };
+  // Get niche-specific content from centralized data file
+  const content = getNicheContent(page.nicheSlug, page.nicheName, page.cityName);
+
+  // --- Testimonials Section ---
+  const testimonials = content.testimonials || [];
 
   // --- Schema markup ---
   const breadcrumbSchema = {
@@ -596,52 +495,27 @@ export default async function NicheCityPage({ params }: Props) {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-black text-[#0A0F1E] mb-4">
-                Real Results from Real Dental Practices
+                Real Results from Real {page.nicheName}
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                See how HuskyTail Digital helped dental practices in Las Vegas dominate local search and fill their schedules.
+                See how HuskyTail Digital helped {page.nicheName.toLowerCase()} in {page.cityName} dominate local search and fill their schedules.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Testimonial 1 */}
-              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-1 mb-4">
-                  <span className="text-[#C8A84B]">★★★★★</span>
+              {testimonials.map((testimonial, idx) => (
+                <div key={idx} className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-1 mb-4">
+                    <span className="text-[#C8A84B]">★★★★★</span>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed mb-6 italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="border-t pt-4">
+                    <p className="font-bold text-[#0A0F1E]">{testimonial.author}</p>
+                    <p className="text-sm text-gray-600">{testimonial.company}, {testimonial.location}</p>
+                  </div>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
-                  "We went from 2-3 new patient calls per week to 15+ calls. Our Google Maps ranking went from page 3 to the 3-Pack in just 90 days. This is exactly what we needed."
-                </p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-[#0A0F1E]">Dr. Sarah Mitchell</p>
-                  <p className="text-sm text-gray-600">Mitchell Family Dental, Las Vegas</p>
-                </div>
-              </div>
-              {/* Testimonial 2 */}
-              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-1 mb-4">
-                  <span className="text-[#C8A84B]">★★★★★</span>
-                </div>
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
-                  "I was skeptical about SEO, but HuskyTail proved it works. My practice went from invisible to dominating search results for 'emergency dentist Las Vegas.' Revenue is up 287% in 6 months."
-                </p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-[#0A0F1E]">Dr. James Chen</p>
-                  <p className="text-sm text-gray-600">Advanced Implant Center, Henderson</p>
-                </div>
-              </div>
-              {/* Testimonial 3 */}
-              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-1 mb-4">
-                  <span className="text-[#C8A84B]">★★★★★</span>
-                </div>
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
-                  "Stephen and his team know Las Vegas local search inside and out. They didn't just promise results — they delivered. No contracts, no BS. Just real growth."
-                </p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-[#0A0F1E]">Dr. Maria Rodriguez</p>
-                  <p className="text-sm text-gray-600">Smile Dental Group, Summerlin</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
