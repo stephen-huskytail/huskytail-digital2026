@@ -343,7 +343,6 @@ export default function HealthcareSEOPage() {
                         <Link
                           key={city.slug}
                           href={`/${niche.slug}-seo-${city.slug}`}
-                          onClick={(e) => e.stopPropagation()}
                           className="text-xs text-gray-400 hover:text-[#C8A84B] hover:underline transition-colors"
                         >
                           {city.name}
