@@ -265,11 +265,9 @@ export default async function NicheCityPage({ params }: Props) {
         {/* Hero Section */}
         <section className="text-white overflow-hidden relative" style={{
           backgroundImage: `url('${ASSETS.everestHero}')`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'right center',
-          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
           backgroundAttachment: 'scroll',
-          minHeight: '600px',
         }}>
           {/* Dark overlay for readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0F1E] via-[#0A0F1E]/80 to-transparent" />
