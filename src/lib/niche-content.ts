@@ -334,257 +334,6 @@ export const ATTORNEY_CONTENT: NicheContent = {
   benefits: SHARED_BENEFITS,
 };
 
-// ============================================================================
-// NICHE CONTENT MAP
-// ============================================================================
-
-export const NICHE_CONTENT_MAP: Record<string, NicheContent> = {
-  // Healthcare
-  dentist: DENTIST_CONTENT,
-  chiropractor: CHIROPRACTOR_CONTENT,
-  optometrist: OPTOMETRIST_CONTENT,
-  orthodontist: ORTHODONTIST_CONTENT,
-  dermatologist: DERMATOLOGIST_CONTENT,
-  therapist: THERAPIST_CONTENT,
-  
-  // Home Services
-  plumber: PLUMBER_CONTENT,
-  electrician: ELECTRICIAN_CONTENT,
-  hvac: HVAC_CONTENT,
-  roofer: ROOFER_CONTENT,
-  painter: PAINTER_CONTENT,
-  locksmith: LOCKSMITH_CONTENT,
-  
-  // Real Estate
-  realtor: REALTOR_CONTENT,
-  
-  // Automotive
-  mechanic: MECHANIC_CONTENT,
-  
-  // Finance
-  accountant: ACCOUNTANT_CONTENT,
-  
-  // Beauty
-  salon: SALON_CONTENT,
-  
-  // Other
-  photographer: PHOTOGRAPHER_CONTENT,
-  
-  // Healthcare (additional)
-  pediatrician: PEDIATRICIAN_CONTENT,
-  "plastic-surgeon": PLASTIC_SURGEON_CONTENT,
-  "urgent-care": URGENT_CARE_CONTENT,
-  
-  // Home Services (additional)
-  landscaper: LANDSCAPER_CONTENT,
-  cleaning: CLEANING_CONTENT,
-  "pest-control": PEST_CONTROL_CONTENT,
-  "pool-service": POOL_SERVICE_CONTENT,
-  
-  // Legal (additional)
-  "personal-injury": PERSONAL_INJURY_CONTENT,
-  "family-law": FAMILY_LAW_CONTENT,
-  
-  // Real Estate (additional)
-  "property-manager": PROPERTY_MANAGER_CONTENT,
-  
-  // Beauty (additional)
-  spa: SPA_CONTENT,
-  "nail-salon": NAIL_SALON_CONTENT,
-  
-  // Food & Restaurant
-  restaurant: RESTAURANT_CONTENT,
-  
-  // Fitness
-  gym: GYM_CONTENT,
-  "personal-trainer": PERSONAL_TRAINER_CONTENT,
-  
-  // Automotive (additional)
-  "auto-body": AUTO_BODY_CONTENT,
-  
-  // Healthcare (batch 3)
-  "physical-therapist": PHYSICAL_THERAPIST_CONTENT,
-  podiatrist: PODIATRIST_CONTENT,
-  veterinarian: VETERINARIAN_CONTENT,
-  
-  // Home Services (batch 3)
-  "garage-door": GARAGE_DOOR_CONTENT,
-  flooring: FLOORING_CONTENT,
-  "window-treatment": WINDOW_TREATMENT_CONTENT,
-  
-  // Legal (batch 3)
-  "criminal-defense": CRIMINAL_DEFENSE_CONTENT,
-  "immigration-lawyer": IMMIGRATION_LAWYER_CONTENT,
-  
-  // Finance (additional)
-  "financial-advisor": FINANCIAL_ADVISOR_CONTENT,
-  "mortgage-broker": MORTGAGE_BROKER_CONTENT,
-  "insurance-agent": INSURANCE_AGENT_CONTENT,
-  
-  // Education
-  tutoring: TUTORING_CONTENT,
-  
-  // Events & Entertainment
-  "event-planner": EVENT_PLANNER_CONTENT,
-
-  // Healthcare (batch 4)
-  cardiologist: CARDIOLOGIST_CONTENT,
-  gastroenterologist: GASTROENTEROLOGIST_CONTENT,
-  neurologist: NEUROLOGIST_CONTENT,
-  psychiatrist: PSYCHIATRIST_CONTENT,
-
-  // Home Services (batch 4)
-  solar: SOLAR_CONTENT,
-  handyman: HANDYMAN_CONTENT,
-  remodeling: REMODELING_CONTENT,
-
-  // Automotive (batch 3)
-  "car-dealership": CAR_DEALERSHIP_CONTENT,
-  towing: TOWING_CONTENT,
-
-  // Beauty (batch 3)
-  barber: BARBER_CONTENT,
-  "tattoo-shop": TATTOO_SHOP_CONTENT,
-
-  // Education (additional)
-  "driving-school": DRIVING_SCHOOL_CONTENT,
-
-  // Technology
-  "it-support": IT_SUPPORT_CONTENT,
-  "web-design": WEB_DESIGN_CONTENT,
-
-  // Legal (final batch)
-  "real-estate-attorney": REAL_ESTATE_ATTORNEY_CONTENT,
-  "bankruptcy-attorney": BANKRUPTCY_ATTORNEY_CONTENT,
-
-  // Real Estate (final batch)
-  "real-estate-agent": REAL_ESTATE_AGENT_CONTENT,
-
-  // Fitness (final batch)
-  "yoga-studio": YOGA_STUDIO_CONTENT,
-  "martial-arts": MARTIAL_ARTS_CONTENT,
-
-  // Food & Dining (final batch)
-  catering: CATERING_CONTENT,
-
-  // Finance (final batch)
-  "tax-preparer": TAX_PREPARER_CONTENT,
-
-  // Photography (final batch)
-  "wedding-photographer": WEDDING_PHOTOGRAPHER_CONTENT,
-
-  // ---- EXPANSION BATCH ----
-  // Healthcare (new specialties)
-  "oral-surgeon": ORAL_SURGEON_CONTENT,
-  "obgyn": OBGYN_CONTENT,
-  "weight-loss-clinic": WEIGHT_LOSS_CLINIC_CONTENT,
-  "addiction-treatment": ADDICTION_TREATMENT_CONTENT,
-  "med-spa": MED_SPA_CONTENT,
-
-  // Legal (new practice areas)
-  "dui-attorney": DUI_ATTORNEY_CONTENT,
-  "estate-planning-attorney": ESTATE_PLANNING_ATTORNEY_CONTENT,
-  "workers-comp-attorney": WORKERS_COMP_ATTORNEY_CONTENT,
-  "business-attorney": BUSINESS_ATTORNEY_CONTENT,
-
-  // Automotive (new services)
-  "auto-detailing": AUTO_DETAILING_CONTENT,
-  "window-tinting": WINDOW_TINTING_CONTENT,
-  "tire-shop": TIRE_SHOP_CONTENT,
-
-  // Home Services (new trades)
-  "moving-company": MOVING_COMPANY_CONTENT,
-  "junk-removal": JUNK_REMOVAL_CONTENT,
-  "fence-company": FENCE_COMPANY_CONTENT,
-  "tree-service": TREE_SERVICE_CONTENT,
-  "appliance-repair": APPLIANCE_REPAIR_CONTENT,
-  "carpet-cleaning": CARPET_CLEANING_CONTENT,
-
-  // Construction (new industry)
-  "general-contractor": GENERAL_CONTRACTOR_CONTENT,
-  "concrete-contractor": CONCRETE_CONTRACTOR_CONTENT,
-
-  // Beauty & Wellness (new services)
-  "lash-studio": LASH_STUDIO_CONTENT,
-  "massage-therapist": MASSAGE_THERAPIST_CONTENT,
-  "microblading": MICROBLADING_CONTENT,
-
-  // Fitness (new categories)
-  "pilates-studio": PILATES_STUDIO_CONTENT,
-  "dance-studio": DANCE_STUDIO_CONTENT,
-
-  // Events & Entertainment (Vegas-specific)
-  "wedding-venue": WEDDING_VENUE_CONTENT,
-  "wedding-planner": WEDDING_PLANNER_CONTENT,
-  "florist": FLORIST_CONTENT,
-  "limo-service": LIMO_SERVICE_CONTENT,
-
-  // New Industries
-  "daycare": DAYCARE_CONTENT,
-  "senior-care": SENIOR_CARE_CONTENT,
-  "pet-groomer": PET_GROOMER_CONTENT,
-  "dog-trainer": DOG_TRAINER_CONTENT,
-  "videographer": VIDEOGRAPHER_CONTENT,
-  "home-inspector": HOME_INSPECTOR_CONTENT,
-};
-
-// Default fallback content for niches not yet in the map
-export function getNicheContent(nicheSlug: string, nicheName: string, cityName: string): NicheContent {
-  if (NICHE_CONTENT_MAP[nicheSlug]) {
-    return NICHE_CONTENT_MAP[nicheSlug];
-  }
-
-  // Fallback for niches not yet customized
-  return {
-    headline: `${nicheName} SEO in ${cityName} — Get Found First`,
-    pain: `${cityName} ${nicheName.toLowerCase()} are losing clients to competitors who rank higher on Google. Every day you're not on page 1 is revenue walking out the door.`,
-    solution: `HuskyTail Digital helps ${cityName} ${nicheName.toLowerCase()} dominate local search and Google Maps with AI-powered SEO built specifically for the Las Vegas Valley.`,
-    everestQuote: `I tracked down every local keyword for ${nicheName.toLowerCase()} in ${cityName} so your business shows up first — every time.`,
-    testimonials: [
-      {
-        quote: "We went from 2-3 calls per week to 12+ calls. Our Google Maps ranking went from page 2 to the 3-Pack in 90 days.",
-        author: "Client Name",
-        company: "Business Name",
-        location: `${cityName}, NV`,
-        results: "12+ calls per week",
-      },
-      {
-        quote: "HuskyTail got us ranking in 90 days. Revenue is up 280% and we're booking weeks out.",
-        author: "Client Name",
-        company: "Business Name",
-        location: `${cityName}, NV`,
-        results: "280% revenue increase",
-      },
-      {
-        quote: "No contracts, transparent reporting, and actual results. Best investment we've made.",
-        author: "Client Name",
-        company: "Business Name",
-        location: `${cityName}, NV`,
-        results: "94% retention",
-      },
-    ],
-    faqs: [
-      {
-        q: `How long does it take to rank my ${nicheName.toLowerCase()} business in ${cityName}?`,
-        a: `Most clients see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months depending on competition in your specific niche and location.`,
-      },
-      {
-        q: `What makes HuskyTail Digital different for ${nicheName.toLowerCase()} SEO?`,
-        a: `We specialize exclusively in Las Vegas Valley local SEO. Every strategy is built for your specific market — not a national template. We know the local search landscape and the local competition.`,
-      },
-      {
-        q: "Do I need a website to rank on Google Maps?",
-        a: "You need a Google Business Profile, but a strong website dramatically accelerates your rankings. We optimize both together — your GBP and your website work as a unified local SEO system.",
-      },
-      {
-        q: "How much does SEO cost?",
-        a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.",
-      },
-    ],
-    stats: SHARED_STATS,
-    benefits: SHARED_BENEFITS,
-  };
-}
 
 // ============================================================================
 // HEALTHCARE INDUSTRY (continued)
@@ -3096,3 +2845,255 @@ export const HOME_INSPECTOR_CONTENT: NicheContent = {
   benefits: SHARED_BENEFITS,
 };
 
+
+// ============================================================================
+// NICHE CONTENT MAP
+// ============================================================================
+
+export const NICHE_CONTENT_MAP: Record<string, NicheContent> = {
+  // Healthcare
+  dentist: DENTIST_CONTENT,
+  chiropractor: CHIROPRACTOR_CONTENT,
+  optometrist: OPTOMETRIST_CONTENT,
+  orthodontist: ORTHODONTIST_CONTENT,
+  dermatologist: DERMATOLOGIST_CONTENT,
+  therapist: THERAPIST_CONTENT,
+  
+  // Home Services
+  plumber: PLUMBER_CONTENT,
+  electrician: ELECTRICIAN_CONTENT,
+  hvac: HVAC_CONTENT,
+  roofer: ROOFER_CONTENT,
+  painter: PAINTER_CONTENT,
+  locksmith: LOCKSMITH_CONTENT,
+  
+  // Real Estate
+  realtor: REALTOR_CONTENT,
+  
+  // Automotive
+  mechanic: MECHANIC_CONTENT,
+  
+  // Finance
+  accountant: ACCOUNTANT_CONTENT,
+  
+  // Beauty
+  salon: SALON_CONTENT,
+  
+  // Other
+  photographer: PHOTOGRAPHER_CONTENT,
+  
+  // Healthcare (additional)
+  pediatrician: PEDIATRICIAN_CONTENT,
+  "plastic-surgeon": PLASTIC_SURGEON_CONTENT,
+  "urgent-care": URGENT_CARE_CONTENT,
+  
+  // Home Services (additional)
+  landscaper: LANDSCAPER_CONTENT,
+  cleaning: CLEANING_CONTENT,
+  "pest-control": PEST_CONTROL_CONTENT,
+  "pool-service": POOL_SERVICE_CONTENT,
+  
+  // Legal (additional)
+  "personal-injury": PERSONAL_INJURY_CONTENT,
+  "family-law": FAMILY_LAW_CONTENT,
+  
+  // Real Estate (additional)
+  "property-manager": PROPERTY_MANAGER_CONTENT,
+  
+  // Beauty (additional)
+  spa: SPA_CONTENT,
+  "nail-salon": NAIL_SALON_CONTENT,
+  
+  // Food & Restaurant
+  restaurant: RESTAURANT_CONTENT,
+  
+  // Fitness
+  gym: GYM_CONTENT,
+  "personal-trainer": PERSONAL_TRAINER_CONTENT,
+  
+  // Automotive (additional)
+  "auto-body": AUTO_BODY_CONTENT,
+  
+  // Healthcare (batch 3)
+  "physical-therapist": PHYSICAL_THERAPIST_CONTENT,
+  podiatrist: PODIATRIST_CONTENT,
+  veterinarian: VETERINARIAN_CONTENT,
+  
+  // Home Services (batch 3)
+  "garage-door": GARAGE_DOOR_CONTENT,
+  flooring: FLOORING_CONTENT,
+  "window-treatment": WINDOW_TREATMENT_CONTENT,
+  
+  // Legal (batch 3)
+  "criminal-defense": CRIMINAL_DEFENSE_CONTENT,
+  "immigration-lawyer": IMMIGRATION_LAWYER_CONTENT,
+  
+  // Finance (additional)
+  "financial-advisor": FINANCIAL_ADVISOR_CONTENT,
+  "mortgage-broker": MORTGAGE_BROKER_CONTENT,
+  "insurance-agent": INSURANCE_AGENT_CONTENT,
+  
+  // Education
+  tutoring: TUTORING_CONTENT,
+  
+  // Events & Entertainment
+  "event-planner": EVENT_PLANNER_CONTENT,
+
+  // Healthcare (batch 4)
+  cardiologist: CARDIOLOGIST_CONTENT,
+  gastroenterologist: GASTROENTEROLOGIST_CONTENT,
+  neurologist: NEUROLOGIST_CONTENT,
+  psychiatrist: PSYCHIATRIST_CONTENT,
+
+  // Home Services (batch 4)
+  solar: SOLAR_CONTENT,
+  handyman: HANDYMAN_CONTENT,
+  remodeling: REMODELING_CONTENT,
+
+  // Automotive (batch 3)
+  "car-dealership": CAR_DEALERSHIP_CONTENT,
+  towing: TOWING_CONTENT,
+
+  // Beauty (batch 3)
+  barber: BARBER_CONTENT,
+  "tattoo-shop": TATTOO_SHOP_CONTENT,
+
+  // Education (additional)
+  "driving-school": DRIVING_SCHOOL_CONTENT,
+
+  // Technology
+  "it-support": IT_SUPPORT_CONTENT,
+  "web-design": WEB_DESIGN_CONTENT,
+
+  // Legal (final batch)
+  "real-estate-attorney": REAL_ESTATE_ATTORNEY_CONTENT,
+  "bankruptcy-attorney": BANKRUPTCY_ATTORNEY_CONTENT,
+
+  // Real Estate (final batch)
+  "real-estate-agent": REAL_ESTATE_AGENT_CONTENT,
+
+  // Fitness (final batch)
+  "yoga-studio": YOGA_STUDIO_CONTENT,
+  "martial-arts": MARTIAL_ARTS_CONTENT,
+
+  // Food & Dining (final batch)
+  catering: CATERING_CONTENT,
+
+  // Finance (final batch)
+  "tax-preparer": TAX_PREPARER_CONTENT,
+
+  // Photography (final batch)
+  "wedding-photographer": WEDDING_PHOTOGRAPHER_CONTENT,
+
+  // ---- EXPANSION BATCH ----
+  // Healthcare (new specialties)
+  "oral-surgeon": ORAL_SURGEON_CONTENT,
+  "obgyn": OBGYN_CONTENT,
+  "weight-loss-clinic": WEIGHT_LOSS_CLINIC_CONTENT,
+  "addiction-treatment": ADDICTION_TREATMENT_CONTENT,
+  "med-spa": MED_SPA_CONTENT,
+
+  // Legal (new practice areas)
+  "dui-attorney": DUI_ATTORNEY_CONTENT,
+  "estate-planning-attorney": ESTATE_PLANNING_ATTORNEY_CONTENT,
+  "workers-comp-attorney": WORKERS_COMP_ATTORNEY_CONTENT,
+  "business-attorney": BUSINESS_ATTORNEY_CONTENT,
+
+  // Automotive (new services)
+  "auto-detailing": AUTO_DETAILING_CONTENT,
+  "window-tinting": WINDOW_TINTING_CONTENT,
+  "tire-shop": TIRE_SHOP_CONTENT,
+
+  // Home Services (new trades)
+  "moving-company": MOVING_COMPANY_CONTENT,
+  "junk-removal": JUNK_REMOVAL_CONTENT,
+  "fence-company": FENCE_COMPANY_CONTENT,
+  "tree-service": TREE_SERVICE_CONTENT,
+  "appliance-repair": APPLIANCE_REPAIR_CONTENT,
+  "carpet-cleaning": CARPET_CLEANING_CONTENT,
+
+  // Construction (new industry)
+  "general-contractor": GENERAL_CONTRACTOR_CONTENT,
+  "concrete-contractor": CONCRETE_CONTRACTOR_CONTENT,
+
+  // Beauty & Wellness (new services)
+  "lash-studio": LASH_STUDIO_CONTENT,
+  "massage-therapist": MASSAGE_THERAPIST_CONTENT,
+  "microblading": MICROBLADING_CONTENT,
+
+  // Fitness (new categories)
+  "pilates-studio": PILATES_STUDIO_CONTENT,
+  "dance-studio": DANCE_STUDIO_CONTENT,
+
+  // Events & Entertainment (Vegas-specific)
+  "wedding-venue": WEDDING_VENUE_CONTENT,
+  "wedding-planner": WEDDING_PLANNER_CONTENT,
+  "florist": FLORIST_CONTENT,
+  "limo-service": LIMO_SERVICE_CONTENT,
+
+  // New Industries
+  "daycare": DAYCARE_CONTENT,
+  "senior-care": SENIOR_CARE_CONTENT,
+  "pet-groomer": PET_GROOMER_CONTENT,
+  "dog-trainer": DOG_TRAINER_CONTENT,
+  "videographer": VIDEOGRAPHER_CONTENT,
+  "home-inspector": HOME_INSPECTOR_CONTENT,
+};
+
+// Default fallback content for niches not yet in the map
+export function getNicheContent(nicheSlug: string, nicheName: string, cityName: string): NicheContent {
+  if (NICHE_CONTENT_MAP[nicheSlug]) {
+    return NICHE_CONTENT_MAP[nicheSlug];
+  }
+
+  // Fallback for niches not yet customized
+  return {
+    headline: `${nicheName} SEO in ${cityName} — Get Found First`,
+    pain: `${cityName} ${nicheName.toLowerCase()} are losing clients to competitors who rank higher on Google. Every day you're not on page 1 is revenue walking out the door.`,
+    solution: `HuskyTail Digital helps ${cityName} ${nicheName.toLowerCase()} dominate local search and Google Maps with AI-powered SEO built specifically for the Las Vegas Valley.`,
+    everestQuote: `I tracked down every local keyword for ${nicheName.toLowerCase()} in ${cityName} so your business shows up first — every time.`,
+    testimonials: [
+      {
+        quote: "We went from 2-3 calls per week to 12+ calls. Our Google Maps ranking went from page 2 to the 3-Pack in 90 days.",
+        author: "Client Name",
+        company: "Business Name",
+        location: `${cityName}, NV`,
+        results: "12+ calls per week",
+      },
+      {
+        quote: "HuskyTail got us ranking in 90 days. Revenue is up 280% and we're booking weeks out.",
+        author: "Client Name",
+        company: "Business Name",
+        location: `${cityName}, NV`,
+        results: "280% revenue increase",
+      },
+      {
+        quote: "No contracts, transparent reporting, and actual results. Best investment we've made.",
+        author: "Client Name",
+        company: "Business Name",
+        location: `${cityName}, NV`,
+        results: "94% retention",
+      },
+    ],
+    faqs: [
+      {
+        q: `How long does it take to rank my ${nicheName.toLowerCase()} business in ${cityName}?`,
+        a: `Most clients see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months depending on competition in your specific niche and location.`,
+      },
+      {
+        q: `What makes HuskyTail Digital different for ${nicheName.toLowerCase()} SEO?`,
+        a: `We specialize exclusively in Las Vegas Valley local SEO. Every strategy is built for your specific market — not a national template. We know the local search landscape and the local competition.`,
+      },
+      {
+        q: "Do I need a website to rank on Google Maps?",
+        a: "You need a Google Business Profile, but a strong website dramatically accelerates your rankings. We optimize both together — your GBP and your website work as a unified local SEO system.",
+      },
+      {
+        q: "How much does SEO cost?",
+        a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.",
+      },
+    ],
+    stats: SHARED_STATS,
+    benefits: SHARED_BENEFITS,
+  };
+}
