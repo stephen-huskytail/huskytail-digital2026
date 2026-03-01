@@ -13,6 +13,7 @@ const ASSETS = {
   everestGrass: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-happy_7a210c0c.webp",
   everestSitting: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-sitting_f142456e.webp",
   everestLeap: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-mid-leap-v2-LkVUzVyqddX8JgNZHz8xJx.webp",
+  everestHero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-hero_e34b0707.webp",
 };
 
 // Disable all caching during development — switch to ISR (revalidate = 600) for production
@@ -245,9 +246,17 @@ export default async function NicheCityPage({ params }: Props) {
       <main className="border-t-0" style={{ paddingTop: 'var(--desktop-nav-height, 80px)' }}>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-[#0A0F1E] via-[#0D1B3E] to-[#0A0F1E] text-white overflow-hidden">
+        <section className="text-white overflow-hidden relative" style={{
+          backgroundImage: `url('${ASSETS.everestHero}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
+          backgroundAttachment: 'fixed',
+        }}>
+          {/* Dark overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0F1E] via-[#0A0F1E]/80 to-transparent" />
+          <div className="relative z-10">
           {/* Breadcrumb nav */}
-          <nav className="px-4 py-3">
+          <nav className="px-4 py-3 relative z-10">
             <div className="max-w-6xl mx-auto text-xs text-gray-400" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               <Link href="/" className="hover:text-[#C8A84B] transition-colors">Home</Link>
               <span className="text-gray-600 mx-2">/</span>
@@ -260,7 +269,7 @@ export default async function NicheCityPage({ params }: Props) {
           </nav>
 
           {/* Hero content */}
-          <div className="py-20 px-4">
+          <div className="py-20 px-4 relative z-10">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
             {/* Left: copy */}
             <div>
@@ -300,20 +309,13 @@ export default async function NicheCityPage({ params }: Props) {
                 </Link>
               </div>
             </div>
-            {/* Right: Everest photo */}
+            {/* Right: Everest photo - hidden on desktop since it's in background */}
             <div className="hidden md:flex justify-center items-end relative">
-              <div className="relative w-[380px] h-[420px]">
-                <div className="absolute inset-0 rounded-2xl bg-[#C8A84B]/10 blur-2xl scale-90" />
-                <Image
-                  src={ASSETS.everestSitting}
-                  alt={`${page.nicheName} SEO ${page.cityName} — HuskyTail Digital mascot Everest`}
-                  fill
-                  className="object-contain object-bottom drop-shadow-2xl"
-                  priority
-                  sizes="380px"
-                />
-              </div>
+              {/* Everest is now in the background, so we can hide this or remove it */}
             </div>
+            {/* Placeholder for layout balance */}
+            <div className="hidden md:block" />
+          </div>
           </div>
           </div>
         </section>
