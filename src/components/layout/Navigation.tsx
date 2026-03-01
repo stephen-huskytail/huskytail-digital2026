@@ -130,8 +130,8 @@ export default function Navigation() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block border-b-0 border-t-0",
           scrolled
-            ? "bg-deep-navy/98 backdrop-blur-md"
-            : "bg-deep-navy"
+            ? "bg-gradient-to-br from-[#0A0F1E] via-[#0D1B3E] to-[#0A0F1E]/98 backdrop-blur-md"
+            : "bg-gradient-to-br from-[#0A0F1E] via-[#0D1B3E] to-[#0A0F1E]"
         )}
         style={{ height: "var(--desktop-nav-height)" }}
       >
@@ -219,7 +219,7 @@ export default function Navigation() {
 
       {/* ===== MOBILE BOTTOM NAV ===== */}
       <nav
-        className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-deep-navy/98 backdrop-blur-md border-t border-ice-blue/20"
+        className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gradient-to-br from-[#0A0F1E] via-[#0D1B3E] to-[#0A0F1E]/98 backdrop-blur-md border-t border-ice-blue/20"
         style={{ height: "calc(var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px))", paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
       >
         <div className="flex items-center justify-around h-16">
