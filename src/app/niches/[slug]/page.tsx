@@ -345,7 +345,7 @@ export default async function NicheCityPage({ params }: Props) {
                 <span>5.0 on Google</span>
               </div>
               <span className="text-black/40">|</span>
-              <span>Trusted by 250+ Las Vegas businesses</span>
+              <span>Trusted by 250+ Las Vegas Businesses</span>
             </div>
             {/* Stats grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
