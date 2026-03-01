@@ -230,7 +230,15 @@ export default async function NicheCityPage({ params }: Props) {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
         "reviewCount": "12",
+        "bestRating": "5",
+        "worstRating": "1",
       },
+      "sameAs": [
+        "https://www.linkedin.com/company/huskytail-digital",
+        "https://www.instagram.com/huskytaildigital",
+        "https://www.facebook.com/huskytaildigital",
+        "https://x.com/huskytailseo",
+      ],
     },
     "areaServed": {
       "@type": "City",
@@ -238,6 +246,12 @@ export default async function NicheCityPage({ params }: Props) {
       "containedInPlace": { "@type": "State", "name": "Nevada" },
     },
     "description": `AI-powered local SEO for ${page.nicheName.toLowerCase()} in ${page.cityName}, NV. Get found on Google Maps and dominate local search.`,
+    "offers": {
+      "@type": "Offer",
+      "price": "197",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2026-12-31",
+    },
   };
 
   const faqSchema = {
