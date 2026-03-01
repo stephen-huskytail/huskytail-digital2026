@@ -82,7 +82,7 @@ function DesktopDropdown({ label, href, items }: DropdownProps) {
           {/* Invisible bridge — fills the gap so mouse doesn't lose hover state */}
           <div className="absolute top-full left-0 w-full h-2" />
           {/* Dropdown panel — fully opaque for readability over any background */}
-          <div className="absolute top-[calc(100%+4px)] left-0 min-w-[200px] w-max max-w-[240px] bg-[#0A1628] border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.7)] py-2 z-[100]">
+          <div className="absolute top-[calc(100%+4px)] left-0 min-w-[200px] w-max max-w-[240px] bg-[#0c152f] border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.7)] py-2 z-[100]">
             {items.slice(0, 14).map((item) => (
               <Link
                 key={item.href}
@@ -156,6 +156,9 @@ export default function Navigation() {
             </Link>
             <Link href="/pricing" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
               Pricing
+            </Link>
+            <Link href="/contact" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
+              Contact
             </Link>
           </nav>
 

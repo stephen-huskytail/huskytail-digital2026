@@ -31,10 +31,10 @@ interface NicheCity {
 // --- Sample pages only — 4 for audit ---
 // After approval, replace with full combinatorial generation
 const SAMPLE_PAGES: NicheCity[] = [
-  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "henderson", cityName: "Henderson" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "henderson", cityName: "Henderson" },
+  { nicheSlug: "plumbers", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "plumbers", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "henderson", cityName: "Henderson" },
+  { nicheSlug: "dentists", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "dentists", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "henderson", cityName: "Henderson" },
 ];
 
 // Temporarily disabled to prevent Next.js prerender caching during development
@@ -91,7 +91,7 @@ const NICHE_CONTENT: Record<string, {
   faqs: { q: string; a: string }[];
   everestQuote: string;
 }> = {
-  plumber: {
+  plumbers: {
     headline: "Stop Losing Emergency Calls to Your Competitors",
     pain: "When a pipe bursts at 2am, homeowners grab their phone and search 'plumber near me.' If you're not in the top 3 results on Google Maps, that call goes to your competitor. Every. Single. Time.",
     solution: "We get Las Vegas plumbers to the top of Google Maps and local search — so when someone needs a plumber fast, they find you first. Our AI-powered local SEO system is built specifically for home service businesses in the Las Vegas Valley.",
@@ -121,7 +121,7 @@ const NICHE_CONTENT: Record<string, {
       },
     ],
   },
-  dentist: {
+  dentists: {
     headline: "Your Dental Practice Deserves to Be the First One Patients Find",
     pain: "Las Vegas has hundreds of dental practices competing for the same patients. When someone searches 'dentist near me' or 'emergency dentist Las Vegas,' the practices in the Google Maps 3-Pack get 70% of the clicks. If you're not there, you're invisible.",
     solution: "We help Las Vegas dental practices dominate local search and Google Maps — attracting high-value patients who are actively searching for a dentist right now. Our AI-powered SEO system is built specifically for healthcare practices in the Las Vegas Valley.",

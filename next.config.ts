@@ -19,13 +19,14 @@ const CITY_SLUGS = [
 
 // Niche-city slugs for the 4 sample pages
 const NICHE_CITY_SLUGS = [
-  "plumber-seo-las-vegas",
-  "plumber-seo-henderson",
-  "dentist-seo-las-vegas",
-  "dentist-seo-henderson",
+  "plumbers-seo-las-vegas",
+  "plumbers-seo-henderson",
+  "dentists-seo-las-vegas",
+  "dentists-seo-henderson",
 ];
 
 const nextConfig: NextConfig = {
+  skipTrailingSlashRedirect: true,
   images: {
     remotePatterns: [
       {
@@ -41,13 +42,13 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
 
-  // Rewrite /{city}-seo → /cities/{city}
+  // Rewrite /{city}-seo → /seo/{city}
   // Rewrite /{niche}-seo-{city} → /niches/{niche}-seo-{city}
   // These deliver the prompt-specified URL formats while Next.js generates pages correctly
   async rewrites() {
     const cityRewrites = CITY_SLUGS.map((slug) => ({
       source: `/${slug}-seo`,
-      destination: `/cities/${slug}`,
+      destination: `/seo/${slug}`,
     }));
 
     const nicheCityRewrites = NICHE_CITY_SLUGS.map((slug) => ({

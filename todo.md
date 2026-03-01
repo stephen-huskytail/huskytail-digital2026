@@ -203,3 +203,18 @@
 
 - [x] Add Enterprise tier with "Quote Required" CTA (no fixed price)
 - [x] Enterprise features: unlimited cities, dedicated account manager, custom strategy, priority support, unlimited backlinks, advanced analytics, quarterly reviews, API access
+
+## 🐾 Session: Feb 28, 2026
+
+- [x] Create Privacy Policy page with Termageddon script
+- [x] Create Terms & Conditions page with Termageddon script
+- [x] Create Disclaimer page with Termageddon script
+- [x] Create Cookie Policy page with Termageddon script
+- [x] Add social media icons to footer (LinkedIn, Instagram, Facebook, X)
+- [x] Add Contact link to desktop navigation menu
+- [x] Add legal page links to footer bottom bar (no bullet points)
+- [ ] Generate new dynamic Everest hero image (different pose, ice/frost effects, red/brown rust coloring)
+- [ ] Add address and phone number to footer (from huskytaildigital.com)
+- [ ] Fix plural slug issues — dentists vs dentist and other missing [s] in slugs and content links
+- [ ] Fix build errors (conflicting dynamic route directories, Html import error)
+- [ ] Test build and push to Vercel
