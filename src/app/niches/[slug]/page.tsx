@@ -31,10 +31,10 @@ interface NicheCity {
 // --- Sample pages only — 4 for audit ---
 // After approval, replace with full combinatorial generation
 const SAMPLE_PAGES: NicheCity[] = [
-  { nicheSlug: "plumbers", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "plumbers", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "henderson", cityName: "Henderson" },
-  { nicheSlug: "dentists", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "dentists", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "henderson", cityName: "Henderson" },
+  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "henderson", cityName: "Henderson" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "henderson", cityName: "Henderson" },
 ];
 
 // Temporarily disabled to prevent Next.js prerender caching during development
@@ -91,7 +91,7 @@ const NICHE_CONTENT: Record<string, {
   faqs: { q: string; a: string }[];
   everestQuote: string;
 }> = {
-  plumbers: {
+  plumber: {
     headline: "Stop Losing Emergency Calls to Your Competitors",
     pain: "When a pipe bursts at 2am, homeowners grab their phone and search 'plumber near me.' If you're not in the top 3 results on Google Maps, that call goes to your competitor. Every. Single. Time.",
     solution: "We get Las Vegas plumbers to the top of Google Maps and local search — so when someone needs a plumber fast, they find you first. Our AI-powered local SEO system is built specifically for home service businesses in the Las Vegas Valley.",
@@ -121,33 +121,33 @@ const NICHE_CONTENT: Record<string, {
       },
     ],
   },
-  dentists: {
+  dentist: {
     headline: "Your Dental Practice Deserves to Be the First One Patients Find",
-    pain: "Las Vegas has hundreds of dental practices competing for the same patients. When someone searches 'dentist near me' or 'emergency dentist Las Vegas,' the practices in the Google Maps 3-Pack get 70% of the clicks. If you're not there, you're invisible.",
-    solution: "We help Las Vegas dental practices dominate local search and Google Maps — attracting high-value patients who are actively searching for a dentist right now. Our AI-powered SEO system is built specifically for healthcare practices in the Las Vegas Valley.",
+    pain: `Las Vegas has hundreds of dental practices competing for the same patients. When someone searches 'dentist near me' or 'emergency dentist Las Vegas,' the practices in the Google Maps 3-Pack get 70% of the clicks. If you're not there, you're invisible.`,
+    solution: `We help Las Vegas dental practices dominate local search and Google Maps — attracting high-value patients who are actively searching for a dentist right now. Our AI-powered SEO system is built specifically for healthcare practices in the Las Vegas Valley.`,
     stats: [
       { label: "Avg. increase in new patient inquiries", value: "287%" },
       { label: "Time to Google Maps 3-Pack", value: "60–90 days" },
       { label: "Procedures targeted", value: "Implants & More" },
       { label: "Client retention rate", value: "94%" },
     ],
-    everestQuote: "I sniffed out every high-value dental keyword in Las Vegas — implants, Invisalign, emergency visits — so your practice fills the schedule, not your competitor's.",
+    everestQuote: `I sniffed out every high-value dental keyword in Las Vegas — implants, Invisalign, emergency visits — so your practice fills the schedule, not your competitor's.`,
     faqs: [
       {
-        q: "How do I get my dental practice into the Google Maps 3-Pack?",
-        a: "The Google Maps 3-Pack is determined by three factors: relevance, distance, and prominence. We optimize all three — your Google Business Profile, your website's local signals, and your online reputation — to push your practice into the top 3 for your most valuable search terms.",
+        q: `How do I get my dental practice into the Google Maps 3-Pack?`,
+        a: `The Google Maps 3-Pack is determined by three factors: relevance, distance, and prominence. We optimize all three — your Google Business Profile, your website's local signals, and your online reputation — to push your practice into the top 3 for your most valuable search terms.`,
       },
       {
-        q: "What dental search terms should I be targeting in Las Vegas?",
-        a: "The highest-value terms are procedure-specific and location-specific: 'dental implants Las Vegas,' 'Invisalign Henderson,' 'emergency dentist near me,' 'cosmetic dentist Summerlin.' We build a keyword strategy around the procedures that generate the most revenue for your practice.",
+        q: `What dental search terms should I be targeting in Las Vegas?`,
+        a: `We target high-intent keywords like 'emergency dentist Las Vegas,' 'implants Las Vegas,' 'teeth whitening near me,' and niche-specific terms like 'Invisalign specialist Las Vegas.' We focus on terms that bring patients ready to book — not just traffic.`,
       },
       {
-        q: "How is HuskyTail different from dental marketing agencies?",
-        a: "Most dental marketing agencies use the same national templates for every market. We are a Las Vegas-only SEO agency. We know the local search landscape, the local competition, and the local patient behavior. Every strategy is built for your specific market — not copied from a playbook.",
+        q: `How is HuskyTail different from dental marketing agencies?`,
+        a: `Most dental marketing agencies are generalists. We specialize exclusively in Las Vegas Valley local SEO. Every strategy is built for your specific market — not a national template. We know the local search landscape and the local competition. Plus, we operate month-to-month with no contracts.`,
       },
       {
-        q: "How much does dental SEO cost in Las Vegas?",
-        a: "Our packages start at $197/month with no contracts. We offer a free audit that shows you exactly where you stand against your top 3 competitors before you commit to anything.",
+        q: `How much does dental SEO cost in Las Vegas?`,
+        a: `Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting before you invest a dollar.`,
       },
     ],
   },

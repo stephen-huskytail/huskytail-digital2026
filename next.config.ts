@@ -19,10 +19,10 @@ const CITY_SLUGS = [
 
 // Niche-city slugs for the 4 sample pages
 const NICHE_CITY_SLUGS = [
-  "plumbers-seo-las-vegas",
-  "plumbers-seo-henderson",
-  "dentists-seo-las-vegas",
-  "dentists-seo-henderson",
+  "plumber-seo-las-vegas",
+  "plumber-seo-henderson",
+  "dentist-seo-las-vegas",
+  "dentist-seo-henderson",
 ];
 
 const nextConfig: NextConfig = {
