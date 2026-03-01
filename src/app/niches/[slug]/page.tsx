@@ -45,8 +45,11 @@ const SAMPLE_PAGES: NicheCity[] = [
   { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "pahrump", cityName: "Pahrump" },
   { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "laughlin", cityName: "Laughlin" },
   
-  // Phase 2: Plumber in Las Vegas (sample)
+  // Phase 2: Other niches in Las Vegas
   { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "chiropractor", nicheName: "Chiropractors", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "electrician", nicheName: "Electricians", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
+  { nicheSlug: "attorney", nicheName: "Attorneys", industryName: "Legal", industrySlug: "legal", citySlug: "las-vegas", cityName: "Las Vegas" },
 ];
 
 // Temporarily disabled to prevent Next.js prerender caching during development
