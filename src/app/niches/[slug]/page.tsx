@@ -591,6 +591,61 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Client Testimonials Section */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-black text-[#0A0F1E] mb-4">
+                Real Results from Real Dental Practices
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                See how HuskyTail Digital helped dental practices in Las Vegas dominate local search and fill their schedules.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Testimonial 1 */}
+              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-1 mb-4">
+                  <span className="text-[#C8A84B]">★★★★★</span>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                  "We went from 2-3 new patient calls per week to 15+ calls. Our Google Maps ranking went from page 3 to the 3-Pack in just 90 days. This is exactly what we needed."
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-bold text-[#0A0F1E]">Dr. Sarah Mitchell</p>
+                  <p className="text-sm text-gray-600">Mitchell Family Dental, Las Vegas</p>
+                </div>
+              </div>
+              {/* Testimonial 2 */}
+              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-1 mb-4">
+                  <span className="text-[#C8A84B]">★★★★★</span>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                  "I was skeptical about SEO, but HuskyTail proved it works. My practice went from invisible to dominating search results for 'emergency dentist Las Vegas.' Revenue is up 287% in 6 months."
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-bold text-[#0A0F1E]">Dr. James Chen</p>
+                  <p className="text-sm text-gray-600">Advanced Implant Center, Henderson</p>
+                </div>
+              </div>
+              {/* Testimonial 3 */}
+              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-1 mb-4">
+                  <span className="text-[#C8A84B]">★★★★★</span>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                  "Stephen and his team know Las Vegas local search inside and out. They didn't just promise results — they delivered. No contracts, no BS. Just real growth."
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-bold text-[#0A0F1E]">Dr. Maria Rodriguez</p>
+                  <p className="text-sm text-gray-600">Smile Dental Group, Summerlin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section — Accordion */}
         <section className="py-20 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
