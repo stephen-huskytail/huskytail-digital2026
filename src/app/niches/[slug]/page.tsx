@@ -46,11 +46,39 @@ const CITIES_LIST = [
 ];
 
 const NICHES = [
+  // Healthcare
   { slug: "dentist", name: "Dentists", industry: "Healthcare", industrySlug: "healthcare" },
   { slug: "chiropractor", name: "Chiropractors", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "optometrist", name: "Optometrists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "orthodontist", name: "Orthodontists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "dermatologist", name: "Dermatologists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "therapist", name: "Therapists", industry: "Healthcare", industrySlug: "healthcare" },
+  
+  // Home Services
   { slug: "plumber", name: "Plumbers", industry: "Home Services", industrySlug: "home-services" },
   { slug: "electrician", name: "Electricians", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "hvac", name: "HVAC Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "roofer", name: "Roofers", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "painter", name: "Painters", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "locksmith", name: "Locksmiths", industry: "Home Services", industrySlug: "home-services" },
+  
+  // Legal
   { slug: "attorney", name: "Attorneys", industry: "Legal", industrySlug: "legal" },
+  
+  // Real Estate
+  { slug: "realtor", name: "Realtors", industry: "Real Estate", industrySlug: "real-estate" },
+  
+  // Automotive
+  { slug: "mechanic", name: "Auto Mechanics", industry: "Automotive", industrySlug: "automotive" },
+  
+  // Finance
+  { slug: "accountant", name: "Accountants", industry: "Finance", industrySlug: "finance" },
+  
+  // Beauty
+  { slug: "salon", name: "Hair Salons", industry: "Beauty", industrySlug: "beauty" },
+  
+  // Other
+  { slug: "photographer", name: "Photographers", industry: "Other Services", industrySlug: "other-services" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>
