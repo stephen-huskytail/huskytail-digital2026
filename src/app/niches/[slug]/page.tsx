@@ -79,6 +79,38 @@ const NICHES = [
   
   // Other
   { slug: "photographer", name: "Photographers", industry: "Other Services", industrySlug: "other-services" },
+  
+  // Healthcare (additional)
+  { slug: "pediatrician", name: "Pediatricians", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "plastic-surgeon", name: "Plastic Surgeons", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "urgent-care", name: "Urgent Care Clinics", industry: "Healthcare", industrySlug: "healthcare" },
+  
+  // Home Services (additional)
+  { slug: "landscaper", name: "Landscapers", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "cleaning", name: "Cleaning Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "pest-control", name: "Pest Control Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "pool-service", name: "Pool Service Companies", industry: "Home Services", industrySlug: "home-services" },
+  
+  // Legal (additional)
+  { slug: "personal-injury", name: "Personal Injury Attorneys", industry: "Legal", industrySlug: "legal" },
+  { slug: "family-law", name: "Family Law Attorneys", industry: "Legal", industrySlug: "legal" },
+  
+  // Real Estate (additional)
+  { slug: "property-manager", name: "Property Managers", industry: "Real Estate", industrySlug: "real-estate" },
+  
+  // Beauty (additional)
+  { slug: "spa", name: "Spas", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "nail-salon", name: "Nail Salons", industry: "Beauty", industrySlug: "beauty" },
+  
+  // Food & Restaurant
+  { slug: "restaurant", name: "Restaurants", industry: "Food & Dining", industrySlug: "food-dining" },
+  
+  // Fitness
+  { slug: "gym", name: "Gyms", industry: "Fitness", industrySlug: "fitness" },
+  { slug: "personal-trainer", name: "Personal Trainers", industry: "Fitness", industrySlug: "fitness" },
+  
+  // Automotive (additional)
+  { slug: "auto-body", name: "Auto Body Shops", industry: "Automotive", industrySlug: "automotive" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>
