@@ -29,28 +29,40 @@ interface NicheCity {
   cityName: string;
 }
 
-// --- Phase 1: Dentist in all Las Vegas Valley cities ---
-const SAMPLE_PAGES: NicheCity[] = [
-  // Dentist pages (Phase 1)
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "henderson", cityName: "Henderson" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "paradise", cityName: "Paradise" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "spring-valley", cityName: "Spring Valley" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "north-las-vegas", cityName: "North Las Vegas" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "summerlin", cityName: "Summerlin" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "anthem", cityName: "Anthem" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "green-valley", cityName: "Green Valley" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "boulder-city", cityName: "Boulder City" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "mesquite", cityName: "Mesquite" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "pahrump", cityName: "Pahrump" },
-  { nicheSlug: "dentist", nicheName: "Dentists", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "laughlin", cityName: "Laughlin" },
-  
-  // Phase 2: Other niches in Las Vegas
-  { nicheSlug: "plumber", nicheName: "Plumbers", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "chiropractor", nicheName: "Chiropractors", industryName: "Healthcare", industrySlug: "healthcare", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "electrician", nicheName: "Electricians", industryName: "Home Services", industrySlug: "home-services", citySlug: "las-vegas", cityName: "Las Vegas" },
-  { nicheSlug: "attorney", nicheName: "Attorneys", industryName: "Legal", industrySlug: "legal", citySlug: "las-vegas", cityName: "Las Vegas" },
+// Generate all niche/city combinations
+const CITIES_LIST = [
+  { slug: "las-vegas", name: "Las Vegas" },
+  { slug: "henderson", name: "Henderson" },
+  { slug: "paradise", name: "Paradise" },
+  { slug: "spring-valley", name: "Spring Valley" },
+  { slug: "north-las-vegas", name: "North Las Vegas" },
+  { slug: "summerlin", name: "Summerlin" },
+  { slug: "anthem", name: "Anthem" },
+  { slug: "green-valley", name: "Green Valley" },
+  { slug: "boulder-city", name: "Boulder City" },
+  { slug: "mesquite", name: "Mesquite" },
+  { slug: "pahrump", name: "Pahrump" },
+  { slug: "laughlin", name: "Laughlin" },
 ];
+
+const NICHES = [
+  { slug: "dentist", name: "Dentists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "chiropractor", name: "Chiropractors", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "plumber", name: "Plumbers", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "electrician", name: "Electricians", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "attorney", name: "Attorneys", industry: "Legal", industrySlug: "legal" },
+];
+
+const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>
+  CITIES_LIST.map(city => ({
+    nicheSlug: niche.slug,
+    nicheName: niche.name,
+    industryName: niche.industry,
+    industrySlug: niche.industrySlug,
+    citySlug: city.slug,
+    cityName: city.name,
+  }))
+);
 
 // Temporarily disabled to prevent Next.js prerender caching during development
 // Re-enable for production build:
