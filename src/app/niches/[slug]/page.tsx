@@ -136,6 +136,32 @@ const NICHES = [
   
   // Events & Entertainment
   { slug: "event-planner", name: "Event Planners", industry: "Events", industrySlug: "events" },
+
+  // Healthcare (batch 4)
+  { slug: "cardiologist", name: "Cardiologists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "gastroenterologist", name: "Gastroenterologists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "neurologist", name: "Neurologists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "psychiatrist", name: "Psychiatrists", industry: "Healthcare", industrySlug: "healthcare" },
+
+  // Home Services (batch 4)
+  { slug: "solar", name: "Solar Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "handyman", name: "Handymen", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "remodeling", name: "Remodeling Companies", industry: "Home Services", industrySlug: "home-services" },
+
+  // Automotive (batch 3)
+  { slug: "car-dealership", name: "Car Dealerships", industry: "Automotive", industrySlug: "automotive" },
+  { slug: "towing", name: "Towing Companies", industry: "Automotive", industrySlug: "automotive" },
+
+  // Beauty (batch 3)
+  { slug: "barber", name: "Barbershops", industry: "Beauty", industrySlug: "beauty" },
+  { slug: "tattoo-shop", name: "Tattoo Shops", industry: "Beauty", industrySlug: "beauty" },
+
+  // Education (additional)
+  { slug: "driving-school", name: "Driving Schools", industry: "Education", industrySlug: "education" },
+
+  // Technology
+  { slug: "it-support", name: "IT Support Companies", industry: "Technology", industrySlug: "technology" },
+  { slug: "web-design", name: "Web Design Agencies", industry: "Technology", industrySlug: "technology" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>

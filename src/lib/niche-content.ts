@@ -426,6 +426,32 @@ export const NICHE_CONTENT_MAP: Record<string, NicheContent> = {
   
   // Events & Entertainment
   "event-planner": EVENT_PLANNER_CONTENT,
+
+  // Healthcare (batch 4)
+  cardiologist: CARDIOLOGIST_CONTENT,
+  gastroenterologist: GASTROENTEROLOGIST_CONTENT,
+  neurologist: NEUROLOGIST_CONTENT,
+  psychiatrist: PSYCHIATRIST_CONTENT,
+
+  // Home Services (batch 4)
+  solar: SOLAR_CONTENT,
+  handyman: HANDYMAN_CONTENT,
+  remodeling: REMODELING_CONTENT,
+
+  // Automotive (batch 3)
+  "car-dealership": CAR_DEALERSHIP_CONTENT,
+  towing: TOWING_CONTENT,
+
+  // Beauty (batch 3)
+  barber: BARBER_CONTENT,
+  "tattoo-shop": TATTOO_SHOP_CONTENT,
+
+  // Education (additional)
+  "driving-school": DRIVING_SCHOOL_CONTENT,
+
+  // Technology
+  "it-support": IT_SUPPORT_CONTENT,
+  "web-design": WEB_DESIGN_CONTENT,
 };
 
 // Default fallback content for niches not yet in the map
@@ -1796,6 +1822,311 @@ export const EVENT_PLANNER_CONTENT: NicheContent = {
     { q: "What event planning keywords should I target?", a: "We target 'event planner near me,' 'wedding planner Las Vegas,' 'corporate event planner,' 'birthday party planner,' and 'quinceañera planner.' We focus on high-intent terms." },
     { q: "How long does it take to rank?", a: "Most event planners see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
     { q: "How much does event planning SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+
+// ============================================================================
+// HEALTHCARE (batch 4)
+// ============================================================================
+
+export const CARDIOLOGIST_CONTENT: NicheContent = {
+  headline: "Your Cardiology Practice Deserves to Be the First One Patients Find",
+  pain: "Las Vegas cardiologists are losing patients to competitors who rank higher on Google. When someone searches 'cardiologist near me' or 'heart doctor Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas cardiologists dominate local search and Google Maps — attracting patients actively searching for heart health care.",
+  everestQuote: "I tracked every high-intent cardiology keyword in Las Vegas — heart doctor, EKG, stress test — so your practice stays fully booked.",
+  testimonials: [
+    { quote: "We went from 8-10 new patients per week to 22+ patients. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Dr. William H.", company: "Desert Heart Institute", location: "Las Vegas, NV", results: "22+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'cardiologist Las Vegas' in 90 days. Revenue is up 270%.", author: "Dr. Patricia M.", company: "Premier Cardiology Center", location: "Henderson, NV", results: "270% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Dr. Robert K.", company: "Valley Heart Specialists", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'cardiologist near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for cardiology keywords. We build content around heart conditions, diagnostic tests, and treatment options." },
+    { q: "What cardiology keywords should I target?", a: "We target 'cardiologist near me,' 'heart doctor Las Vegas,' 'EKG test,' 'stress test,' and 'heart specialist.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most cardiology practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does cardiology SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const GASTROENTEROLOGIST_CONTENT: NicheContent = {
+  headline: "Your Gastroenterology Practice Deserves to Be the First One Patients Find",
+  pain: "Las Vegas gastroenterologists are losing patients to competitors who rank higher on Google. When someone searches 'gastroenterologist near me' or 'colonoscopy Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas gastroenterologists dominate local search and Google Maps — attracting patients actively searching for digestive health care.",
+  everestQuote: "I tracked every high-intent GI keyword in Las Vegas — colonoscopy, IBS, acid reflux — so your practice stays fully booked.",
+  testimonials: [
+    { quote: "We went from 6-8 new patients per week to 18+ patients. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Dr. Nancy L.", company: "Desert GI Associates", location: "Las Vegas, NV", results: "18+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'gastroenterologist Las Vegas' in 90 days. Revenue is up 260%.", author: "Dr. Steven T.", company: "Premier Digestive Health", location: "Henderson, NV", results: "260% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Dr. Helen R.", company: "Valley GI Specialists", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'gastroenterologist near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for GI keywords. We build content around digestive conditions, procedures, and preventive care." },
+    { q: "What gastroenterology keywords should I target?", a: "We target 'gastroenterologist near me,' 'colonoscopy Las Vegas,' 'IBS treatment,' 'acid reflux doctor,' and 'digestive specialist.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most GI practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does gastroenterology SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const NEUROLOGIST_CONTENT: NicheContent = {
+  headline: "Your Neurology Practice Deserves to Be the First One Patients Find",
+  pain: "Las Vegas neurologists are losing patients to competitors who rank higher on Google. When someone searches 'neurologist near me' or 'migraine doctor Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas neurologists dominate local search and Google Maps — attracting patients actively searching for neurological care.",
+  everestQuote: "I tracked every high-intent neurology keyword in Las Vegas — migraine, epilepsy, nerve pain — so your practice stays fully booked.",
+  testimonials: [
+    { quote: "We went from 5-7 new patients per week to 16+ patients. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Dr. Alan B.", company: "Desert Neurology Center", location: "Las Vegas, NV", results: "16+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'neurologist Las Vegas' in 90 days. Revenue is up 255%.", author: "Dr. Christine M.", company: "Premier Brain & Spine", location: "Henderson, NV", results: "255% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Dr. Richard T.", company: "Valley Neurology Group", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'neurologist near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for neurology keywords. We build content around neurological conditions, symptoms, and treatments." },
+    { q: "What neurology keywords should I target?", a: "We target 'neurologist near me,' 'migraine doctor Las Vegas,' 'epilepsy specialist,' 'nerve pain treatment,' and 'brain specialist.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most neurology practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does neurology SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const PSYCHIATRIST_CONTENT: NicheContent = {
+  headline: "Your Psychiatry Practice Deserves to Be the First One Patients Find",
+  pain: "Las Vegas psychiatrists are losing patients to competitors who rank higher on Google. When someone searches 'psychiatrist near me' or 'mental health doctor Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas psychiatrists dominate local search and Google Maps — attracting patients actively searching for mental health treatment.",
+  everestQuote: "I tracked every high-intent psychiatry keyword in Las Vegas — anxiety treatment, depression doctor, ADHD specialist — so your practice stays fully booked.",
+  testimonials: [
+    { quote: "We went from 4-6 new patients per week to 14+ patients. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Dr. Laura S.", company: "Desert Mind Psychiatry", location: "Las Vegas, NV", results: "14+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'psychiatrist Las Vegas' in 90 days. Revenue is up 260%.", author: "Dr. Jason W.", company: "Premier Mental Health", location: "Henderson, NV", results: "260% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Dr. Monica R.", company: "Valley Psychiatry Group", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'psychiatrist near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for psychiatry keywords. We build content around mental health conditions, treatments, and medication management." },
+    { q: "What psychiatry keywords should I target?", a: "We target 'psychiatrist near me,' 'mental health doctor Las Vegas,' 'anxiety treatment,' 'depression specialist,' and 'ADHD doctor.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most psychiatry practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does psychiatry SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// HOME SERVICES (batch 4)
+// ============================================================================
+
+export const SOLAR_CONTENT: NicheContent = {
+  headline: "Your Solar Company Deserves to Be the First One Homeowners Find",
+  pain: "Las Vegas solar companies are losing customers to competitors who rank higher on Google. When someone searches 'solar panels near me' or 'solar installation Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas solar companies dominate local search and Google Maps — attracting homeowners actively searching for solar energy solutions.",
+  everestQuote: "I tracked every high-intent solar keyword in Las Vegas — solar panels, solar installation, battery backup — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 solar consultations per week to 12+ consultations. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Brian T.", company: "Desert Sun Solar", location: "Las Vegas, NV", results: "12+ consultations per week" },
+    { quote: "HuskyTail got us ranking for 'solar installation Las Vegas' in 85 days. Revenue is up 290%.", author: "Kevin M.", company: "Premier Solar Solutions", location: "Henderson, NV", results: "290% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Chris S.", company: "Valley Solar Energy", location: "Summerlin, NV", results: "95% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'solar panels near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for solar keywords. We build content around energy savings, installation process, and incentives." },
+    { q: "What solar keywords should I target?", a: "We target 'solar panels near me,' 'solar installation Las Vegas,' 'solar energy company,' 'battery backup,' and 'solar tax credit.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most solar companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does solar SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const HANDYMAN_CONTENT: NicheContent = {
+  headline: "Your Handyman Business Deserves to Be the First One Customers Find",
+  pain: "Las Vegas handymen are losing customers to competitors who rank higher on Google. When someone searches 'handyman near me' or 'home repair Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas handymen dominate local search and Google Maps — attracting customers actively searching for home repair and maintenance services.",
+  everestQuote: "I tracked every high-intent handyman keyword in Las Vegas — home repair, drywall, fixture installation — so your business books solid.",
+  testimonials: [
+    { quote: "We went from 4-5 jobs per week to 14+ jobs. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Joe M.", company: "Desert Handyman Services", location: "Las Vegas, NV", results: "14+ jobs per week" },
+    { quote: "HuskyTail got us ranking for 'handyman Las Vegas' in 80 days. Revenue is up 275%.", author: "Frank T.", company: "Premier Home Repair", location: "Henderson, NV", results: "275% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Gary S.", company: "Valley Handyman Co.", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'handyman near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for handyman keywords. We build content around specific services, response time, and pricing." },
+    { q: "What handyman keywords should I target?", a: "We target 'handyman near me,' 'home repair Las Vegas,' 'drywall repair,' 'fixture installation,' and 'general contractor.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most handymen see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does handyman SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const REMODELING_CONTENT: NicheContent = {
+  headline: "Your Remodeling Company Deserves to Be the First One Homeowners Find",
+  pain: "Las Vegas remodeling companies are losing customers to competitors who rank higher on Google. When someone searches 'remodeling company near me' or 'kitchen remodel Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas remodeling companies dominate local search and Google Maps — attracting homeowners actively searching for renovation services.",
+  everestQuote: "I tracked every high-intent remodeling keyword in Las Vegas — kitchen remodel, bathroom renovation, home addition — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 2-3 remodeling projects per week to 8+ projects. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Paul R.", company: "Desert Dream Remodeling", location: "Las Vegas, NV", results: "8+ projects per week" },
+    { quote: "HuskyTail got us ranking for 'kitchen remodel Las Vegas' in 90 days. Revenue is up 295%.", author: "Mike T.", company: "Premier Home Renovation", location: "Henderson, NV", results: "295% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Steve M.", company: "Valley Remodeling Co.", location: "Summerlin, NV", results: "95% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'remodeling company near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for remodeling keywords. We build content around specific renovation projects, timelines, and before/after results." },
+    { q: "What remodeling keywords should I target?", a: "We target 'remodeling company near me,' 'kitchen remodel Las Vegas,' 'bathroom renovation,' 'home addition,' and 'general contractor.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most remodeling companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does remodeling SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// AUTOMOTIVE (batch 3)
+// ============================================================================
+
+export const CAR_DEALERSHIP_CONTENT: NicheContent = {
+  headline: "Your Car Dealership Deserves to Be the First One Buyers Find",
+  pain: "Las Vegas car dealerships are losing buyers to competitors who rank higher on Google. When someone searches 'car dealership near me' or 'used cars Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas car dealerships dominate local search and Google Maps — attracting buyers actively searching for new and used vehicles.",
+  everestQuote: "I tracked every high-intent car dealership keyword in Las Vegas — used cars, new cars, car financing — so your dealership books solid.",
+  testimonials: [
+    { quote: "We went from 10-12 test drives per week to 28+ test drives. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "John M.", company: "Desert Auto Group", location: "Las Vegas, NV", results: "28+ test drives per week" },
+    { quote: "HuskyTail got us ranking for 'used cars Las Vegas' in 85 days. Sales are up 280%.", author: "Sam T.", company: "Premier Auto Sales", location: "Henderson, NV", results: "280% sales increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Dave R.", company: "Valley Motors", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'car dealership near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for dealership keywords. We build content around specific makes, models, financing, and inventory." },
+    { q: "What car dealership keywords should I target?", a: "We target 'car dealership near me,' 'used cars Las Vegas,' 'new cars,' 'car financing,' and 'trade-in value.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most car dealerships see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does car dealership SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const TOWING_CONTENT: NicheContent = {
+  headline: "Your Towing Company Deserves to Be the First One Customers Find",
+  pain: "Las Vegas towing companies are losing customers to competitors who rank higher on Google. When someone searches 'towing near me' or 'roadside assistance Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas towing companies dominate local search and Google Maps — attracting customers actively searching for emergency towing and roadside assistance.",
+  everestQuote: "I tracked every high-intent towing keyword in Las Vegas — tow truck, roadside assistance, flat tire — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 6-8 tow calls per day to 18+ calls. Our Google Maps ranking hit the 3-Pack in 70 days.", author: "Tony M.", company: "Desert Towing & Recovery", location: "Las Vegas, NV", results: "18+ calls per day" },
+    { quote: "HuskyTail got us ranking for 'towing Las Vegas' in 75 days. Revenue is up 285%.", author: "Mike S.", company: "Premier Tow Service", location: "Henderson, NV", results: "285% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Carlos R.", company: "Valley Towing Co.", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'towing near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for towing keywords. We emphasize 24/7 availability, response time, and service area." },
+    { q: "What towing keywords should I target?", a: "We target 'towing near me,' 'roadside assistance Las Vegas,' 'tow truck,' 'flat tire help,' and 'emergency towing.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most towing companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does towing SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// BEAUTY (batch 3)
+// ============================================================================
+
+export const BARBER_CONTENT: NicheContent = {
+  headline: "Your Barbershop Deserves to Be the First One Customers Find",
+  pain: "Las Vegas barbershops are losing customers to competitors who rank higher on Google. When someone searches 'barber near me' or 'barbershop Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas barbershops dominate local search and Google Maps — attracting customers actively searching for haircuts and grooming services.",
+  everestQuote: "I tracked every high-intent barbershop keyword in Las Vegas — haircut, fade, beard trim — so your shop stays fully booked.",
+  testimonials: [
+    { quote: "We went from 20-25 cuts per day to 45+ cuts. Our Google Maps ranking hit the 3-Pack in 70 days.", author: "Marcus T.", company: "Sharp Cuts Barbershop", location: "Las Vegas, NV", results: "45+ cuts per day" },
+    { quote: "HuskyTail got us ranking for 'barber Las Vegas' in 75 days. Revenue is up 275%.", author: "Darius M.", company: "Premier Barbershop", location: "Henderson, NV", results: "275% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "James R.", company: "Valley Cuts", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'barber near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for barbershop keywords. We build content around specific cuts, styles, and grooming services." },
+    { q: "What barbershop keywords should I target?", a: "We target 'barber near me,' 'barbershop Las Vegas,' 'fade haircut,' 'beard trim,' and 'men haircut.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most barbershops see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does barbershop SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const TATTOO_SHOP_CONTENT: NicheContent = {
+  headline: "Your Tattoo Shop Deserves to Be the First One Customers Find",
+  pain: "Las Vegas tattoo shops are losing customers to competitors who rank higher on Google. When someone searches 'tattoo shop near me' or 'tattoo artist Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas tattoo shops dominate local search and Google Maps — attracting customers actively searching for tattoo and piercing services.",
+  everestQuote: "I tracked every high-intent tattoo keyword in Las Vegas — tattoo artist, custom tattoo, piercing — so your shop stays fully booked.",
+  testimonials: [
+    { quote: "We went from 8-10 appointments per week to 22+ appointments. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Alex T.", company: "Ink Masters Las Vegas", location: "Las Vegas, NV", results: "22+ appointments per week" },
+    { quote: "HuskyTail got us ranking for 'tattoo shop Las Vegas' in 80 days. Revenue is up 270%.", author: "Jordan M.", company: "Premier Tattoo Studio", location: "Henderson, NV", results: "270% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Ryan S.", company: "Valley Ink Studio", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'tattoo shop near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for tattoo keywords. We showcase your artists' portfolios and build content around styles and specialties." },
+    { q: "What tattoo keywords should I target?", a: "We target 'tattoo shop near me,' 'tattoo artist Las Vegas,' 'custom tattoo,' 'piercing studio,' and 'tattoo removal.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most tattoo shops see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does tattoo shop SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// EDUCATION (additional)
+// ============================================================================
+
+export const DRIVING_SCHOOL_CONTENT: NicheContent = {
+  headline: "Your Driving School Deserves to Be the First One Students Find",
+  pain: "Las Vegas driving schools are losing students to competitors who rank higher on Google. When someone searches 'driving school near me' or 'driving lessons Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas driving schools dominate local search and Google Maps — attracting students actively searching for driving lessons and licensing help.",
+  everestQuote: "I tracked every high-intent driving school keyword in Las Vegas — driving lessons, DMV test prep, teen driver — so your school books solid.",
+  testimonials: [
+    { quote: "We went from 5-6 new students per week to 16+ students. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Linda T.", company: "Desert Driving Academy", location: "Las Vegas, NV", results: "16+ students per week" },
+    { quote: "HuskyTail got us ranking for 'driving school Las Vegas' in 80 days. Revenue is up 265%.", author: "Mark R.", company: "Premier Driving School", location: "Henderson, NV", results: "265% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Susan M.", company: "Valley Driver Training", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'driving school near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for driving school keywords. We build content around teen drivers, adult learners, and DMV test preparation." },
+    { q: "What driving school keywords should I target?", a: "We target 'driving school near me,' 'driving lessons Las Vegas,' 'teen driver course,' 'DMV test prep,' and 'defensive driving.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most driving schools see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does driving school SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// TECHNOLOGY
+// ============================================================================
+
+export const IT_SUPPORT_CONTENT: NicheContent = {
+  headline: "Your IT Support Company Deserves to Be the First One Businesses Find",
+  pain: "Las Vegas IT support companies are losing clients to competitors who rank higher on Google. When a business searches 'IT support near me' or 'managed IT services Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas IT support companies dominate local search and Google Maps — attracting businesses actively searching for technology support and managed services.",
+  everestQuote: "I tracked every high-intent IT support keyword in Las Vegas — managed IT, cybersecurity, network support — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 2-3 new client inquiries per week to 9+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Eric T.", company: "Desert IT Solutions", location: "Las Vegas, NV", results: "9+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'IT support Las Vegas' in 85 days. Revenue is up 280%.", author: "Chris M.", company: "Premier Managed IT", location: "Henderson, NV", results: "280% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Brian S.", company: "Valley Tech Support", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'IT support near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for IT support keywords. We build content around managed services, cybersecurity, and response times." },
+    { q: "What IT support keywords should I target?", a: "We target 'IT support near me,' 'managed IT services Las Vegas,' 'cybersecurity company,' 'network support,' and 'computer repair.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most IT support companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does IT support SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const WEB_DESIGN_CONTENT: NicheContent = {
+  headline: "Your Web Design Agency Deserves to Be the First One Clients Find",
+  pain: "Las Vegas web design agencies are losing clients to competitors who rank higher on Google. When a business searches 'web design near me' or 'website designer Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas web design agencies dominate local search and Google Maps — attracting businesses actively searching for website design and development.",
+  everestQuote: "I tracked every high-intent web design keyword in Las Vegas — website design, e-commerce, landing page — so your agency books solid.",
+  testimonials: [
+    { quote: "We went from 2-3 new project inquiries per week to 8+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Alex M.", company: "Desert Digital Design", location: "Las Vegas, NV", results: "8+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'web design Las Vegas' in 85 days. Revenue is up 275%.", author: "Natalie T.", company: "Premier Web Solutions", location: "Henderson, NV", results: "275% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Ryan K.", company: "Valley Web Agency", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'web design near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for web design keywords. We build content around your portfolio, process, and client results." },
+    { q: "What web design keywords should I target?", a: "We target 'web design near me,' 'website designer Las Vegas,' 'e-commerce website,' 'landing page design,' and 'WordPress developer.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most web design agencies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does web design SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
   ],
   stats: SHARED_STATS,
   benefits: SHARED_BENEFITS,
