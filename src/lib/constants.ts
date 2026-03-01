@@ -194,13 +194,6 @@ export const TESTIMONIALS = [
     rating: 5,
     text: "The AI-powered content strategy they built for us is incredible. We're ranking for keywords our competitors don't even know exist yet.",
   },
-  {
-    name: "David K.",
-    business: "North LV Auto Repair",
-    city: "North Las Vegas, NV",
-    rating: 5,
-    text: "Month-to-month, no contracts — that alone told me they were confident in their work. Results confirmed it. Best SEO investment I've made.",
-  },
 ];
 
 export const NAV_CITIES = CITIES.map(c => ({ label: c.name, href: `/${c.slug}-seo` }));
