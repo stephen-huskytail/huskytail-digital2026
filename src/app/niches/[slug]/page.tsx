@@ -263,7 +263,7 @@ export default async function NicheCityPage({ params }: Props) {
 
         {/* Hero Section */}
         <section className="text-white overflow-hidden relative" style={{
-          background: `linear-gradient(to right, #0A0F1E 0%, #0A0F1E 50%, rgba(10, 15, 30, 0.7) 100%), url('${ASSETS.everestHero}')`,
+          background: `linear-gradient(to right, #0A0F1E 0%, #0A0F1E 50%, rgba(10, 15, 30, 0.3) 100%), url('${ASSETS.everestHero}')`,
           backgroundSize: 'auto 100%',
           backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat',
@@ -500,7 +500,7 @@ export default async function NicheCityPage({ params }: Props) {
                 {
                   step: "03",
                   title: "You Rank. We Report.",
-                  description: `You get a monthly strategy call and a clear report showing rankings, traffic, and leads. After 30 days, we do a full satisfaction review together — if you're not seeing progress, we make it right.`,
+                  description: `You get a monthly strategy call and a clear report showing rankings, traffic, and leads. We guarantee first-page Google Maps rankings in 90 days or stop paying until you do.`,
                   icon: "📈",
                   cta: "See Real Results",
                   ctaHref: "/results",
@@ -628,21 +628,21 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
-        {/* 30-Day Satisfaction Review + Final CTA */}
+        {/* 90-Day Guarantee + Final CTA */}
         <section className="py-20 px-4 bg-[#0A0F1E] text-white">
           <div className="max-w-3xl mx-auto text-center">
 
-            {/* 30-Day Satisfaction Review block */}
+            {/* 90-Day Guarantee block */}
             <div className="bg-white/5 border border-[#C8A84B]/20 rounded-2xl p-8 mb-12 text-left">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl">🛡️</span>
-                <h3 className="text-xl font-bold text-[#C8A84B]">Our 30-Day Satisfaction Review</h3>
+                <h3 className="text-xl font-bold text-[#C8A84B]">Guarantee: First Page Google Maps Rankings in 90 Days or Stop Paying Until You Do</h3>
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">
-                After your first 30 days, we sit down together and review everything — rankings, activity, strategy, and results. If you feel we haven't delivered value, we'll make it right or part ways without drama.
+                We are confident in our process. If you are not seeing first-page Google Maps rankings within 90 days, you stop paying until you do. That is it. No excuses. No fine print.
               </p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                No lock-in. No fine print. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
+                No lock-in. No contracts. We operate month-to-month because we believe our results should earn your business every single month — not a contract.
               </p>
             </div>
 
