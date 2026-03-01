@@ -111,6 +111,31 @@ const NICHES = [
   
   // Automotive (additional)
   { slug: "auto-body", name: "Auto Body Shops", industry: "Automotive", industrySlug: "automotive" },
+  
+  // Healthcare (batch 3)
+  { slug: "physical-therapist", name: "Physical Therapists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "podiatrist", name: "Podiatrists", industry: "Healthcare", industrySlug: "healthcare" },
+  { slug: "veterinarian", name: "Veterinarians", industry: "Healthcare", industrySlug: "healthcare" },
+  
+  // Home Services (batch 3)
+  { slug: "garage-door", name: "Garage Door Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "flooring", name: "Flooring Companies", industry: "Home Services", industrySlug: "home-services" },
+  { slug: "window-treatment", name: "Window Treatment Companies", industry: "Home Services", industrySlug: "home-services" },
+  
+  // Legal (batch 3)
+  { slug: "criminal-defense", name: "Criminal Defense Attorneys", industry: "Legal", industrySlug: "legal" },
+  { slug: "immigration-lawyer", name: "Immigration Attorneys", industry: "Legal", industrySlug: "legal" },
+  
+  // Finance (additional)
+  { slug: "financial-advisor", name: "Financial Advisors", industry: "Finance", industrySlug: "finance" },
+  { slug: "mortgage-broker", name: "Mortgage Brokers", industry: "Finance", industrySlug: "finance" },
+  { slug: "insurance-agent", name: "Insurance Agents", industry: "Finance", industrySlug: "finance" },
+  
+  // Education
+  { slug: "tutoring", name: "Tutoring Services", industry: "Education", industrySlug: "education" },
+  
+  // Events & Entertainment
+  { slug: "event-planner", name: "Event Planners", industry: "Events", industrySlug: "events" },
 ];
 
 const SAMPLE_PAGES: NicheCity[] = NICHES.flatMap(niche =>

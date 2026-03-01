@@ -401,6 +401,31 @@ export const NICHE_CONTENT_MAP: Record<string, NicheContent> = {
   
   // Automotive (additional)
   "auto-body": AUTO_BODY_CONTENT,
+  
+  // Healthcare (batch 3)
+  "physical-therapist": PHYSICAL_THERAPIST_CONTENT,
+  podiatrist: PODIATRIST_CONTENT,
+  veterinarian: VETERINARIAN_CONTENT,
+  
+  // Home Services (batch 3)
+  "garage-door": GARAGE_DOOR_CONTENT,
+  flooring: FLOORING_CONTENT,
+  "window-treatment": WINDOW_TREATMENT_CONTENT,
+  
+  // Legal (batch 3)
+  "criminal-defense": CRIMINAL_DEFENSE_CONTENT,
+  "immigration-lawyer": IMMIGRATION_LAWYER_CONTENT,
+  
+  // Finance (additional)
+  "financial-advisor": FINANCIAL_ADVISOR_CONTENT,
+  "mortgage-broker": MORTGAGE_BROKER_CONTENT,
+  "insurance-agent": INSURANCE_AGENT_CONTENT,
+  
+  // Education
+  tutoring: TUTORING_CONTENT,
+  
+  // Events & Entertainment
+  "event-planner": EVENT_PLANNER_CONTENT,
 };
 
 // Default fallback content for niches not yet in the map
@@ -1486,6 +1511,291 @@ export const AUTO_BODY_CONTENT: NicheContent = {
     { q: "What auto body keywords should I target?", a: "We target 'auto body shop near me,' 'collision repair Las Vegas,' 'dent removal,' 'paint job,' and 'bumper repair.' We focus on high-intent terms." },
     { q: "How long does it take to rank?", a: "Most auto body shops see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
     { q: "How much does auto body SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+
+// ============================================================================
+// HEALTHCARE (batch 3)
+// ============================================================================
+
+export const PHYSICAL_THERAPIST_CONTENT: NicheContent = {
+  headline: "Your Physical Therapy Practice Deserves to Be the First One Patients Find",
+  pain: "Las Vegas physical therapists are losing patients to competitors who rank higher on Google. When someone searches 'physical therapist near me' or 'PT clinic Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas physical therapists dominate local search and Google Maps — attracting patients actively searching for injury recovery and rehabilitation.",
+  everestQuote: "I tracked every high-intent PT keyword in Las Vegas — sports injury, back pain, post-surgery rehab — so your clinic fills its schedule.",
+  testimonials: [
+    { quote: "We went from 8-10 new patients per week to 22+ patients. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Dr. Kevin M.", company: "Active Recovery PT", location: "Las Vegas, NV", results: "22+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'physical therapist Las Vegas' in 85 days. Revenue is up 265%.", author: "Dr. Rachel S.", company: "Premier Physical Therapy", location: "Henderson, NV", results: "265% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Dr. James W.", company: "Valley Rehab Center", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'physical therapist near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for PT keywords. We build content around specific conditions, treatments, and recovery timelines." },
+    { q: "What physical therapy keywords should I target?", a: "We target 'physical therapist near me,' 'PT clinic Las Vegas,' 'sports injury rehab,' 'back pain treatment,' and 'post-surgery recovery.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most PT practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does physical therapy SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const PODIATRIST_CONTENT: NicheContent = {
+  headline: "Your Podiatry Practice Deserves to Be the First One Patients Find",
+  pain: "Las Vegas podiatrists are losing patients to competitors who rank higher on Google. When someone searches 'podiatrist near me' or 'foot doctor Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas podiatrists dominate local search and Google Maps — attracting patients actively searching for foot and ankle care.",
+  everestQuote: "I tracked every high-intent podiatry keyword in Las Vegas — bunions, plantar fasciitis, ingrown toenails — so your practice stays fully booked.",
+  testimonials: [
+    { quote: "We went from 6-8 new patients per week to 18+ patients. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Dr. Sandra T.", company: "Desert Foot & Ankle", location: "Las Vegas, NV", results: "18+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'podiatrist Las Vegas' in 85 days. Revenue is up 260%.", author: "Dr. Paul R.", company: "Premier Podiatry", location: "Henderson, NV", results: "260% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Dr. Amy L.", company: "Valley Foot Care", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'podiatrist near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for podiatry keywords. We build content around common foot conditions and treatments." },
+    { q: "What podiatry keywords should I target?", a: "We target 'podiatrist near me,' 'foot doctor Las Vegas,' 'bunion treatment,' 'plantar fasciitis,' and 'ingrown toenail.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most podiatry practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does podiatry SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const VETERINARIAN_CONTENT: NicheContent = {
+  headline: "Your Veterinary Practice Deserves to Be the First One Pet Owners Find",
+  pain: "Las Vegas veterinarians are losing patients to competitors who rank higher on Google. When a pet owner searches 'vet near me' or 'animal hospital Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas veterinarians dominate local search and Google Maps — attracting pet owners actively searching for trusted animal care.",
+  everestQuote: "I tracked every high-intent veterinary keyword in Las Vegas — emergency vet, dog vaccinations, cat spay — so your clinic fills appointments.",
+  testimonials: [
+    { quote: "We went from 10-12 new patients per week to 28+ patients. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Dr. Emily R.", company: "Desert Paws Veterinary", location: "Las Vegas, NV", results: "28+ patients per week" },
+    { quote: "HuskyTail got us ranking for 'vet near me Las Vegas' in 80 days. Revenue is up 275%.", author: "Dr. Mark T.", company: "Premier Animal Hospital", location: "Henderson, NV", results: "275% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Dr. Lisa M.", company: "Valley Veterinary Clinic", location: "Summerlin, NV", results: "95% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'vet near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for veterinary keywords. We build content around specific services, pet types, and emergency care." },
+    { q: "What veterinary keywords should I target?", a: "We target 'vet near me,' 'animal hospital Las Vegas,' 'dog vaccinations,' 'cat spay neuter,' and 'emergency vet.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most veterinary practices see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does veterinary SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// HOME SERVICES (batch 3)
+// ============================================================================
+
+export const GARAGE_DOOR_CONTENT: NicheContent = {
+  headline: "Your Garage Door Company Deserves to Be the First One Customers Find",
+  pain: "Las Vegas garage door companies are losing customers to competitors who rank higher on Google. When someone searches 'garage door repair near me' or 'garage door installation Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas garage door companies dominate local search and Google Maps — attracting customers actively searching for garage door repair and installation.",
+  everestQuote: "I tracked every high-intent garage door keyword in Las Vegas — broken spring, opener repair, new door installation — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 4-5 service calls per week to 14+ calls. Our Google Maps ranking hit the 3-Pack in 75 days.", author: "Dan M.", company: "Desert Garage Door Co.", location: "Las Vegas, NV", results: "14+ calls per week" },
+    { quote: "HuskyTail got us ranking for 'garage door repair Las Vegas' in 80 days. Revenue is up 270%.", author: "Steve K.", company: "Premier Garage Doors", location: "Henderson, NV", results: "270% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Mike B.", company: "Valley Garage Door", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'garage door repair near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for garage door keywords. We build content around repairs, installations, and emergency services." },
+    { q: "What garage door keywords should I target?", a: "We target 'garage door repair near me,' 'garage door installation Las Vegas,' 'broken spring repair,' 'opener repair,' and 'new garage door.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most garage door companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does garage door SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const FLOORING_CONTENT: NicheContent = {
+  headline: "Your Flooring Company Deserves to Be the First One Customers Find",
+  pain: "Las Vegas flooring companies are losing customers to competitors who rank higher on Google. When someone searches 'flooring company near me' or 'hardwood floors Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas flooring companies dominate local search and Google Maps — attracting customers actively searching for flooring installation and repair.",
+  everestQuote: "I tracked every high-intent flooring keyword in Las Vegas — hardwood, tile, carpet, luxury vinyl — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 flooring jobs per week to 11+ jobs. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Rick T.", company: "Desert Flooring Solutions", location: "Las Vegas, NV", results: "11+ jobs per week" },
+    { quote: "HuskyTail got us ranking for 'hardwood floors Las Vegas' in 85 days. Revenue is up 265%.", author: "Tony S.", company: "Premier Flooring Co.", location: "Henderson, NV", results: "265% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Paul M.", company: "Valley Flooring", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'flooring company near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for flooring keywords. We build content around flooring types, installation, and room-specific applications." },
+    { q: "What flooring keywords should I target?", a: "We target 'flooring company near me,' 'hardwood floors Las Vegas,' 'tile installation,' 'carpet replacement,' and 'luxury vinyl plank.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most flooring companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does flooring SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const WINDOW_TREATMENT_CONTENT: NicheContent = {
+  headline: "Your Window Treatment Company Deserves to Be the First One Customers Find",
+  pain: "Las Vegas window treatment companies are losing customers to competitors who rank higher on Google. When someone searches 'blinds near me' or 'window shutters Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas window treatment companies dominate local search and Google Maps — attracting customers actively searching for blinds, shutters, and window coverings.",
+  everestQuote: "I tracked every high-intent window treatment keyword in Las Vegas — shutters, blinds, shades, solar screens — so your company books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 installs per week to 10+ installs. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Karen L.", company: "Desert Window Treatments", location: "Las Vegas, NV", results: "10+ installs per week" },
+    { quote: "HuskyTail got us ranking for 'shutters Las Vegas' in 85 days. Revenue is up 260%.", author: "Nancy T.", company: "Premier Blinds & Shutters", location: "Henderson, NV", results: "260% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Susan M.", company: "Valley Window Coverings", location: "Summerlin, NV", results: "93% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'blinds near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for window treatment keywords. We build content around specific products, energy efficiency, and custom solutions." },
+    { q: "What window treatment keywords should I target?", a: "We target 'blinds near me,' 'shutters Las Vegas,' 'window shades,' 'solar screens,' and 'custom window treatments.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most window treatment companies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does window treatment SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// LEGAL (batch 3)
+// ============================================================================
+
+export const CRIMINAL_DEFENSE_CONTENT: NicheContent = {
+  headline: "Your Criminal Defense Law Firm Deserves to Be the First One Clients Find",
+  pain: "Las Vegas criminal defense attorneys are losing clients to competitors who rank higher on Google. When someone searches 'criminal defense lawyer near me' or 'DUI attorney Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas criminal defense attorneys dominate local search and Google Maps — attracting clients actively searching for legal defense.",
+  everestQuote: "I tracked every high-intent criminal defense keyword in Las Vegas — DUI, assault, drug charges — so your firm gets the cases that matter.",
+  testimonials: [
+    { quote: "We went from 2-3 case inquiries per week to 9+ inquiries. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Attorney Robert H.", company: "Shield Defense Law", location: "Las Vegas, NV", results: "9+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'DUI attorney Las Vegas' in 90 days. Case volume is up 295%.", author: "Attorney Jennifer K.", company: "Premier Criminal Defense", location: "Henderson, NV", results: "295% case increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Attorney Marcus T.", company: "Valley Defense Group", location: "Summerlin, NV", results: "95% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'criminal defense lawyer near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for criminal defense keywords. We build content around specific charges, defense strategies, and client rights." },
+    { q: "What criminal defense keywords should I target?", a: "We target 'criminal defense lawyer near me,' 'DUI attorney Las Vegas,' 'drug charge defense,' 'assault lawyer,' and 'felony defense attorney.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most criminal defense firms see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does criminal defense SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const IMMIGRATION_LAWYER_CONTENT: NicheContent = {
+  headline: "Your Immigration Law Firm Deserves to Be the First One Clients Find",
+  pain: "Las Vegas immigration attorneys are losing clients to competitors who rank higher on Google. When someone searches 'immigration lawyer near me' or 'visa attorney Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas immigration attorneys dominate local search and Google Maps — attracting clients actively searching for immigration legal help.",
+  everestQuote: "I tracked every high-intent immigration keyword in Las Vegas — green card, visa, citizenship, DACA — so your firm gets the clients who need you.",
+  testimonials: [
+    { quote: "We went from 3-4 case inquiries per week to 11+ inquiries. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Attorney Maria G.", company: "New Path Immigration Law", location: "Las Vegas, NV", results: "11+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'immigration lawyer Las Vegas' in 90 days. Case volume is up 280%.", author: "Attorney Carlos R.", company: "Premier Immigration Law", location: "Henderson, NV", results: "280% case increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Attorney Ana M.", company: "Valley Immigration Group", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'immigration lawyer near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for immigration keywords. We build content in English and Spanish to reach all clients." },
+    { q: "What immigration keywords should I target?", a: "We target 'immigration lawyer near me,' 'visa attorney Las Vegas,' 'green card lawyer,' 'citizenship attorney,' and 'DACA lawyer.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most immigration firms see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does immigration SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// FINANCE (additional)
+// ============================================================================
+
+export const FINANCIAL_ADVISOR_CONTENT: NicheContent = {
+  headline: "Your Financial Advisory Practice Deserves to Be the First One Clients Find",
+  pain: "Las Vegas financial advisors are losing clients to competitors who rank higher on Google. When someone searches 'financial advisor near me' or 'wealth management Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas financial advisors dominate local search and Google Maps — attracting high-value clients actively searching for wealth management and financial planning.",
+  everestQuote: "I tracked every high-intent financial advisory keyword in Las Vegas — retirement planning, investment management, wealth advisor — so your practice books solid.",
+  testimonials: [
+    { quote: "We went from 2-3 new client inquiries per week to 8+ inquiries. Our Google Maps ranking hit the 3-Pack in 85 days.", author: "Michael T.", company: "Desert Wealth Management", location: "Las Vegas, NV", results: "8+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'financial advisor Las Vegas' in 90 days. AUM is up 290%.", author: "Sarah K.", company: "Premier Financial Planning", location: "Henderson, NV", results: "290% AUM increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "David R.", company: "Valley Wealth Advisors", location: "Summerlin, NV", results: "95% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'financial advisor near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for financial advisory keywords. We build content around retirement planning, investment strategies, and wealth management." },
+    { q: "What financial advisor keywords should I target?", a: "We target 'financial advisor near me,' 'wealth management Las Vegas,' 'retirement planning,' 'investment advisor,' and 'CFP Las Vegas.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most financial advisors see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does financial advisor SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const MORTGAGE_BROKER_CONTENT: NicheContent = {
+  headline: "Your Mortgage Brokerage Deserves to Be the First One Clients Find",
+  pain: "Las Vegas mortgage brokers are losing clients to competitors who rank higher on Google. When someone searches 'mortgage broker near me' or 'home loan Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas mortgage brokers dominate local search and Google Maps — attracting homebuyers actively searching for the best mortgage rates and loans.",
+  everestQuote: "I tracked every high-intent mortgage keyword in Las Vegas — home loan, refinance, FHA loan — so your brokerage books solid.",
+  testimonials: [
+    { quote: "We went from 3-4 loan inquiries per week to 12+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Greg M.", company: "Desert Home Loans", location: "Las Vegas, NV", results: "12+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'mortgage broker Las Vegas' in 85 days. Loan volume is up 285%.", author: "Lisa T.", company: "Premier Mortgage Solutions", location: "Henderson, NV", results: "285% loan volume increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Mark S.", company: "Valley Mortgage Group", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'mortgage broker near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for mortgage keywords. We build content around loan types, rates, and the homebuying process." },
+    { q: "What mortgage keywords should I target?", a: "We target 'mortgage broker near me,' 'home loan Las Vegas,' 'refinance mortgage,' 'FHA loan,' and 'VA loan.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most mortgage brokers see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does mortgage SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+export const INSURANCE_AGENT_CONTENT: NicheContent = {
+  headline: "Your Insurance Agency Deserves to Be the First One Clients Find",
+  pain: "Las Vegas insurance agents are losing clients to competitors who rank higher on Google. When someone searches 'insurance agent near me' or 'auto insurance Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas insurance agents dominate local search and Google Maps — attracting clients actively searching for insurance coverage.",
+  everestQuote: "I tracked every high-intent insurance keyword in Las Vegas — auto, home, life, business insurance — so your agency books solid.",
+  testimonials: [
+    { quote: "We went from 4-5 new policy inquiries per week to 14+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Bob T.", company: "Desert Shield Insurance", location: "Las Vegas, NV", results: "14+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'insurance agent Las Vegas' in 85 days. Policy volume is up 275%.", author: "Carol M.", company: "Premier Insurance Group", location: "Henderson, NV", results: "275% policy increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Tom R.", company: "Valley Insurance Agency", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'insurance agent near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for insurance keywords. We build content around specific coverage types and client needs." },
+    { q: "What insurance keywords should I target?", a: "We target 'insurance agent near me,' 'auto insurance Las Vegas,' 'home insurance,' 'life insurance,' and 'business insurance.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most insurance agencies see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does insurance SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// EDUCATION
+// ============================================================================
+
+export const TUTORING_CONTENT: NicheContent = {
+  headline: "Your Tutoring Business Deserves to Be the First One Parents Find",
+  pain: "Las Vegas tutors are losing students to competitors who rank higher on Google. When a parent searches 'tutor near me' or 'math tutor Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas tutors dominate local search and Google Maps — attracting parents actively searching for academic support for their children.",
+  everestQuote: "I tracked every high-intent tutoring keyword in Las Vegas — math tutor, SAT prep, reading tutor — so your business books solid.",
+  testimonials: [
+    { quote: "We went from 4-5 new students per week to 14+ students. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Jennifer L.", company: "Bright Minds Tutoring", location: "Las Vegas, NV", results: "14+ students per week" },
+    { quote: "HuskyTail got us ranking for 'math tutor Las Vegas' in 85 days. Revenue is up 270%.", author: "Mark S.", company: "Premier Academic Tutoring", location: "Henderson, NV", results: "270% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. We're staying with HuskyTail long-term.", author: "Amy T.", company: "Valley Learning Center", location: "Summerlin, NV", results: "94% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'tutor near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for tutoring keywords. We build content around specific subjects, grade levels, and test prep." },
+    { q: "What tutoring keywords should I target?", a: "We target 'tutor near me,' 'math tutor Las Vegas,' 'SAT prep,' 'reading tutor,' and 'homework help.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most tutoring businesses see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does tutoring SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
+  ],
+  stats: SHARED_STATS,
+  benefits: SHARED_BENEFITS,
+};
+
+// ============================================================================
+// EVENTS & ENTERTAINMENT
+// ============================================================================
+
+export const EVENT_PLANNER_CONTENT: NicheContent = {
+  headline: "Your Event Planning Business Deserves to Be the First One Clients Find",
+  pain: "Las Vegas event planners are losing clients to competitors who rank higher on Google. When someone searches 'event planner near me' or 'wedding planner Las Vegas,' the top 3 get 70% of the clicks.",
+  solution: "We help Las Vegas event planners dominate local search and Google Maps — attracting clients actively searching for event planning services.",
+  everestQuote: "I tracked every high-intent event planning keyword in Las Vegas — wedding planner, corporate events, birthday party — so your business books solid.",
+  testimonials: [
+    { quote: "We went from 2-3 event inquiries per week to 9+ inquiries. Our Google Maps ranking hit the 3-Pack in 80 days.", author: "Rachel T.", company: "Dream Events Las Vegas", location: "Las Vegas, NV", results: "9+ inquiries per week" },
+    { quote: "HuskyTail got us ranking for 'wedding planner Las Vegas' in 85 days. Revenue is up 285%.", author: "Melissa R.", company: "Premier Event Planning", location: "Henderson, NV", results: "285% revenue increase" },
+    { quote: "No contracts, transparent reporting, and actual results. Best investment we've made.", author: "Tanya M.", company: "Valley Events & Celebrations", location: "Summerlin, NV", results: "95% retention" },
+  ],
+  faqs: [
+    { q: "How do I rank for 'event planner near me' in Las Vegas?", a: "We optimize your Google Business Profile, website, and local citations for event planning keywords. We build content around specific event types, venues, and packages." },
+    { q: "What event planning keywords should I target?", a: "We target 'event planner near me,' 'wedding planner Las Vegas,' 'corporate event planner,' 'birthday party planner,' and 'quinceañera planner.' We focus on high-intent terms." },
+    { q: "How long does it take to rank?", a: "Most event planners see measurable ranking improvements within 60–90 days. Full page 1 dominance typically takes 4–6 months." },
+    { q: "How much does event planning SEO cost?", a: "Our local SEO packages start at $197/month with no contracts. We offer a free audit so you know exactly what you're getting." },
   ],
   stats: SHARED_STATS,
   benefits: SHARED_BENEFITS,
