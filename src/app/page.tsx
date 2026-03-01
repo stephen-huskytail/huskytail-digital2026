@@ -5,6 +5,13 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { HoverCard, HoverLink } from "@/components/ui/HoverCard";
 import { SERVICES, PRICING_TIERS, TRUST_STATS, TESTIMONIALS, INDUSTRIES, CITIES, ASSETS } from "@/lib/constants";
+import { MapPin, Zap, Map, type LucideIcon } from "lucide-react";
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  MapPin,
+  Zap,
+  Map,
+};
 
 export const metadata: Metadata = {
   title: "HuskyTail Digital | #1 Las Vegas SEO & AI Marketing Agency",
@@ -301,10 +308,10 @@ export default function HomePage() {
                   }}
                 >
                   <div
-                    className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-6"
+                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
                     style={{ backgroundColor: "rgba(0,209,255,0.1)" }}
                   >
-                    {service.icon}
+                    {(() => { const IconComp = ICON_MAP[service.icon]; return IconComp ? <IconComp className="w-7 h-7" style={{ color: "#00D1FF" }} /> : null; })()}
                   </div>
                   <h3
                     className="mb-3"
