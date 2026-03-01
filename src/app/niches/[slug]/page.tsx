@@ -536,8 +536,8 @@ export default async function NicheCityPage({ params }: Props) {
             {/* Everest mid-leap illustration */}
             <div className="shrink-0 w-56 h-56 md:w-80 md:h-80 relative">
               <Image
-                src={ASSETS.everestLeap}
-                alt="Everest the Husky mid-leap — HuskyTail Digital Chief Distraction Officer"
+                src={ASSETS.everestRock}
+                alt="Everest the Husky — HuskyTail Digital Chief Distraction Officer"
                 fill
                 className="object-contain drop-shadow-[0_0_20px_rgba(0,209,255,0.4)]"
                 sizes="320px"
