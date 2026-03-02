@@ -231,7 +231,7 @@ function FAQAccordion() {
           >
             <span className="font-bold text-[#0A0F1E] text-base leading-snug">{faq.q}</span>
             <span
-              className="text-[#C8A84B] text-xl font-bold flex-shrink-0 transition-transform duration-200"
+              className="text-[#c8a84b] text-xl font-bold flex-shrink-0 transition-transform duration-200"
               style={{ transform: openIndex === i ? "rotate(45deg)" : "rotate(0deg)" }}
             >
               +
@@ -269,7 +269,7 @@ function NicheSearch() {
             placeholder="Search by specialty or service..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:border-[#C8A84B] focus:outline-none text-[#0A0F1E] text-sm bg-gray-50 focus:bg-white transition-colors"
+            className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:border-[#c8a84b] focus:outline-none text-[#0A0F1E] text-sm bg-gray-50 focus:bg-white transition-colors"
           />
         </div>
         <div className="relative">
@@ -277,7 +277,7 @@ function NicheSearch() {
           <select
             value={selectedCity}
             onChange={(e) => setSelectedCity(e.target.value)}
-            className="pl-10 pr-8 py-3 rounded-xl border border-gray-200 focus:border-[#C8A84B] focus:outline-none text-[#0A0F1E] text-sm bg-gray-50 focus:bg-white transition-colors appearance-none cursor-pointer min-w-[160px]"
+            className="pl-10 pr-8 py-3 rounded-xl border border-gray-200 focus:border-[#c8a84b] focus:outline-none text-[#0A0F1E] text-sm bg-gray-50 focus:bg-white transition-colors appearance-none cursor-pointer min-w-[160px]"
           >
             {CITIES.map((c) => (
               <option key={c.slug} value={c.slug}>{c.name}</option>
@@ -290,13 +290,13 @@ function NicheSearch() {
           ? `Showing all ${NICHES.length} professional services services`
           : `${filtered.length} result${filtered.length !== 1 ? "s" : ""} for "${query}"`}
         {" · "}
-        <span className="text-[#C8A84B] font-medium">{selectedCityName}, NV</span>
+        <span className="text-[#c8a84b] font-medium">{selectedCityName}, NV</span>
       </p>
       {filtered.length === 0 ? (
         <div className="text-center py-16 text-gray-400">
           <p className="text-4xl mb-3">🔍</p>
           <p className="font-semibold text-lg">No services match "{query}"</p>
-          <button onClick={() => setQuery("")} className="mt-3 text-[#C8A84B] hover:underline text-sm">
+          <button onClick={() => setQuery("")} className="mt-3 text-[#c8a84b] hover:underline text-sm">
             Clear search
           </button>
         </div>
@@ -306,12 +306,12 @@ function NicheSearch() {
             <Link
               key={niche.slug}
               href={`/${niche.slug}-seo-${selectedCity}`}
-              className="group bg-white rounded-2xl border border-gray-200 hover:border-[#C8A84B] hover:shadow-lg transition-all duration-200 p-6 flex flex-col"
+              className="group bg-white rounded-2xl border border-gray-200 hover:border-[#c8a84b] hover:shadow-lg transition-all duration-200 p-6 flex flex-col"
             >
               <div className="flex items-start gap-4 mb-3">
                 <span className="text-3xl">{niche.icon}</span>
                 <div>
-                  <h3 className="font-bold text-[#0A0F1E] text-base group-hover:text-[#C8A84B] transition-colors leading-tight">
+                  <h3 className="font-bold text-[#0A0F1E] text-base group-hover:text-[#c8a84b] transition-colors leading-tight">
                     {niche.name} SEO
                   </h3>
                   <span className="text-xs text-gray-400 font-medium">{selectedCityName}, NV</span>
@@ -327,7 +327,7 @@ function NicheSearch() {
                     <Link
                       key={city.slug}
                       href={`/${niche.slug}-seo-${city.slug}`}
-                      className="text-xs text-gray-400 hover:text-[#C8A84B] hover:underline transition-colors"
+                      className="text-xs text-gray-400 hover:text-[#c8a84b] hover:underline transition-colors"
                     >
                       {city.name}
                     </Link>
@@ -359,7 +359,7 @@ function FullMatrix() {
           placeholder="Filter services..."
           value={matrixQuery}
           onChange={(e) => setMatrixQuery(e.target.value)}
-          className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:border-[#C8A84B] focus:outline-none text-[#0A0F1E] text-sm"
+          className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 focus:border-[#c8a84b] focus:outline-none text-[#0A0F1E] text-sm"
         />
       </div>
       <div className="space-y-4">
@@ -374,7 +374,7 @@ function FullMatrix() {
                 <Link
                   key={city.slug}
                   href={`/${niche.slug}-seo-${city.slug}`}
-                  className="px-3 py-3 text-xs md:text-sm text-gray-600 hover:bg-[#C8A84B]/5 hover:text-[#C8A84B] transition-colors font-medium"
+                  className="px-3 py-3 text-xs md:text-sm text-gray-600 hover:bg-[#c8a84b]/5 hover:text-[#c8a84b] transition-colors font-medium"
                 >
                   {city.name}
                 </Link>
@@ -410,21 +410,21 @@ export default function ProfessionalServicesSEOPage() {
           <div className="relative z-10">
             <nav className="px-4 py-3">
               <div className="max-w-6xl mx-auto text-xs text-gray-400">
-                <Link href="/" className="hover:text-[#C8A84B] transition-colors">Home</Link>
+                <Link href="/" className="hover:text-[#c8a84b] transition-colors">Home</Link>
                 <span className="text-gray-600 mx-2">/</span>
-                <span className="text-[#C8A84B]">Professional Services SEO</span>
+                <span className="text-[#c8a84b]">Professional Services SEO</span>
               </div>
             </nav>
             <div className="py-16 md:py-24 px-4">
               <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 bg-[#C8A84B]/10 border border-[#C8A84B]/30 text-[#C8A84B] text-sm font-medium px-4 py-2 rounded-full mb-6">
+                  <div className="inline-flex items-center gap-2 bg-[#c8a84b]/10 border border-[#c8a84b]/30 text-[#c8a84b] text-sm font-medium px-4 py-2 rounded-full mb-6">
                     <span>💼</span>
                     <span>11 Professional Service Businesses · 12 Cities</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
                     Professional Services SEO<br />
-                    <span className="text-[#C8A84B]">Las Vegas, NV</span>
+                    <span className="text-[#c8a84b]">Las Vegas, NV</span>
                   </h1>
                   <p className="text-xl md:text-2xl text-gray-300 mb-4 font-semibold">
                     More Clients. More Contracts. More Revenue.
@@ -435,13 +435,13 @@ export default function ProfessionalServicesSEOPage() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                       href="/paw-sultation"
-                      className="inline-flex items-center justify-center gap-2 bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+                      className="inline-flex items-center justify-center gap-2 bg-[#c8a84b] hover:bg-[#b09038] text-black font-bold px-8 py-4 rounded-lg text-lg transition-colors"
                     >
                       🐾 Get Your Free Audit
                     </Link>
                     <Link
                       href="/pricing"
-                      className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#C8A84B] text-white hover:text-[#C8A84B] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+                      className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#c8a84b] text-white hover:text-[#c8a84b] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
                     >
                       View Pricing
                     </Link>
@@ -454,7 +454,7 @@ export default function ProfessionalServicesSEOPage() {
         </section>
 
         {/* ── Stats Bar ── */}
-        <section className="bg-[#C8A84B] py-8 px-4">
+        <section className="bg-[#c8a84b] py-8 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-black">
               {STATS.map((stat) => (
@@ -471,7 +471,7 @@ export default function ProfessionalServicesSEOPage() {
         <section className="bg-gray-50 py-16 md:py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#C8A84B]/10 border border-[#C8A84B]/30 text-[#C8A84B] text-sm font-medium px-4 py-2 rounded-full mb-4">
+              <div className="inline-flex items-center gap-2 bg-[#c8a84b]/10 border border-[#c8a84b]/30 text-[#c8a84b] text-sm font-medium px-4 py-2 rounded-full mb-4">
                 11 Professional Services Services
               </div>
               <h2 className="text-3xl md:text-4xl font-black text-[#0A0F1E] mb-4">
@@ -489,7 +489,7 @@ export default function ProfessionalServicesSEOPage() {
         <section className="bg-white py-14 md:py-16 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10">
-              <p className="text-sm font-semibold text-[#C8A84B] uppercase tracking-widest mb-2">Real Results. Real Businesses.</p>
+              <p className="text-sm font-semibold text-[#c8a84b] uppercase tracking-widest mb-2">Real Results. Real Businesses.</p>
               <h2 className="text-2xl md:text-3xl font-black text-[#0A0F1E]">
                 Las Vegas Professional Services Businesses That Now Own Their Market
               </h2>
@@ -500,13 +500,13 @@ export default function ProfessionalServicesSEOPage() {
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-3xl">{t.icon}</span>
                     <div>
-                      <div className="font-black text-[#C8A84B] text-lg leading-tight">{t.result}</div>
+                      <div className="font-black text-[#c8a84b] text-lg leading-tight">{t.result}</div>
                       <div className="text-xs text-gray-400 font-medium">{t.specialty} · {t.city}</div>
                     </div>
                   </div>
                   <div className="flex mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-[#C8A84B] text-sm">★</span>
+                      <span key={i} className="text-[#c8a84b] text-sm">★</span>
                     ))}
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed italic flex-1 mb-4">
@@ -543,7 +543,7 @@ export default function ProfessionalServicesSEOPage() {
               <div className="grid grid-cols-1 gap-4">
                 {WHY_SERVICES.map((item) => (
                   <div key={item.title} className="flex gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100">
-                    <div className="w-2 h-2 rounded-full bg-[#C8A84B] mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-[#c8a84b] mt-2 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold text-[#0A0F1E] mb-1 text-sm md:text-base">{item.title}</h3>
                       <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
@@ -587,7 +587,7 @@ export default function ProfessionalServicesSEOPage() {
                 { step: "04", title: "Reporting", desc: "Monthly reports showing ranking movement, traffic growth, and call volume. You always know what your investment is producing." },
               ].map((item) => (
                 <div key={item.step}>
-                  <div className="text-5xl font-black text-[#C8A84B]/20 mb-3">{item.step}</div>
+                  <div className="text-5xl font-black text-[#c8a84b]/20 mb-3">{item.step}</div>
                   <h3 className="text-white font-bold text-lg mb-3">{item.title}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
                 </div>
@@ -607,7 +607,7 @@ export default function ProfessionalServicesSEOPage() {
         </section>
 
         {/* ── CTA ── */}
-        <section className="bg-[#C8A84B] py-16 md:py-20 px-4">
+        <section className="bg-[#c8a84b] py-16 md:py-20 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-black text-black mb-4">
               Ready to Grow Your Professional Services Business?

@@ -99,7 +99,7 @@ export default function ResultsPage() {
             The{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -402,7 +402,7 @@ export default function ResultsPage() {
               >
                 <div className="flex gap-0.5 mb-4">
                   {Array.from({ length: t.rating }).map((_, i) => (
-                    <span key={i} style={{ color: "#FFD700", fontSize: "1rem" }}>★</span>
+                    <span key={i} style={{ color: "#c8a84b", fontSize: "1rem" }}>★</span>
                   ))}
                 </div>
                 <p

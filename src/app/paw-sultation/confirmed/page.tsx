@@ -21,7 +21,7 @@ export default function PawSultationConfirmedPage() {
 
           {/* Everest celebrating */}
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-8">
-            <div className="absolute inset-0 rounded-full bg-[#C8A84B]/10 blur-3xl scale-110" />
+            <div className="absolute inset-0 rounded-full bg-[#c8a84b]/10 blur-3xl scale-110" />
             <Image
               src={EVEREST_LEAP}
               alt="Everest the Husky celebrating your SEO consultation booking — HuskyTail Digital Marketing, Las Vegas"
@@ -33,13 +33,13 @@ export default function PawSultationConfirmedPage() {
           </div>
 
           {/* Headline */}
-          <div className="inline-flex items-center gap-2 bg-[#C8A84B]/10 border border-[#C8A84B]/30 text-[#C8A84B] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#c8a84b]/10 border border-[#c8a84b]/30 text-[#c8a84b] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
             🐾 Paws Up — You&apos;re Booked!
           </div>
 
           <h1 className="text-4xl md:text-5xl font-black text-white leading-tight mb-4">
             See you on the call,{" "}
-            <span className="text-[#C8A84B]">let&apos;s get to work.</span>
+            <span className="text-[#c8a84b]">let&apos;s get to work.</span>
           </h1>
 
           <p className="text-gray-300 text-lg leading-relaxed mb-4 max-w-lg mx-auto">
@@ -87,13 +87,13 @@ export default function PawSultationConfirmedPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/"
-              className="inline-flex items-center justify-center gap-2 bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-8 py-4 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#c8a84b] hover:bg-[#b09038] text-black font-bold px-8 py-4 rounded-lg transition-colors"
             >
               🐾 Back to Home
             </Link>
             <Link
               href="/free-seo-tools"
-              className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#C8A84B] text-white hover:text-[#C8A84B] font-semibold px-8 py-4 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#c8a84b] text-white hover:text-[#c8a84b] font-semibold px-8 py-4 rounded-lg transition-colors"
             >
               Explore Free SEO Tools →
             </Link>

@@ -50,7 +50,7 @@ export default function WhyWeWagPage() {
             Why We{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -210,7 +210,7 @@ export default function WhyWeWagPage() {
             Ready to Work With an Agency That{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

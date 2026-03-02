@@ -26,8 +26,8 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
             className={cn(
               "border rounded-xl overflow-hidden transition-colors duration-200",
               isOpen
-                ? "border-[#C8A84B]/60 bg-white shadow-sm"
-                : "border-gray-200 bg-white hover:border-[#C8A84B]/30"
+                ? "border-[#c8a84b]/60 bg-white shadow-sm"
+                : "border-gray-200 bg-white hover:border-[#c8a84b]/30"
             )}
           >
             <button
@@ -40,7 +40,7 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
               </h3>
               <ChevronDown
                 className={cn(
-                  "w-5 h-5 shrink-0 text-[#C8A84B] transition-transform duration-200",
+                  "w-5 h-5 shrink-0 text-[#c8a84b] transition-transform duration-200",
                   isOpen && "rotate-180"
                 )}
               />

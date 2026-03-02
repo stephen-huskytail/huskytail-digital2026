@@ -407,11 +407,11 @@ export default async function NicheCityPage({ params }: Props) {
           {/* Breadcrumb nav */}
           <nav className="px-4 py-3 relative z-10">
             <div className="max-w-6xl mx-auto text-xs text-gray-400" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-              <Link href="/" className="hover:text-[#C8A84B] transition-colors">Home</Link>
+              <Link href="/" className="hover:text-[#c8a84b] transition-colors">Home</Link>
               <span className="text-gray-600 mx-2">/</span>
-              <Link href={`/${page.industrySlug}-seo`} className="hover:text-[#C8A84B] transition-colors">{page.industryName} SEO</Link>
+              <Link href={`/${page.industrySlug}-seo`} className="hover:text-[#c8a84b] transition-colors">{page.industryName} SEO</Link>
               <span className="text-gray-600 mx-2">/</span>
-              <Link href={`/${page.nicheSlug}-seo`} className="hover:text-[#C8A84B] transition-colors">{page.nicheName} SEO</Link>
+              <Link href={`/${page.nicheSlug}-seo`} className="hover:text-[#c8a84b] transition-colors">{page.nicheName} SEO</Link>
               <span className="text-gray-600 mx-2">/</span>
               <span className="text-gray-400">{page.cityName}</span>
             </div>
@@ -422,13 +422,13 @@ export default async function NicheCityPage({ params }: Props) {
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
             {/* Left: copy */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-[#C8A84B]/10 border border-[#C8A84B]/30 text-[#C8A84B] text-sm font-medium px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-[#c8a84b]/10 border border-[#c8a84b]/30 text-[#c8a84b] text-sm font-medium px-4 py-2 rounded-full mb-6">
                 <span>📍</span>
                 <span>{page.cityName}, Nevada · {page.industryName}</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
                 <span className="block">{page.nicheName} SEO</span>
-                <span className="block text-[#C8A84B]">{page.cityName}, NV</span>
+                <span className="block text-[#c8a84b]">{page.cityName}, NV</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-4 font-semibold">
                 {content.headline}
@@ -439,20 +439,20 @@ export default async function NicheCityPage({ params }: Props) {
               {/* Credibility bridge → niche parent page for silo authority */}
               <p className="text-sm text-gray-500 mb-8">
                 Trusted by Las Vegas {page.industryName.toLowerCase()} businesses.{" "}
-                <Link href={`/${page.nicheSlug}-seo`} className="text-[#C8A84B] hover:underline font-medium">
+                <Link href={`/${page.nicheSlug}-seo`} className="text-[#c8a84b] hover:underline font-medium">
                   See how we rank {page.nicheName.toLowerCase()} →
                 </Link>
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/paw-sultation"
-                  className="inline-flex items-center justify-center gap-2 bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#c8a84b] hover:bg-[#b09038] text-black font-bold px-8 py-4 rounded-lg text-lg transition-colors"
                 >
                   🐾 Get Your Free Audit
                 </Link>
                 <Link
                   href="/pricing"
-                  className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#C8A84B] text-white hover:text-[#C8A84B] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
+                  className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#c8a84b] text-white hover:text-[#c8a84b] font-semibold px-8 py-4 rounded-lg text-lg transition-colors"
                 >
                   View Pricing
                 </Link>
@@ -470,7 +470,7 @@ export default async function NicheCityPage({ params }: Props) {
         </section>
 
         {/* Social Proof Badge + Stats Bar */}
-        <section className="bg-[#C8A84B] py-10 px-4">
+        <section className="bg-[#c8a84b] py-10 px-4">
           <div className="max-w-5xl mx-auto">
             {/* Social proof line above stats */}
             <div className="flex flex-wrap justify-center items-center gap-4 mb-8 text-black text-sm md:text-base font-semibold">
@@ -500,7 +500,7 @@ export default async function NicheCityPage({ params }: Props) {
               <div>
                 <h2 className="text-3xl md:text-4xl font-black text-[#0A0F1E] mb-6">
                   The HuskyTail Approach for{" "}
-                  <span className="text-[#C8A84B]">{page.nicheName}</span> in {page.cityName}
+                  <span className="text-[#c8a84b]">{page.nicheName}</span> in {page.cityName}
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   {content.solution}
@@ -515,26 +515,26 @@ export default async function NicheCityPage({ params }: Props) {
                     "Monthly Reporting & Strategy Calls",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-gray-700">
-                      <span className="text-[#C8A84B] font-bold text-lg">✓</span>
+                      <span className="text-[#c8a84b] font-bold text-lg">✓</span>
                       <span className="font-medium">{item}</span>
                     </li>
                   ))}
                 </ul>
                 {/* Internal links to related services */}
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/pricing" className="text-sm text-[#C8A84B] hover:underline font-medium">
+                  <Link href="/pricing" className="text-sm text-[#c8a84b] hover:underline font-medium">
                     → AI Rank Boost
                   </Link>
-                  <Link href="/pricing" className="text-sm text-[#C8A84B] hover:underline font-medium">
+                  <Link href="/pricing" className="text-sm text-[#c8a84b] hover:underline font-medium">
                     → Maps Domination
                   </Link>
-                  <Link href="/results" className="text-sm text-[#C8A84B] hover:underline font-medium">
+                  <Link href="/results" className="text-sm text-[#c8a84b] hover:underline font-medium">
                     → See Client Results
                   </Link>
                 </div>
               </div>
               <div className="bg-[#0A0F1E] rounded-2xl p-8 text-white">
-                <h3 className="text-xl font-bold mb-6 text-[#C8A84B]">
+                <h3 className="text-xl font-bold mb-6 text-[#c8a84b]">
                   Free {page.nicheName} SEO Audit
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
@@ -548,14 +548,14 @@ export default async function NicheCityPage({ params }: Props) {
                     "Quick-win opportunities",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-2 text-sm text-gray-300">
-                      <span className="text-[#C8A84B]">🐾</span>
+                      <span className="text-[#c8a84b]">🐾</span>
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/paw-sultation"
-                  className="block text-center bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-6 py-3 rounded-lg transition-colors"
+                  className="block text-center bg-[#c8a84b] hover:bg-[#b09038] text-black font-bold px-6 py-3 rounded-lg transition-colors"
                 >
                   Claim Your Free Audit →
                 </Link>
@@ -580,7 +580,7 @@ export default async function NicheCityPage({ params }: Props) {
                 { stat: "70%", label: "of clicks go to the top 3 Google Maps results — the 3-Pack", source: "Moz" },
               ].map((item) => (
                 <div key={item.stat} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
-                  <div className="text-5xl font-black text-[#C8A84B] mb-3">{item.stat}</div>
+                  <div className="text-5xl font-black text-[#c8a84b] mb-3">{item.stat}</div>
                   <p className="text-gray-600 mb-2 leading-relaxed">{item.label}</p>
                   <p className="text-xs text-gray-400">Source: {item.source}</p>
                 </div>
@@ -590,7 +590,7 @@ export default async function NicheCityPage({ params }: Props) {
         </section>
 
         {/* What You Get — Benefits Section */}
-        <section className="py-20 px-4 bg-[#0A0F1E] text-white border-t-4 border-[#C8A84B]">
+        <section className="py-20 px-4 bg-[#0A0F1E] text-white border-t-4 border-[#c8a84b]">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
@@ -611,7 +611,7 @@ export default async function NicheCityPage({ params }: Props) {
                   <div>
                     <h3 className="text-lg font-bold mb-2 text-white">{benefit.title}</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      <span className="italic text-[#C8A84B] font-semibold">First part.</span> {benefit.description}
+                      <span className="italic text-[#c8a84b] font-semibold">First part.</span> {benefit.description}
                     </p>
                   </div>
                 </div>
@@ -637,7 +637,7 @@ export default async function NicheCityPage({ params }: Props) {
               <p className="text-lg md:text-xl text-[#0A0F1E] font-medium leading-relaxed italic mb-3">
                 &ldquo;{content.everestQuote}&rdquo;
               </p>
-              <p className="text-[#C8A84B] font-bold text-sm">
+              <p className="text-[#c8a84b] font-bold text-sm">
                 — Everest, Chief Distraction Officer · HuskyTail Digital
               </p>
             </div>
@@ -648,7 +648,7 @@ export default async function NicheCityPage({ params }: Props) {
         <section className="py-20 px-4 bg-[#0A0F1E] text-white">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-14">
-              <p className="text-[#C8A84B] text-sm font-semibold uppercase tracking-widest mb-3">The Process</p>
+              <p className="text-[#c8a84b] text-sm font-semibold uppercase tracking-widest mb-3">The Process</p>
               <h2 className="text-3xl md:text-4xl font-black">
                 How We Get Your {page.nicheName} Business to Page 1
               </h2>
@@ -659,7 +659,7 @@ export default async function NicheCityPage({ params }: Props) {
 
             <div className="grid md:grid-cols-3 gap-8 relative">
               {/* Connector line on desktop */}
-              <div className="hidden md:block absolute top-12 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-[#C8A84B]/20 via-[#C8A84B]/60 to-[#C8A84B]/20" />
+              <div className="hidden md:block absolute top-12 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-[#c8a84b]/20 via-[#c8a84b]/60 to-[#c8a84b]/20" />
 
               {[
                 {
@@ -689,8 +689,8 @@ export default async function NicheCityPage({ params }: Props) {
               ].map((item, i) => (
                 <div key={item.step} className="relative flex flex-col">
                   {/* Step number bubble */}
-                  <div className="flex items-center justify-center w-24 h-24 rounded-full bg-[#C8A84B]/10 border-2 border-[#C8A84B]/40 mx-auto mb-6 relative z-10">
-                    <span className="text-3xl font-black text-[#C8A84B]">{item.step}</span>
+                  <div className="flex items-center justify-center w-24 h-24 rounded-full bg-[#c8a84b]/10 border-2 border-[#c8a84b]/40 mx-auto mb-6 relative z-10">
+                    <span className="text-3xl font-black text-[#c8a84b]">{item.step}</span>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-7 flex-1 flex flex-col">
                     <div className="text-2xl mb-3">{item.icon}</div>
@@ -699,7 +699,7 @@ export default async function NicheCityPage({ params }: Props) {
                     {item.cta && item.ctaHref && (
                       <Link
                         href={item.ctaHref}
-                        className="mt-6 inline-flex items-center gap-1 text-[#C8A84B] font-semibold text-sm hover:underline"
+                        className="mt-6 inline-flex items-center gap-1 text-[#c8a84b] font-semibold text-sm hover:underline"
                       >
                         {item.cta} →
                       </Link>
@@ -726,7 +726,7 @@ export default async function NicheCityPage({ params }: Props) {
               {testimonials.map((testimonial, idx) => (
                 <div key={idx} className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-1 mb-4">
-                    <span className="text-[#C8A84B]">★★★★★</span>
+                    <span className="text-[#c8a84b]">★★★★★</span>
                   </div>
                   <p className="text-gray-700 leading-relaxed mb-6 italic">
                     "{testimonial.quote}"
@@ -765,11 +765,11 @@ export default async function NicheCityPage({ params }: Props) {
                 <Link
                   key={city.slug}
                   href={`/${page.nicheSlug}-seo-${city.slug}`}
-                  className="group bg-white border border-gray-200 hover:border-[#C8A84B] rounded-xl p-5 transition-all hover:shadow-md"
+                  className="group bg-white border border-gray-200 hover:border-[#c8a84b] rounded-xl p-5 transition-all hover:shadow-md"
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-[#C8A84B] text-lg">📍</span>
-                    <span className="font-bold text-[#0A0F1E] group-hover:text-[#C8A84B] transition-colors text-sm">
+                    <span className="text-[#c8a84b] text-lg">📍</span>
+                    <span className="font-bold text-[#0A0F1E] group-hover:text-[#c8a84b] transition-colors text-sm">
                       {city.name}
                     </span>
                   </div>
@@ -780,10 +780,10 @@ export default async function NicheCityPage({ params }: Props) {
               ))}
             </div>
             <div className="text-center mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href={`/${page.nicheSlug}-seo`} className="text-[#C8A84B] hover:underline font-medium text-sm">
+              <Link href={`/${page.nicheSlug}-seo`} className="text-[#c8a84b] hover:underline font-medium text-sm">
                 ← All {page.nicheName} SEO Services
               </Link>
-              <Link href={`/${page.citySlug}-seo`} className="text-[#C8A84B] hover:underline font-medium text-sm">
+              <Link href={`/${page.citySlug}-seo`} className="text-[#c8a84b] hover:underline font-medium text-sm">
                 ← All SEO Services in {page.cityName}
               </Link>
             </div>
@@ -804,18 +804,18 @@ export default async function NicheCityPage({ params }: Props) {
               Get a free, no-pressure audit of your {page.nicheName.toLowerCase()} business in {page.cityName}. See exactly what it will take to reach page 1.
             </p>
             {/* Credible urgency */}
-            <p className="text-[#C8A84B] font-semibold text-sm mb-8">
+            <p className="text-[#c8a84b] font-semibold text-sm mb-8">
               Currently accepting 3 new partner clients in {page.cityName} this month.
             </p>
             <Link
               href="/paw-sultation"
-              className="inline-flex items-center gap-2 bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-10 py-5 rounded-lg text-xl transition-colors"
+              className="inline-flex items-center gap-2 bg-[#c8a84b] hover:bg-[#b09038] text-black font-bold px-10 py-5 rounded-lg text-xl transition-colors"
             >
               🐾 Book Your Free Paw-sultation
             </Link>
             <p className="text-gray-500 text-sm mt-6">
               No contracts. No fluff. Just strategy. Starts at{" "}
-              <Link href="/pricing" className="text-[#C8A84B] hover:underline">$197/month</Link>.
+              <Link href="/pricing" className="text-[#c8a84b] hover:underline">$197/month</Link>.
             </p>
           </div>
         </section>

@@ -21,7 +21,7 @@ const CALENDLY_URL =
   "https://calendly.com/stephen-huskytaildigital/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=162233&text_color=ffffff&primary_color=c8a84b";
 
 const EVEREST_SRC =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-sitting_f142456e.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-peeking-final_fc0486af.png";
 
 export default function PawSultationPage() {
   const [formData, setFormData] = useState({
@@ -99,12 +99,12 @@ export default function PawSultationPage() {
 
         {/* Page header */}
         <section className="pt-24 pb-10 px-4 text-center">
-          <p className="text-[#C8A84B] text-xs font-bold uppercase tracking-widest mb-4">
+          <p className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest mb-4">
             🐾 Free · No Commitment · Two Ways to Start
           </p>
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-white leading-tight mb-4">
             Let&apos;s Figure Out Why<br />
-            <span className="text-[#C8A84B]">You&apos;re Not Ranking</span>
+            <span className="text-[#c8a84b]">You&apos;re Not Ranking</span>
           </h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">
             Pick how you want to start.
@@ -132,14 +132,14 @@ export default function PawSultationPage() {
               {/* Everest peeking over the top edge — centered, head + paws above card boundary */}
               <div
                 className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center z-10"
-                style={{ top: "-8px" }}
+                style={{ top: "-72px" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={EVEREST_SRC}
                   alt="Everest the HuskyTail mascot peeking over the form card"
-                  className="w-24 h-24 object-contain drop-shadow-lg"
-                  style={{ marginBottom: "-4px" }}
+                  className="w-40 h-40 object-contain drop-shadow-xl"
+                  style={{ marginBottom: "-20px" }}
                 />
               </div>
 
@@ -149,7 +149,7 @@ export default function PawSultationPage() {
                   &ldquo;No spam. Just strategy.&rdquo; &mdash; Everest 🐾
                 </p>
 
-                <p className="text-[#C8A84B] text-xs font-bold uppercase tracking-widest mb-3">
+                <p className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest mb-3">
                   Option 1
                 </p>
                 <h2 className="text-2xl font-black text-white mb-2">
@@ -186,7 +186,7 @@ export default function PawSultationPage() {
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Jane Smith"
-                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                         />
                       </div>
                       <div>
@@ -200,7 +200,7 @@ export default function PawSultationPage() {
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           placeholder="jane@yourbusiness.com"
-                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                         />
                       </div>
                     </div>
@@ -217,7 +217,7 @@ export default function PawSultationPage() {
                         value={formData.website}
                         onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                         placeholder="https://yourbusiness.com"
-                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                       />
                     </div>
 
@@ -234,7 +234,7 @@ export default function PawSultationPage() {
                           value={formData.city}
                           onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                           placeholder="Las Vegas, NV"
-                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                         />
                       </div>
                       <div>
@@ -246,7 +246,7 @@ export default function PawSultationPage() {
                           required
                           value={formData.niche}
                           onChange={(e) => setFormData({ ...formData, niche: e.target.value })}
-                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0d1f3c] text-white text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                          className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0d1f3c] text-white text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                         >
                           <option value="">Select your industry</option>
                           {INDUSTRIES.map((n) => (
@@ -268,7 +268,7 @@ export default function PawSultationPage() {
                         value={formData.challenge}
                         onChange={(e) => setFormData({ ...formData, challenge: e.target.value })}
                         placeholder="e.g. We're not showing up on Google Maps at all, or competitors keep outranking us..."
-                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors resize-none"
                       />
                     </div>
 
@@ -279,7 +279,7 @@ export default function PawSultationPage() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full bg-[#C8A84B] hover:bg-[#b8973d] disabled:opacity-60 text-[#0A1628] font-black text-base py-4 rounded-full transition-colors flex items-center justify-center gap-2"
+                      className="w-full bg-[#c8a84b] hover:bg-[#c8a84b] disabled:opacity-60 text-[#0A1628] font-black text-base py-4 rounded-full transition-colors flex items-center justify-center gap-2"
                     >
                       {loading ? (
                         <>
@@ -301,7 +301,7 @@ export default function PawSultationPage() {
             {/* RIGHT: Calendly */}
             <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden flex flex-col">
               <div className="px-8 pt-8 pb-2 shrink-0">
-                <p className="text-[#C8A84B] text-xs font-bold uppercase tracking-widest mb-3">
+                <p className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest mb-3">
                   Option 2
                 </p>
                 <h2 className="text-2xl font-black text-white mb-2">

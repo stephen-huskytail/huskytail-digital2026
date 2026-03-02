@@ -72,12 +72,12 @@ export default function FreeAuditPage() {
         {/* Hero */}
         <section className="bg-[#0A1628] pt-28 pb-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-[#C8A84B] text-sm font-semibold uppercase tracking-widest mb-4">
+            <p className="text-[#c8a84b] text-sm font-semibold uppercase tracking-widest mb-4">
               🐾 Free · No Call Required · Results in 48 Hours
             </p>
             <h1 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6">
               Get Your Free<br />
-              <span className="text-[#C8A84B]">Local SEO Audit</span>
+              <span className="text-[#c8a84b]">Local SEO Audit</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
               Tell us your website and city. We&apos;ll audit your Google Business Profile,
@@ -141,12 +141,12 @@ export default function FreeAuditPage() {
                 </h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-8">
                   Your audit request is in. Stephen will review your site and send your
-                  free audit within 48 hours. Check your inbox at <strong className="text-[#C8A84B]">{formData.email}</strong>.
+                  free audit within 48 hours. Check your inbox at <strong className="text-[#c8a84b]">{formData.email}</strong>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     href="/paw-sultation"
-                    className="inline-flex items-center justify-center gap-2 bg-[#C8A84B] hover:bg-[#b8973d] text-[#0A1628] font-bold px-6 py-3 rounded-full transition-colors"
+                    className="inline-flex items-center justify-center gap-2 bg-[#c8a84b] hover:bg-[#c8a84b] text-[#0A1628] font-bold px-6 py-3 rounded-full transition-colors"
                   >
                     🐾 Book a Paw-sultation Too
                   </Link>
@@ -181,7 +181,7 @@ export default function FreeAuditPage() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="Jane Smith"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                       />
                     </div>
                     <div>
@@ -195,7 +195,7 @@ export default function FreeAuditPage() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="jane@yourbusiness.com"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                       />
                     </div>
                   </div>
@@ -212,7 +212,7 @@ export default function FreeAuditPage() {
                       value={formData.website}
                       onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                       placeholder="https://yourbusiness.com"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                     />
                   </div>
 
@@ -229,7 +229,7 @@ export default function FreeAuditPage() {
                         value={formData.city}
                         onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                         placeholder="Las Vegas, NV"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                       />
                     </div>
                     <div>
@@ -241,7 +241,7 @@ export default function FreeAuditPage() {
                         required
                         value={formData.niche}
                         onChange={(e) => setFormData({ ...formData, niche: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors"
                       >
                         <option value="">Select your industry</option>
                         {NICHES.map((n) => (
@@ -263,7 +263,7 @@ export default function FreeAuditPage() {
                       value={formData.challenge}
                       onChange={(e) => setFormData({ ...formData, challenge: e.target.value })}
                       placeholder="e.g. We're not showing up on Google Maps at all, or competitors keep outranking us..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#F8F6F0] text-[#0A1628] text-sm focus:outline-none focus:border-[#c8a84b] focus:ring-1 focus:ring-[#c8a84b] transition-colors resize-none"
                     />
                   </div>
 
@@ -274,7 +274,7 @@ export default function FreeAuditPage() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-[#C8A84B] hover:bg-[#b8973d] disabled:opacity-60 text-[#0A1628] font-black text-lg py-4 rounded-full transition-colors flex items-center justify-center gap-2"
+                    className="w-full bg-[#c8a84b] hover:bg-[#c8a84b] disabled:opacity-60 text-[#0A1628] font-black text-lg py-4 rounded-full transition-colors flex items-center justify-center gap-2"
                   >
                     {loading ? (
                       <>
@@ -297,7 +297,7 @@ export default function FreeAuditPage() {
         {/* Trust + Upgrade CTA */}
         <section className="py-14 px-4 bg-[#0A1628]">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-[#C8A84B] font-semibold text-sm uppercase tracking-widest mb-3">
+            <p className="text-[#c8a84b] font-semibold text-sm uppercase tracking-widest mb-3">
               Ready to move faster?
             </p>
             <h2 className="text-3xl font-black text-white mb-4">
@@ -309,7 +309,7 @@ export default function FreeAuditPage() {
             </p>
             <Link
               href="/paw-sultation"
-              className="inline-flex items-center gap-2 bg-[#C8A84B] hover:bg-[#b8973d] text-[#0A1628] font-bold px-8 py-4 rounded-full text-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#c8a84b] hover:bg-[#c8a84b] text-[#0A1628] font-bold px-8 py-4 rounded-full text-lg transition-colors"
             >
               🐾 Book My Free Paw-sultation
             </Link>

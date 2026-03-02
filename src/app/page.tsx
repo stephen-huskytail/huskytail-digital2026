@@ -108,7 +108,7 @@ export default function HomePage() {
               Start Owning{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                  background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -159,7 +159,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <div>
-                  <div className="text-sm" style={{ color: "#FFD700" }}>★★★★★</div>
+                  <div className="text-sm" style={{ color: "#c8a84b" }}>★★★★★</div>
                   <p className="text-xs" style={{ color: "rgba(248,250,252,0.7)", fontFamily: "Inter, sans-serif" }}>
                     247+ Las Vegas businesses ranked
                   </p>
@@ -168,12 +168,12 @@ export default function HomePage() {
               <div
                 className="rounded-xl px-4 py-2"
                 style={{
-                  backgroundColor: "rgba(255,215,0,0.15)",
-                  border: "1px solid rgba(255,215,0,0.4)",
+                  backgroundColor: "rgba(200,168,75,0.15)",
+                  border: "1px solid rgba(200,168,75,0.4)",
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <p style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 900, color: "#FFD700", fontSize: "1.25rem" }}>94%</p>
+                <p style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 900, color: "#c8a84b", fontSize: "1.25rem" }}>94%</p>
                 <p style={{ color: "rgba(248,250,252,0.7)", fontSize: "0.7rem", fontFamily: "Montserrat, sans-serif" }}>Client Retention</p>
               </div>
               <div
@@ -388,7 +388,7 @@ export default function HomePage() {
                     "Monthly Strategy Call",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-2">
-                      <span style={{ color: "#FFD700", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                      <span style={{ color: "#c8a84b", fontWeight: 700, flexShrink: 0 }}>✓</span>
                       <span style={{ color: "rgba(248,250,252,0.85)", fontFamily: "Inter, sans-serif", fontSize: "0.875rem" }}>{item}</span>
                     </div>
                   ))}
@@ -681,7 +681,7 @@ export default function HomePage() {
               >
                 {/* Google badge */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="text-sm" style={{ color: "#FFD700" }}>★★★★★</div>
+                  <div className="text-sm" style={{ color: "#c8a84b" }}>★★★★★</div>
                   <span className="text-xs font-semibold" style={{ color: "rgba(248,250,252,0.4)", fontFamily: "Inter, sans-serif" }}>Google Review</span>
                 </div>
                 <p
@@ -924,7 +924,7 @@ export default function HomePage() {
           >
             Your Competitors Are Already on Page 1.
             <br />
-            <span style={{ color: "#FFD700" }}>Let&apos;s Put You There Too.</span>
+            <span style={{ color: "#c8a84b" }}>Let&apos;s Put You There Too.</span>
           </h2>
           <p
             className="mb-10"

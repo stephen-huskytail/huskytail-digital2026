@@ -87,7 +87,7 @@ export default function PricingPage() {
             Simple Pricing.{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -199,7 +199,7 @@ export default function PricingPage() {
                       <span
                         className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold"
                         style={{
-                          backgroundColor: tier.popular ? "#00D1FF" : "#C8A84B",
+                          backgroundColor: tier.popular ? "#00D1FF" : "#c8a84b",
                           color: tier.popular ? "#0A2540" : "white",
                         }}
                       >
@@ -222,7 +222,7 @@ export default function PricingPage() {
                   href="/paw-sultation"
                   className="block text-center py-3 px-6 rounded-lg font-semibold transition-all"
                   style={{
-                    backgroundColor: tier.popular ? "#00D1FF" : "#C8A84B",
+                    backgroundColor: tier.popular ? "#00D1FF" : "#c8a84b",
                     color: tier.popular ? "#0A2540" : "white",
                     fontFamily: "Montserrat, sans-serif",
                     textDecoration: "none",
@@ -252,7 +252,7 @@ export default function PricingPage() {
               HuskyTail vs. The{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                  background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",

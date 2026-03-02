@@ -260,7 +260,7 @@ export default async function CityPage({ params }: Props) {
               Why {city.name} Businesses Choose{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                  background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",

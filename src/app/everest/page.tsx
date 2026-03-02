@@ -173,11 +173,11 @@ export default function EverestPage() {
                 <div
                   className="rounded-xl px-5 py-3"
                   style={{
-                    backgroundColor: "rgba(255,215,0,0.1)",
-                    border: "1px solid rgba(255,215,0,0.3)",
+                    backgroundColor: "rgba(200,168,75,0.1)",
+                    border: "1px solid rgba(200,168,75,0.3)",
                   }}
                 >
-                  <p style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 900, color: "#FFD700", fontSize: "1.5rem" }}>Female</p>
+                  <p style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 900, color: "#c8a84b", fontSize: "1.5rem" }}>Female</p>
                   <p style={{ color: "rgba(165,216,255,0.7)", fontSize: "0.75rem", fontFamily: "Montserrat, sans-serif" }}>She / Her</p>
                 </div>
                 <div
@@ -221,7 +221,7 @@ export default function EverestPage() {
                   boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
                 }}
               >
-                <p style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 900, color: "#FFD700", fontSize: "1.1rem" }}>Everest 🐾</p>
+                <p style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 900, color: "#c8a84b", fontSize: "1.1rem" }}>Everest 🐾</p>
                 <p style={{ color: "rgba(0,209,255,0.9)", fontSize: "0.8rem", fontFamily: "Inter, sans-serif" }}>Chief Distraction Officer</p>
                 <p style={{ color: "rgba(165,216,255,0.6)", fontSize: "0.7rem", fontFamily: "Inter, sans-serif", marginTop: "0.25rem" }}>HuskyTail Digital Marketing</p>
               </div>
@@ -638,7 +638,7 @@ export default function EverestPage() {
               <div
                 className="rounded-2xl overflow-hidden mt-8"
                 style={{
-                  border: "2px solid rgba(255,215,0,0.3)",
+                  border: "2px solid rgba(200,168,75,0.3)",
                   boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
                 }}
               >
@@ -673,7 +673,7 @@ export default function EverestPage() {
                 <br />
                 <span
                   style={{
-                    background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                    background: "linear-gradient(135deg, #c8a84b, #c8a84b)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
