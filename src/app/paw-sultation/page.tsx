@@ -123,41 +123,14 @@ export default function PawSultationPage() {
         </section>
 
         {/* Two-column main section */}
-        {/* Extra top padding on the grid row to give Everest room to peek above the card */}
         <section className="pb-12 px-4 lg:px-8">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Audit Form */}
-            {/* Outer wrapper: pt-16 for Everest clearance, flex-col so card stretches full height */}
-            <div className="pt-16 flex flex-col">
-              {/* Card is position:relative — Everest is anchored to THIS element */}
+            <div className="flex flex-col">
               <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col flex-1">
 
-                {/* Everest — absolute to the card, top:0 translateY(-50%) straddles the top border */}
-                {/* left-[25%] places her left-of-center on the card */}
-                <div
-                  className="absolute z-10"
-                  style={{
-                    top: 0,
-                    left: "25%",
-                    transform: "translate(-50%, -50%)",
-                    width: "160px",
-                  }}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={EVEREST_SRC}
-                    alt="Everest the HuskyTail mascot peeking over the form card"
-                    className="w-full h-auto object-contain drop-shadow-xl"
-                  />
-                </div>
-
-                {/* Caption sits just inside the card top, directly below Everest's paws */}
-                {/* pt-10 gives clearance so caption appears below the paw overlap zone */}
-                <div className="pt-10 flex flex-col flex-1">
-                  <p className="text-center text-xs text-gray-500 italic mb-6">
-                    &ldquo;No spam. Just strategy.&rdquo; &mdash; Everest 🐾
-                  </p>
+                <div className="flex flex-col flex-1">
 
                   <p className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest mb-3">
                     Option 1
@@ -301,7 +274,7 @@ export default function PawSultationPage() {
                       )}
                     </button>
 
-                    <p className="text-center text-xs text-gray-500">
+                    <p className="text-center text-xs text-gray-500 mt-4">
                       No spam. No sales calls unless you ask. Just your audit, delivered in 24 hours.
                     </p>
                     </div>{/* end mt-auto button wrapper */}
