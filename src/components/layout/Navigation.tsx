@@ -151,19 +151,21 @@ export default function Navigation() {
 
           </nav>
 
-          {/* Phone + CTA buttons */}
-          <div className="shrink-0 flex flex-col items-end gap-1.5">
-            {/* Phone number — small, muted, above the buttons */}
+          {/* Phone + CTA buttons — single row */}
+          <div className="shrink-0 flex items-center gap-3">
+            {/* Phone number — small, muted, before the buttons */}
             <a
               href="tel:+17027861309"
-              className="text-[11px] font-medium tracking-wide transition-colors no-underline"
+              className="text-[11px] font-medium tracking-wide transition-colors no-underline hidden lg:block"
               style={{ color: "rgba(255,255,255,0.45)" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#c8a84b")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
             >
               📞 (702) 786-1309
             </a>
-            {/* Buttons row */}
+            {/* Subtle divider */}
+            <span className="hidden lg:block w-px h-5 bg-white/15" />
+            {/* Buttons */}
             <div className="flex items-center gap-2">
             <Link
               href="/paw-sultation"
