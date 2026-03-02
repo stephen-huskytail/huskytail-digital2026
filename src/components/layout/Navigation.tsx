@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Menu, X, ChevronDown, Briefcase, DollarSign, Newspaper, BarChart2, Wrench } from "lucide-react";
+import { Menu, X, ChevronDown, Briefcase, DollarSign, Newspaper, BarChart2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_CITIES, NAV_INDUSTRIES, NAV_BLOG_CATS } from "@/lib/constants";
 
@@ -16,7 +16,7 @@ function PawIcon({ className }: { className?: string }) {
   );
 }
 
-// New nav: Home | Cities | Industries | Pricing | Results | Blog | Free Tools
+// Nav: Home | Cities | Industries | Pricing | Results | Blog
 const HAMBURGER_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Cities We Serve", href: "/cities" },
@@ -24,7 +24,6 @@ const HAMBURGER_ITEMS = [
   { label: "Pricing", href: "/pricing" },
   { label: "Results", href: "/results" },
   { label: "Blog", href: "/blog" },
-  { label: "Free Tools", href: "/free-seo-tools" },
 ];
 
 const MOBILE_BOTTOM_ITEMS = [
@@ -32,7 +31,7 @@ const MOBILE_BOTTOM_ITEMS = [
   { label: "Industries", href: "/industries", Icon: Briefcase },
   { label: "Pricing", href: "/pricing", Icon: DollarSign },
   { label: "Blog", href: "/blog", Icon: Newspaper },
-  { label: "Free Tools", href: "/free-seo-tools", Icon: Wrench },
+  { label: "Results", href: "/results", Icon: BarChart2 },
 ];
 
 interface DropdownProps {
@@ -149,9 +148,7 @@ export default function Navigation() {
               Results
             </Link>
             <DesktopDropdown label="Blog" href="/blog" items={NAV_BLOG_CATS} />
-            <Link href="/free-seo-tools" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
-              Free Tools
-            </Link>
+
           </nav>
 
           {/* Two CTA buttons */}
