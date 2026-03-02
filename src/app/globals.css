@@ -38,7 +38,7 @@
     --safe-area-top: env(safe-area-inset-top, 0px);
     --safe-area-bottom: env(safe-area-inset-bottom, 0px);
     --mobile-nav-height: 64px;
-    --desktop-nav-height: 72px;
+    --desktop-nav-height: 88px;
   }
 }
 

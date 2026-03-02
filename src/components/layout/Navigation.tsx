@@ -151,9 +151,9 @@ export default function Navigation() {
 
           </nav>
 
-          {/* Phone + CTA buttons — single row */}
-          <div className="shrink-0 flex items-center gap-3">
-            {/* Phone number — small, muted, before the buttons */}
+          {/* Phone stacked above CTA buttons — right-aligned column */}
+          <div className="shrink-0 flex flex-col items-end justify-center gap-1">
+            {/* Phone number — own line, right-aligned, above buttons */}
             <a
               href="tel:+17027861309"
               className="text-[11px] font-medium tracking-wide transition-colors no-underline hidden lg:block"
@@ -163,35 +163,33 @@ export default function Navigation() {
             >
               📞 (702) 786-1309
             </a>
-            {/* Subtle divider */}
-            <span className="hidden lg:block w-px h-5 bg-white/15" />
-            {/* Buttons */}
+            {/* Buttons row — below the phone number */}
             <div className="flex items-center gap-2">
-            <Link
-              href="/paw-sultation"
-              className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold whitespace-nowrap transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
-              style={{
-                background: "linear-gradient(135deg, #00D1FF 0%, #0099CC 100%)",
-                color: "#0A2540",
-                fontFamily: "Montserrat, sans-serif",
-                boxShadow: "0 4px 16px rgba(0,209,255,0.35)",
-              }}
-            >
-              🐾 Claim Your Free SEO Audit
-            </Link>
-            <Link
-              href="/paw-sultation"
-              className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-semibold whitespace-nowrap border-2 transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
-              style={{
-                borderColor: "#00D1FF",
-                color: "#00D1FF",
-                fontFamily: "Montserrat, sans-serif",
-                background: "transparent",
-              }}
-            >
-              Talk to Stephen
-            </Link>
-            </div>{/* end buttons row */}
+              <Link
+                href="/paw-sultation"
+                className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold whitespace-nowrap transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+                style={{
+                  background: "linear-gradient(135deg, #00D1FF 0%, #0099CC 100%)",
+                  color: "#0A2540",
+                  fontFamily: "Montserrat, sans-serif",
+                  boxShadow: "0 4px 16px rgba(0,209,255,0.35)",
+                }}
+              >
+                🐾 Claim Your Free SEO Audit
+              </Link>
+              <Link
+                href="/paw-sultation"
+                className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-semibold whitespace-nowrap border-2 transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+                style={{
+                  borderColor: "#00D1FF",
+                  color: "#00D1FF",
+                  fontFamily: "Montserrat, sans-serif",
+                  background: "transparent",
+                }}
+              >
+                Talk to Stephen
+              </Link>
+            </div>
           </div>
         </div>
       </header>
