@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import { CITIES } from "@/lib/constants";
 import FAQAccordion from "@/components/FAQAccordion";
 import { getNicheContent, NICHE_CONTENT_MAP } from "@/lib/niche-content";
+import { FromTheBlog } from "@/components/FromTheBlog";
 
 // CDN assets
 const ASSETS = {
@@ -789,6 +790,8 @@ export default async function NicheCityPage({ params }: Props) {
           </div>
         </section>
 
+        {/* From the Blog */}
+        <FromTheBlog city={page.cityName} industry={page.nicheName} />
         {/* Final CTA */}
         <section className="py-20 px-4 bg-[#0A0F1E] text-white">
           <div className="max-w-3xl mx-auto text-center">

@@ -5,6 +5,7 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import CTAPair from "@/components/ui/CTAPair";
 import { CITIES, SERVICES } from "@/lib/constants";
+import { FromTheBlog } from "@/components/FromTheBlog";
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -223,7 +224,7 @@ export default async function CityPage({ params }: Props) {
                   {service.description}
                 </p>
                 <Link
-                  href={`/services/${service.slug}`}
+                  href="/pricing"
                   style={{
                     color: "#00D1FF",
                     fontFamily: "Montserrat, sans-serif",
@@ -425,6 +426,8 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
+      {/* From the Blog */}
+      <FromTheBlog city={city.name} />
       {/* CTA */}
       <section className="section-padding" style={{ backgroundColor: "#00D1FF" }}>
         <div className="section-container text-center">

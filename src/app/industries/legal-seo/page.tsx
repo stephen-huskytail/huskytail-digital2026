@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import { FromTheBlog } from "@/components/FromTheBlog";
 
 const EVEREST_HERO = "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-hero-realistic-laptop-KVdGPHKu5pyaQZJNE9SKsk.webp";
 
@@ -632,6 +633,8 @@ export default function LegalSEOPage() {
         </section>
 
       </main>
+      {/* From the Blog */}
+      <FromTheBlog />
       <Footer />
     </>
   );

@@ -202,12 +202,10 @@ export const TESTIMONIALS = [
 export const NAV_CITIES = CITIES.map(c => ({ label: c.name, href: `/${c.slug}-seo` }));
 export const NAV_INDUSTRIES = INDUSTRIES.map(i => ({ label: i.name, href: `/${i.urlPath}` }));
 export const NAV_BLOG_CATS = [
-  { label: "Local SEO Tips", href: "/blog/local-seo-tips" },
-  { label: "AI-Powered SEO", href: "/blog/ai-powered-seo" },
-  { label: "Industry Insights", href: "/blog/industry-insights" },
-  { label: "City Guides", href: "/blog/city-guides" },
-  { label: "Case Studies", href: "/blog/case-studies" },
-  { label: "Tools & Resources", href: "/blog/tools-resources" },
+  { label: "All Articles", href: "/articles" },
+  { label: "Local SEO", href: "/articles?category=local-seo" },
+  { label: "Website & Technical SEO", href: "/articles?category=website-technical-seo" },
+  { label: "GEO / AI Search", href: "/articles?category=geo-ai-search" },
 ];
 
 // CDN URLs for uploaded real photos

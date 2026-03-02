@@ -16,21 +16,21 @@ function PawIcon({ className }: { className?: string }) {
   );
 }
 
-// Nav: Home | Cities | Industries | Pricing | Results | Blog
+// Nav: Home | Cities | Industries | Pricing | Results | Articles
 const HAMBURGER_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Cities We Serve", href: "/cities" },
   { label: "Industries", href: "/industries" },
   { label: "Pricing", href: "/pricing" },
   { label: "Results", href: "/results" },
-  { label: "Blog", href: "/blog" },
+  { label: "Articles", href: "/articles" },
 ];
 
 const MOBILE_BOTTOM_ITEMS = [
   { label: "Home", href: "/", Icon: PawIcon },
   { label: "Industries", href: "/industries", Icon: Briefcase },
   { label: "Pricing", href: "/pricing", Icon: DollarSign },
-  { label: "Blog", href: "/blog", Icon: Newspaper },
+  { label: "Articles", href: "/articles", Icon: Newspaper },
   { label: "Results", href: "/results", Icon: BarChart2 },
 ];
 
@@ -147,7 +147,7 @@ export default function Navigation() {
             <Link href="/results" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
               Results
             </Link>
-            <DesktopDropdown label="Blog" href="/blog" items={NAV_BLOG_CATS} />
+            <DesktopDropdown label="Articles" href="/articles" items={NAV_BLOG_CATS} />
 
           </nav>
 

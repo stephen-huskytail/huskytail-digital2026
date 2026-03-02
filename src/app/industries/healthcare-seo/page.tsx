@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import { FromTheBlog } from "@/components/FromTheBlog";
 import Image from "next/image";
 
 const BASE_URL = "https://huskytaildigital.com";
@@ -544,6 +545,8 @@ export default function HealthcareSEOPage() {
 
       </main>
 
+      {/* From the Blog */}
+      <FromTheBlog />
       <Footer />
     </>
   );
