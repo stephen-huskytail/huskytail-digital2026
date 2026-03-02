@@ -243,37 +243,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TRUST BAR ─────────────────────────────────────────────────── */}
-      <section
-        className="py-6 border-b"
-        style={{ backgroundColor: "#0A2540", borderColor: "rgba(165,216,255,0.1)" }}
-      >
-        <div className="section-container">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-            {TRUST_STATS.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p
-                  style={{
-                    fontFamily: "Orbitron, sans-serif",
-                    fontWeight: 900,
-                    fontSize: "1.75rem",
-                    color: "#00D1FF",
-                  }}
-                >
-                  {stat.value}
-                </p>
-                <p
-                  className="text-xs uppercase tracking-wider"
-                  style={{ color: "rgba(165,216,255,0.6)", fontFamily: "Montserrat, sans-serif" }}
-                >
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── SERVICES ──────────────────────────────────────────────────── */}
       <section className="py-20 md:py-28" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="section-container">
