@@ -21,7 +21,7 @@ const CALENDLY_URL =
   "https://calendly.com/stephen-huskytaildigital/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=162233&text_color=ffffff&primary_color=c8a84b";
 
 const EVEREST_SRC =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-peeking-final_fc0486af.png";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-peeking-rust-kFh6dBnFdmybyA6vk2RDFT.png";
 
 export default function PawSultationPage() {
   const [formData, setFormData] = useState({
@@ -128,18 +128,19 @@ export default function PawSultationPage() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Audit Form — position:relative so Everest can overflow the top */}
-            <div className="relative pt-16">
-              {/* Everest peeking over the top edge — centered, head + paws above card boundary */}
+            <div className="relative pt-20">
+              {/* Everest peeking over the top edge — centered, paws resting on card top border */}
+              {/* The image is 2048x2048: roughly top 60% is head/ears, bottom 40% is paws+ledge line */}
+              {/* We position so the ledge line in the image aligns with the card top border */}
               <div
-                className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center z-10"
-                style={{ top: "-72px" }}
+                className="absolute left-1/2 -translate-x-1/2 z-10"
+                style={{ top: "-88px", width: "180px" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={EVEREST_SRC}
                   alt="Everest the HuskyTail mascot peeking over the form card"
-                  className="w-40 h-40 object-contain drop-shadow-xl"
-                  style={{ marginBottom: "-20px" }}
+                  className="w-full h-auto object-contain drop-shadow-xl"
                 />
               </div>
 
