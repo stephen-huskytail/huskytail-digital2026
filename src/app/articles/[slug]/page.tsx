@@ -491,7 +491,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
               <Link href="/paw-sultation" className="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-bold transition-all hover:opacity-90 hover:-translate-y-0.5" style={{ background: "linear-gradient(135deg, #00D1FF 0%, #0099CC 100%)", color: "#0A2540" }}>
                 🐾 Get My Free SEO Audit
               </Link>
-              <Link href="/articles" className="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold border-2 transition-all hover:bg-white/10" style={{ borderColor: "#00D1FF", color: "#00D1FF" }}>
+              <Link href="/articles" className="text-sm transition-colors hover:underline mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
                 ← Back to Articles
               </Link>
             </div>
