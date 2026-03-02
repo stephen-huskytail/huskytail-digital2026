@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import CTAPair from "@/components/ui/CTAPair";
 
 export const metadata: Metadata = {
   title: "Why We Wag | HuskyTail Digital — What Makes Us Different",
@@ -230,12 +231,7 @@ export default function WhyWeWagPage() {
             Start with a free audit. No commitment. No credit card. Just a clear picture of where you stand and how to get to the top.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/free-audit" className="btn-primary px-10 py-4">
-              🐾 Book My Free Audit
-            </Link>
-            <Link href="/pricing" className="btn-secondary px-10 py-4">
-              View Pricing
-            </Link>
+            <CTAPair className="justify-center" />
           </div>
         </div>
       </section>

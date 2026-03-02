@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import CTAPair from "@/components/ui/CTAPair";
 import { CITIES, SERVICES } from "@/lib/constants";
 
 interface Props {
@@ -142,14 +143,7 @@ export default async function CityPage({ params }: Props) {
             >
               HuskyTail Digital helps {city.name} businesses rank higher on Google, dominate Google Maps, and convert more local searches into paying customers. No contracts. No fluff. Just results.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/free-audit" className="btn-primary px-8 py-4">
-                🐾 Free {city.name} SEO Audit
-              </Link>
-              <Link href="/pricing" className="btn-secondary px-8 py-4">
-                View Pricing
-              </Link>
-            </div>
+            <CTAPair className="justify-center" />
           </div>
         </div>
       </section>
@@ -456,9 +450,7 @@ export default async function CityPage({ params }: Props) {
           >
             Get a free {city.name} SEO audit. We&apos;ll show you exactly where you rank, who&apos;s beating you, and how to fix it.
           </p>
-          <Link href="/free-audit" className="btn-gold px-10 py-4 text-base">
-            🐾 Book My Free {city.name} Audit
-          </Link>
+          <CTAPair className="justify-center" />
         </div>
       </section>
 

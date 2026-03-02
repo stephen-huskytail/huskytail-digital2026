@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import CTAPair from "@/components/ui/CTAPair";
 import { SERVICES } from "@/lib/constants";
 
 interface Props {
@@ -129,14 +130,7 @@ export default async function ServicePage({ params }: Props) {
             >
               {service.description} Built for Las Vegas businesses that are serious about growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/free-audit" className="btn-primary px-8 py-4">
-                🐾 Get Your Free {service.name} Audit
-              </Link>
-              <Link href="/pricing" className="btn-secondary px-8 py-4">
-                View Pricing
-              </Link>
-            </div>
+            <CTAPair className="justify-center" />
           </div>
         </div>
       </section>
@@ -365,9 +359,7 @@ export default async function ServicePage({ params }: Props) {
           >
             Start with a free {service.name} audit. No commitment. No credit card. Just a clear picture of where you stand and how to get to the top.
           </p>
-          <Link href="/free-audit" className="btn-gold px-10 py-4 text-base">
-            🐾 Book My Free Audit
-          </Link>
+          <CTAPair className="justify-center" />
         </div>
       </section>
 

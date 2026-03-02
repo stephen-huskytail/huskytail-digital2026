@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import CTAPair from "@/components/ui/CTAPair";
 
 export const metadata: Metadata = {
   title: "About Stephen Gardner | HuskyTail Digital — Las Vegas SEO Expert",
@@ -411,9 +412,7 @@ export default function AboutPage() {
           >
             Let&apos;s have a real conversation about your business, your goals, and exactly how I can help you dominate Las Vegas search.
           </p>
-          <Link href="/paw-sultation" className="btn-gold px-10 py-4 text-base">
-            🐾 Book a Free Paw-sultation
-          </Link>
+          <CTAPair className="justify-center" />
         </div>
       </section>
 

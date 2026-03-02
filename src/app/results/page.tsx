@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { TESTIMONIALS, TRUST_STATS } from "@/lib/constants";
+import CTAPair from "@/components/ui/CTAPair";
 
 export const metadata: Metadata = {
   title: "Client Results & Case Studies | HuskyTail Digital Las Vegas SEO",
@@ -469,9 +470,7 @@ export default function ResultsPage() {
           >
             Start with a free audit. We&apos;ll show you exactly what&apos;s holding you back and what it will take to get you to the top.
           </p>
-          <Link href="/free-audit" className="btn-gold px-10 py-4 text-base">
-            🐾 Book My Free Audit
-          </Link>
+          <CTAPair className="justify-center" />
         </div>
       </section>
 

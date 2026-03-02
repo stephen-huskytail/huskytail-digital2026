@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { HoverCard, HoverLink } from "@/components/ui/HoverCard";
 import { SERVICES, PRICING_TIERS, TRUST_STATS, TESTIMONIALS, INDUSTRIES, CITIES, ASSETS } from "@/lib/constants";
 import { MapPin, Zap, Map, type LucideIcon } from "lucide-react";
+import CTAPair from "@/components/ui/CTAPair";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   MapPin,
@@ -143,14 +144,7 @@ export default function HomePage() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Link href="/paw-sultation" className="btn-primary text-base px-8 py-4">
-                🐾 Get Your Free SEO Audit
-              </Link>
-              <Link href="/pricing" className="btn-secondary text-base px-8 py-4">
-                View Pricing
-              </Link>
-            </div>
+            <CTAPair className="mb-10" />
 
             {/* Social proof strip */}
             <div className="flex flex-wrap items-center gap-4">
@@ -721,14 +715,7 @@ export default function HomePage() {
             Book your free Paw-sultation today. No pressure, no pitch deck, no fluff.
             Just a straight-talking SEO audit and a clear path to more leads.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/paw-sultation" className="btn-primary text-lg px-10 py-5">
-              🐾 Book Your Free Paw-sultation
-            </Link>
-            <Link href="/results" className="btn-secondary text-lg px-10 py-5">
-              See Our Results
-            </Link>
-          </div>
+          <CTAPair className="justify-center" />
         </div>
       </section>
 

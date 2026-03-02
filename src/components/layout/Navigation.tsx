@@ -160,7 +160,7 @@ export default function Navigation() {
           {/* CTA — fixed width mirrors logo to keep nav centered */}
           <div className="shrink-0 w-40 flex justify-end items-center">
             <Link href="/paw-sultation" className="btn-primary text-xs lg:text-sm px-4 lg:px-5 whitespace-nowrap">
-              🐾 Paw-sultation
+              Claim Your Free SEO Audit
             </Link>
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function Navigation() {
             ))}
             <div className="px-6 py-6">
               <Link href="/paw-sultation" className="btn-primary w-full justify-center text-base">
-                🐾 Book Free Paw-sultation
+                Claim Your Free SEO Audit
               </Link>
             </div>
           </nav>

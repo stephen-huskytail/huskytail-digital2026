@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { INDUSTRIES } from "@/lib/constants";
 import { Heart, Home, Scale, Sparkles, Car, Briefcase, Calendar, Users, ArrowRight } from "lucide-react";
+import CTAPair from "@/components/ui/CTAPair";
 
 export const metadata: Metadata = {
   title: "Industries We Serve | HuskyTail Digital — Las Vegas SEO",
@@ -150,9 +151,7 @@ export default function IndustriesPage() {
           >
             We work with any local business in Las Vegas. If you have customers searching for you online, we can help them find you first.
           </p>
-          <Link href="/paw-sultation" className="btn-primary text-base px-8 py-4">
-            🐾 Get a Free SEO Audit
-          </Link>
+          <CTAPair className="justify-center" />
         </div>
       </section>
     </main>
