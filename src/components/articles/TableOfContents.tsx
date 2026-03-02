@@ -44,17 +44,31 @@ interface TableOfContentsProps {
 export default function TableOfContents({ body, variant = "inline" }: TableOfContentsProps) {
   const items = extractH2sFromBody(body);
   const [activeId, setActiveId] = useState<string>("");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Add IDs to the rendered H2 elements and set scroll-margin-top
+    // Wait two animation frames to ensure Portable Text has hydrated and painted H2 elements
+    const raf1 = requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setMounted(true);
+      });
+    });
+    return () => cancelAnimationFrame(raf1);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
+    // Assign IDs and scroll-margin-top to rendered H2 elements
     const headings = document.querySelectorAll("article h2");
     headings.forEach((el, i) => {
       if (items[i]) {
         el.id = items[i].id;
-        // Ensure native anchor scrolling also clears the nav
         (el as HTMLElement).style.scrollMarginTop = "96px";
       }
     });
+
+    if (headings.length === 0) return;
 
     // Intersection observer for active highlight
     const observer = new IntersectionObserver(
@@ -70,9 +84,10 @@ export default function TableOfContents({ body, variant = "inline" }: TableOfCon
 
     headings.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, [items]);
+  }, [mounted, items]);
 
-  if (items.length < 3) return null;
+  // Don't render until mounted and we have enough headings
+  if (!mounted || items.length < 3) return null;
 
   if (variant === "sidebar") {
     return (

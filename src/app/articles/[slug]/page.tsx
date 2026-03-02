@@ -429,7 +429,9 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
               {article.body && <TableOfContents body={article.body} variant="sidebar" />}
               {/* CTA Card */}
               <div className="rounded-2xl p-6 text-center sticky top-24" style={{ background: "linear-gradient(135deg, #0A2540 0%, #0D1B2E 100%)", border: "1px solid rgba(200,168,75,0.3)" }}>
-                <Image src={ASSETS.everestSitting} alt="Everest the HuskyTail mascot" width={56} height={56} className="mx-auto mb-3" />
+                <div className="relative w-14 h-14 mx-auto mb-3 rounded-full overflow-hidden">
+                  <Image src={ASSETS.everestSitting} alt="Everest the HuskyTail mascot" fill className="object-cover" style={{ objectPosition: "50% 10%" }} sizes="56px" />
+                </div>
                 <h3 className="text-lg font-black text-white mb-2" style={{ fontFamily: "Montserrat, sans-serif" }}>
                   Ready to Rank?
                 </h3>
@@ -441,7 +443,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
                   className="block w-full py-3 rounded-full text-sm font-bold text-center transition-all hover:opacity-90"
                   style={{ background: "linear-gradient(135deg, #00D1FF 0%, #0099CC 100%)", color: "#0A2540" }}
                 >
-                  🐾 Get My Free Audit
+                  🐾 Claim Your Free SEO Audit
                 </Link>
                 <p className="text-white/30 text-xs mt-3">No spam. No pitch deck. Just clarity.</p>
               </div>

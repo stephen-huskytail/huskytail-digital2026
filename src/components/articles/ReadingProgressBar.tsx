@@ -20,8 +20,11 @@ export default function ReadingProgressBar() {
 
   return (
     <div
-      className="fixed top-0 left-0 right-0 z-[100] h-[3px] pointer-events-none"
-      style={{ background: "rgba(0,0,0,0.2)" }}
+      className="fixed left-0 right-0 z-[200] h-[3px] pointer-events-none"
+      style={{
+        top: "var(--desktop-nav-height, 88px)",
+        background: "rgba(0,0,0,0.15)",
+      }}
     >
       <div
         className="h-full transition-[width] duration-75 ease-out"
