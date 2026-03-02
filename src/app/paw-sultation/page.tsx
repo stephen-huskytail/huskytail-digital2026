@@ -79,10 +79,21 @@ export default function PawSultationPage() {
           <p className="text-gray-300 text-lg max-w-xl mx-auto">
             Pick how you want to start.
           </p>
+
+          {/* Trust bar */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-gray-400">
+            <span>🔒 SSL Secured</span>
+            <span className="hidden sm:inline text-white/20">·</span>
+            <span>⚡ Audit Delivered in 24 Hours</span>
+            <span className="hidden sm:inline text-white/20">·</span>
+            <span>📅 No Contracts Ever</span>
+            <span className="hidden sm:inline text-white/20">·</span>
+            <span>⭐ 94% Client Retention Rate</span>
+          </div>
         </section>
 
         {/* Two-column main section */}
-        <section className="pb-20 px-4 lg:px-8">
+        <section className="pb-12 px-4 lg:px-8">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Audit Form */}
@@ -233,6 +244,19 @@ export default function PawSultationPage() {
                   </p>
                 </form>
               )}
+
+              {/* Everest decorative element — always visible below form/success */}
+              {!submitted && (
+                <div className="flex flex-col items-end mt-4 pr-2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/everest-sitting_f142456e.webp"
+                    alt="Everest the HuskyTail mascot sitting"
+                    className="w-20 h-20 object-contain opacity-90"
+                  />
+                  <p className="text-xs text-gray-500 italic mt-1">&ldquo;No spam. Just strategy.&rdquo; &mdash; Everest 🐾</p>
+                </div>
+              )}
             </div>
 
             {/* RIGHT: Calendly */}
@@ -264,26 +288,26 @@ export default function PawSultationPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 px-4 bg-[#0A0F1E] border-t border-white/5">
+        <section className="pt-10 pb-16 px-4 bg-[#0D1B2E] border-t border-white/5">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-black text-white text-center mb-8">Common Questions</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 {
-                  q: "Do I need to prepare anything?",
-                  a: "Nothing required. Having your Google Business Profile open is helpful — but not necessary.",
+                  q: "What happens after I submit the audit request?",
+                  a: "We review your business within 24 hours and send you a personalized audit showing exactly where you stand, who\u2019s outranking you, and what it\u2019ll take to get to page 1. No pitch. Just clarity.",
                 },
                 {
-                  q: "Is this really free?",
-                  a: "Yes. No credit card, no obligation. You leave with actionable insights regardless.",
+                  q: "How long does the audit take to complete?",
+                  a: "Most audits are delivered within 24 hours. We\u2019ll email you directly when it\u2019s ready.",
                 },
                 {
-                  q: "What if I'm not ready to start yet?",
-                  a: "That's fine. Many people book months before they're ready to invest — and that's the right move.",
+                  q: "Will I get a sales pitch on the call?",
+                  a: "No pitch deck. No pressure. Stephen does actual audit work on the call \u2014 you\u2019ll see real data about your business, not a generic presentation.",
                 },
                 {
-                  q: "How is this different from a sales call?",
-                  a: "Stephen does actual audit work on the call. You'll see real data about your business, not a generic pitch.",
+                  q: "Do I need a big budget to work with HuskyTail?",
+                  a: "Our plans start at $197/month. The free audit helps us figure out exactly what you need before you spend a dollar. You\u2019ll never be pushed into a plan that doesn\u2019t fit.",
                 },
               ].map((faq, i) => (
                 <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-5">
