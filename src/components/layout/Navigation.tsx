@@ -147,20 +147,8 @@ export default function Navigation() {
             </Link>
           </nav>
 
-          {/* Phone stacked above CTA buttons — right-aligned column, fits within 88px nav */}
-          <div className="shrink-0 flex flex-col items-end justify-center" style={{ gap: "4px" }}>
-            {/* Phone number — own line, right-aligned, above buttons */}
-            <a
-              href="tel:+17027861309"
-              className="text-[11px] font-medium tracking-wide transition-colors no-underline hidden lg:block leading-none"
-              style={{ color: "rgba(255,255,255,0.45)" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#c8a84b")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
-            >
-              📞 (702) 786-1309
-            </a>
-            {/* Buttons row — below the phone number */}
-            <div className="flex items-center gap-2">
+          {/* CTA buttons — right-aligned */}
+          <div className="shrink-0 flex items-center gap-2">
               <Link
                 href="/paw-sultation"
                 className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 text-xs font-bold whitespace-nowrap transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
@@ -189,7 +177,6 @@ export default function Navigation() {
               >
                 Talk to Stephen
               </Link>
-            </div>
           </div>
         </div>
       </header>
@@ -235,14 +222,6 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="px-6 py-6 flex flex-col gap-3">
-              {/* Phone number in mobile menu */}
-              <a
-                href="tel:+17027861309"
-                className="text-center text-xs font-medium tracking-wide transition-colors no-underline pb-1"
-                style={{ color: "rgba(255,255,255,0.45)" }}
-              >
-                📞 (702) 786-1309
-              </a>
               <Link href="/paw-sultation" className="btn-primary w-full justify-center text-base">
                 🐾 Claim Your Free SEO Audit
               </Link>
