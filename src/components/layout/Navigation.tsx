@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Menu, X, ChevronDown, MapPin, Map, Briefcase, DollarSign } from "lucide-react";
+import { Menu, X, ChevronDown, MapPin, Map, Briefcase, DollarSign, Home, Newspaper, Wrench, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_CITIES, NAV_INDUSTRIES, NAV_BLOG_CATS, SERVICES } from "@/lib/constants";
 
@@ -19,22 +19,22 @@ function PawIcon({ className }: { className?: string }) {
 const NAV_SERVICES = SERVICES.map(s => ({ label: s.name, href: `/services/${s.slug}` }));
 
 const HAMBURGER_ITEMS = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "Cities We Serve", href: "/cities" },
+  { label: "Industries", href: "/industries" },
   { label: "Blog", href: "/blog" },
   { label: "Free Tools", href: "/free-seo-tools" },
-  { label: "About", href: "/about" },
-  { label: "Meet Everest 🐾", href: "/everest" },
-  { label: "Why We Wag", href: "/why-we-wag" },
-  { label: "Media", href: "/media" },
-  { label: "Recommended Tools", href: "/recommended-tools" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Contact", href: "/contact" },
 ];
 
 const MOBILE_BOTTOM_ITEMS = [
   { label: "Home", href: "/", Icon: PawIcon },
   { label: "Services", href: "/services", Icon: Map },
-  { label: "Cities", href: "/cities", Icon: MapPin },
   { label: "Industries", href: "/industries", Icon: Briefcase },
   { label: "Pricing", href: "/pricing", Icon: DollarSign },
+  { label: "Contact", href: "/contact", Icon: Phone },
 ];
 
 interface DropdownProps {
