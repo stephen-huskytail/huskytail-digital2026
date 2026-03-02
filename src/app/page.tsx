@@ -4,15 +4,8 @@ import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { HoverCard, HoverLink } from "@/components/ui/HoverCard";
-import { SERVICES, PRICING_TIERS, TRUST_STATS, TESTIMONIALS, INDUSTRIES, CITIES, ASSETS } from "@/lib/constants";
-import { MapPin, Zap, Map, type LucideIcon } from "lucide-react";
+import { PRICING_TIERS, TRUST_STATS, TESTIMONIALS, INDUSTRIES, CITIES, ASSETS } from "@/lib/constants";
 import CTAPair from "@/components/ui/CTAPair";
-
-const ICON_MAP: Record<string, LucideIcon> = {
-  MapPin,
-  Zap,
-  Map,
-};
 
 export const metadata: Metadata = {
   title: "HuskyTail Digital | #1 Las Vegas SEO & AI Marketing Agency",
@@ -231,7 +224,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SERVICES ──────────────────────────────────────────────────── */}
+      {/* ── WHAT'S INCLUDED ───────────────────────────────────────────── */}
       <section className="py-20 md:py-28" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="section-container">
           <div className="text-center mb-14">
@@ -249,59 +242,163 @@ export default function HomePage() {
                 color: "#0A2540",
               }}
             >
-              SEO That Actually Works in Las Vegas
+              Everything You Need to Rank — Included in Every Plan
             </h2>
             <p
-              className="mt-4 max-w-xl mx-auto"
+              className="mt-4 max-w-2xl mx-auto"
               style={{ color: "rgba(10,37,64,0.6)", fontFamily: "Inter, sans-serif", fontSize: "1.05rem" }}
             >
-              We combine AI precision with local market knowledge to get your business found — and chosen.
+              No à la carte. No upsells. One complete Local SEO system built for Las Vegas businesses.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {SERVICES.map((service) => (
-              <HoverCard key={service.slug} href={`/services/${service.slug}`}>
-                <div
-                  className="rounded-2xl p-8 h-full transition-all duration-300"
-                  style={{
-                    backgroundColor: "#fff",
-                    border: "1px solid rgba(10,37,64,0.08)",
-                    boxShadow: "0 4px 20px rgba(10,37,64,0.06)",
-                  }}
-                >
-                  <div
-                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
-                    style={{ backgroundColor: "rgba(0,209,255,0.1)" }}
-                  >
-                    {(() => { const IconComp = ICON_MAP[service.icon]; return IconComp ? <IconComp className="w-7 h-7" style={{ color: "#00D1FF" }} /> : null; })()}
-                  </div>
-                  <h3
-                    className="mb-3"
-                    style={{
-                      fontFamily: "Orbitron, sans-serif",
-                      fontWeight: 700,
-                      fontSize: "1.1rem",
-                      color: "#0A2540",
-                    }}
-                  >
-                    {service.name}
-                  </h3>
-                  <p
-                    className="mb-6"
-                    style={{ color: "rgba(10,37,64,0.6)", fontFamily: "Inter, sans-serif", fontSize: "0.95rem", lineHeight: 1.6 }}
-                  >
-                    {service.description}
-                  </p>
+          {/* Three-column checklist */}
+          <div className="grid md:grid-cols-3 gap-8 mb-10">
+            {/* Column 1 — Local SEO */}
+            <div
+              className="rounded-2xl p-8"
+              style={{
+                backgroundColor: "#fff",
+                border: "1px solid rgba(10,37,64,0.08)",
+                boxShadow: "0 4px 20px rgba(10,37,64,0.06)",
+              }}
+            >
+              <h3
+                className="mb-5"
+                style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 700, fontSize: "1rem", color: "#0A2540" }}
+              >
+                Local SEO
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Google Business Profile Optimization",
+                  "Citation Building & Cleanup",
+                  "On-Page SEO",
+                  "Review Strategy & Monitoring",
+                  "Local Link Building",
+                  "Niche-Specific Content Creation",
+                  "Monthly Performance Reporting",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span style={{ color: "#00D1FF", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                    <span style={{ color: "rgba(10,37,64,0.75)", fontFamily: "Inter, sans-serif", fontSize: "0.9rem" }}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 2 — AI & Content */}
+            <div
+              className="rounded-2xl p-8"
+              style={{
+                backgroundColor: "#fff",
+                border: "1px solid rgba(10,37,64,0.08)",
+                boxShadow: "0 4px 20px rgba(10,37,64,0.06)",
+              }}
+            >
+              <h3
+                className="mb-5"
+                style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 700, fontSize: "1rem", color: "#0A2540" }}
+              >
+                AI & Content
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "AI Keyword Clusters",
+                  "Competitor Gap Analysis",
+                  "AI Content Creation",
+                  "Rank Tracking & Reporting",
+                  "GEO Optimization",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span style={{ color: "#00D1FF", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                    <span style={{ color: "rgba(10,37,64,0.75)", fontFamily: "Inter, sans-serif", fontSize: "0.9rem" }}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 3 — Maps */}
+            <div
+              className="rounded-2xl p-8"
+              style={{
+                backgroundColor: "#fff",
+                border: "1px solid rgba(10,37,64,0.08)",
+                boxShadow: "0 4px 20px rgba(10,37,64,0.06)",
+              }}
+            >
+              <h3
+                className="mb-5"
+                style={{ fontFamily: "Orbitron, sans-serif", fontWeight: 700, fontSize: "1rem", color: "#0A2540" }}
+              >
+                Maps
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Google Maps 3-Pack Targeting",
+                  "GBP Posts & Photos",
+                  "Q&A Optimization",
+                  "Review Generation",
+                  "Map Embed Strategy",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span style={{ color: "#00D1FF", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                    <span style={{ color: "rgba(10,37,64,0.75)", fontFamily: "Inter, sans-serif", fontSize: "0.9rem" }}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Pro Plan upgrade callout */}
+          <div
+            className="rounded-2xl px-8 py-7 mb-10"
+            style={{
+              background: "linear-gradient(135deg, #0A2540 0%, #0d3060 100%)",
+              border: "2px solid rgba(0,209,255,0.3)",
+              boxShadow: "0 8px 32px rgba(0,209,255,0.12)",
+            }}
+          >
+            <div className="flex flex-col md:flex-row md:items-center gap-6">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-4">
                   <span
-                    className="text-sm font-semibold"
+                    className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider"
+                    style={{ backgroundColor: "rgba(0,209,255,0.15)", color: "#00D1FF", border: "1px solid rgba(0,209,255,0.4)", fontFamily: "Montserrat, sans-serif" }}
+                  >
+                    Pro Plan
+                  </span>
+                  <span style={{ color: "rgba(165,216,255,0.5)", fontSize: "0.85rem", fontFamily: "Inter, sans-serif" }}>Also Includes:</span>
+                  <Link
+                    href="/pricing"
+                    className="text-xs font-semibold ml-auto"
                     style={{ color: "#00D1FF", fontFamily: "Montserrat, sans-serif" }}
                   >
-                    Learn More →
-                  </span>
+                    See all plan details →
+                  </Link>
                 </div>
-              </HoverCard>
-            ))}
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+                  {[
+                    "Website Hosting & Management",
+                    "Website Speed Optimization",
+                    "Security & Uptime Monitoring",
+                    "Monthly Website Updates",
+                    "SSL & Technical Maintenance",
+                    "Monthly Strategy Call",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2">
+                      <span style={{ color: "#FFD700", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                      <span style={{ color: "rgba(248,250,252,0.85)", fontFamily: "Inter, sans-serif", fontSize: "0.875rem" }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA pair */}
+          <div className="flex justify-center">
+            <CTAPair />
           </div>
         </div>
       </section>
@@ -429,7 +526,124 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ──────────────────────────────────────────────── */}
+      {/* ── FAQ ─────────────────────────────────────────────────────────── */}
+      <section className="py-20 md:py-28" style={{ backgroundColor: "#F8FAFC" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "How long does Local SEO take to show results?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Most clients see measurable improvements in rankings and traffic within 60–90 days. Local SEO compounds over time — the longer you invest, the stronger your position becomes.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do I need a contract?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "No contracts, ever. We operate month-to-month because we believe in earning your business every single month. If you're not seeing results, you shouldn't be locked in.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How is HuskyTail different from other agencies?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We combine AI-powered tools with genuine local expertise. We know the Las Vegas market — the neighborhoods, the competition, the search behavior. That local intelligence is what separates us from generic agencies.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What does Local SEO cost?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Our packages start at $197/month. Every plan includes our full Local SEO system and monthly performance reporting. Our Pro plan at $497/month also includes website hosting, management, speed optimization, technical maintenance, and a monthly strategy call. Start with a free audit to get a clear picture of what you need.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+        <div className="section-container">
+          <div className="text-center mb-12">
+            <p
+              className="text-xs font-semibold uppercase tracking-widest mb-3"
+              style={{ color: "#00D1FF", fontFamily: "Montserrat, sans-serif" }}
+            >
+              FAQ
+            </p>
+            <h2
+              style={{
+                fontFamily: "Orbitron, sans-serif",
+                fontWeight: 900,
+                fontSize: "clamp(1.75rem, 4vw, 2.75rem)",
+                color: "#0A2540",
+              }}
+            >
+              Common Questions
+            </h2>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {[
+              {
+                q: "How long does Local SEO take to show results?",
+                a: "Most clients see measurable improvements in rankings and traffic within 60–90 days. Local SEO compounds over time — the longer you invest, the stronger your position becomes.",
+              },
+              {
+                q: "Do I need a contract?",
+                a: "No contracts, ever. We operate month-to-month because we believe in earning your business every single month. If you\u2019re not seeing results, you shouldn\u2019t be locked in.",
+              },
+              {
+                q: "How is HuskyTail different from other agencies?",
+                a: "We combine AI-powered tools with genuine local expertise. We know the Las Vegas market — the neighborhoods, the competition, the search behavior. That local intelligence is what separates us from generic agencies.",
+              },
+              {
+                q: "What does Local SEO cost?",
+                a: "Our packages start at $197/month. Every plan includes our full Local SEO system and monthly performance reporting. Our Pro plan at $497/month also includes website hosting, management, speed optimization, technical maintenance, and a monthly strategy call. Start with a free audit to get a clear picture of what you need.",
+              },
+            ].map((faq, i) => (
+              <details
+                key={i}
+                className="group rounded-2xl overflow-hidden"
+                style={{
+                  backgroundColor: "#fff",
+                  border: "1px solid rgba(10,37,64,0.08)",
+                  boxShadow: "0 2px 12px rgba(10,37,64,0.05)",
+                }}
+              >
+                <summary
+                  className="flex items-center justify-between px-7 py-5 cursor-pointer list-none select-none"
+                  style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#0A2540", fontSize: "0.95rem" }}
+                >
+                  {faq.q}
+                  <span
+                    className="ml-4 shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-200 group-open:rotate-45"
+                    style={{ backgroundColor: "rgba(0,209,255,0.1)", color: "#00D1FF", fontSize: "1.2rem", fontWeight: 400 }}
+                  >
+                    +
+                  </span>
+                </summary>
+                <div
+                  className="px-7 pb-6"
+                  style={{ color: "rgba(10,37,64,0.65)", fontFamily: "Inter, sans-serif", fontSize: "0.95rem", lineHeight: 1.7 }}
+                >
+                  {faq.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS ──────────────────────────────────────────────────── */}
       <section
         className="py-20 md:py-28"
         style={{ backgroundColor: "#0A2540" }}
@@ -621,11 +835,11 @@ export default function HomePage() {
               </p>
             </div>
             <Link
-              href="/pricing"
+              href="/paw-sultation"
               className="btn-secondary whitespace-nowrap px-6 py-3"
               style={{ flexShrink: 0 }}
             >
-              Get a Custom Quote →
+              Talk to Stephen →
             </Link>
           </div>
 

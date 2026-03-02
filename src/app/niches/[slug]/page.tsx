@@ -444,7 +444,7 @@ export default async function NicheCityPage({ params }: Props) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/free-audit"
+                  href="/paw-sultation"
                   className="inline-flex items-center justify-center gap-2 bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-8 py-4 rounded-lg text-lg transition-colors"
                 >
                   🐾 Get Your Free Audit
@@ -521,10 +521,10 @@ export default async function NicheCityPage({ params }: Props) {
                 </ul>
                 {/* Internal links to related services */}
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/services/ai-rank-boost" className="text-sm text-[#C8A84B] hover:underline font-medium">
+                  <Link href="/pricing" className="text-sm text-[#C8A84B] hover:underline font-medium">
                     → AI Rank Boost
                   </Link>
-                  <Link href="/services/maps-domination" className="text-sm text-[#C8A84B] hover:underline font-medium">
+                  <Link href="/pricing" className="text-sm text-[#C8A84B] hover:underline font-medium">
                     → Maps Domination
                   </Link>
                   <Link href="/results" className="text-sm text-[#C8A84B] hover:underline font-medium">
@@ -553,7 +553,7 @@ export default async function NicheCityPage({ params }: Props) {
                   ))}
                 </ul>
                 <Link
-                  href="/free-audit"
+                  href="/paw-sultation"
                   className="block text-center bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-6 py-3 rounded-lg transition-colors"
                 >
                   Claim Your Free Audit →
@@ -667,7 +667,7 @@ export default async function NicheCityPage({ params }: Props) {
                   description: `We dig into your ${page.nicheSlug === 'dentist' ? 'dental practice' : page.nicheName.toLowerCase() + ' business'} in ${page.cityName} — your Google Business Profile, competitors, keyword gaps, and quick wins. You leave with a clear picture of exactly where you stand and what it takes to rank.`,
                   icon: "🔍",
                   cta: "Book Your Free Audit",
-                  ctaHref: "/free-audit",
+                  ctaHref: "/paw-sultation",
                 },
                 {
                   step: "02",

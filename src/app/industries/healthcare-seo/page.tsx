@@ -312,7 +312,7 @@ export default function HealthcareSEOPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link
-                      href="/free-audit"
+                      href="/paw-sultation"
                       className="inline-flex items-center justify-center gap-2 bg-[#C8A84B] hover:bg-[#B8943B] text-black font-bold px-8 py-4 rounded-lg text-lg transition-colors"
                     >
                       🐾 Get Your Free Audit
@@ -527,7 +527,7 @@ export default function HealthcareSEOPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/free-audit"
+                href="/paw-sultation"
                 className="inline-flex items-center justify-center gap-2 bg-black hover:bg-[#0A0F1E] text-white font-bold px-10 py-4 rounded-lg text-lg transition-colors"
               >
                 Get My Free Audit

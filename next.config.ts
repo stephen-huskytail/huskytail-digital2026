@@ -156,6 +156,15 @@ const nextConfig: NextConfig = {
     }
     return [];
   },
+  async redirects() {
+    return [
+      // Service pages deleted — redirect to pricing
+      { source: "/services", destination: "/pricing", permanent: true },
+      { source: "/services/local-seo", destination: "/pricing", permanent: true },
+      { source: "/services/ai-rank-boost", destination: "/pricing", permanent: true },
+      { source: "/services/maps-domination", destination: "/pricing", permanent: true },
+    ];
+  },
   async rewrites() {
     // /{city}-seo → /seo/{city}
     const cityRewrites = CITY_SLUGS.map((slug) => ({

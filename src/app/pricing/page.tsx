@@ -412,7 +412,7 @@ export default function PricingPage() {
             No credit card required. No pressure. Just a real audit and a clear action plan.
           </p>
           <Link
-            href="/free-audit"
+            href="/paw-sultation"
             className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105"
             style={{
               backgroundColor: "#0A2540",

@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Menu, X, ChevronDown, MapPin, Map, Briefcase, DollarSign, Home, Newspaper, Wrench } from "lucide-react";
+import { Menu, X, ChevronDown, Briefcase, DollarSign, Newspaper, BarChart2, Wrench } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { NAV_CITIES, NAV_INDUSTRIES, NAV_BLOG_CATS, SERVICES } from "@/lib/constants";
+import { NAV_CITIES, NAV_INDUSTRIES, NAV_BLOG_CATS } from "@/lib/constants";
 
 // Paw icon SVG
 function PawIcon({ className }: { className?: string }) {
@@ -16,23 +16,23 @@ function PawIcon({ className }: { className?: string }) {
   );
 }
 
-const NAV_SERVICES = SERVICES.map(s => ({ label: s.name, href: `/services/${s.slug}` }));
-
+// New nav: Home | Cities | Industries | Pricing | Results | Blog | Free Tools
 const HAMBURGER_ITEMS = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
   { label: "Cities We Serve", href: "/cities" },
   { label: "Industries", href: "/industries" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Results", href: "/results" },
   { label: "Blog", href: "/blog" },
   { label: "Free Tools", href: "/free-seo-tools" },
-  { label: "Pricing", href: "/pricing" },
 ];
 
 const MOBILE_BOTTOM_ITEMS = [
   { label: "Home", href: "/", Icon: PawIcon },
-  { label: "Services", href: "/services", Icon: Map },
   { label: "Industries", href: "/industries", Icon: Briefcase },
   { label: "Pricing", href: "/pricing", Icon: DollarSign },
+  { label: "Blog", href: "/blog", Icon: Newspaper },
+  { label: "Free Tools", href: "/free-seo-tools", Icon: Wrench },
 ];
 
 interface DropdownProps {
@@ -79,7 +79,7 @@ function DesktopDropdown({ label, href, items }: DropdownProps) {
         <>
           {/* Invisible bridge — fills the gap so mouse doesn't lose hover state */}
           <div className="absolute top-full left-0 w-full h-2" />
-          {/* Dropdown panel — fully opaque for readability over any background */}
+          {/* Dropdown panel */}
           <div className="absolute top-[calc(100%+4px)] left-0 min-w-[200px] w-max max-w-[240px] bg-[#0c152f] border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.7)] py-2 z-[100]">
             {items.slice(0, 14).map((item) => (
               <Link
@@ -128,34 +128,57 @@ export default function Navigation() {
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block border-b-0 border-t-0 bg-deep-navy"
         style={{ height: "var(--desktop-nav-height)" }}
       >
-        {/* Three-zone layout: logo | centered nav | CTA */}
+        {/* Three-zone layout: logo | centered nav | CTAs */}
         <div className="max-w-7xl mx-auto px-4 lg:px-8 h-full flex items-center gap-4 w-full">
-          {/* Logo — fixed width anchors the left side */}
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0 min-h-0">
             <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/XwegoxlTucekNaXJ.webp" alt="HuskyTail Digital Marketing — Las Vegas SEO Agency Logo" className="h-12" />
           </Link>
 
-          {/* Nav Links — flex-1 centers them between logo and CTA */}
+          {/* Nav Links — centered */}
           <nav className="flex-1 flex items-center justify-center gap-1 lg:gap-2 xl:gap-3 h-full">
             <Link href="/" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
               Home
             </Link>
-            <DesktopDropdown label="Services" href="/services" items={NAV_SERVICES} />
-            <DesktopDropdown label="Cities We Serve" href="/cities" items={NAV_CITIES} />
+            <DesktopDropdown label="Cities" href="/cities" items={NAV_CITIES} />
             <DesktopDropdown label="Industries" href="/industries" items={NAV_INDUSTRIES} />
+            <Link href="/pricing" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
+              Pricing
+            </Link>
+            <Link href="/results" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
+              Results
+            </Link>
             <DesktopDropdown label="Blog" href="/blog" items={NAV_BLOG_CATS} />
             <Link href="/free-seo-tools" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
               Free Tools
             </Link>
-            <Link href="/pricing" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
-              Pricing
-            </Link>
           </nav>
 
-          {/* CTA — fixed width mirrors logo to keep nav centered */}
-          <div className="shrink-0 w-40 flex justify-end items-center">
-            <Link href="/paw-sultation" className="btn-primary text-xs lg:text-sm px-4 lg:px-5 whitespace-nowrap">
-              Claim Your Free SEO Audit
+          {/* Two CTA buttons */}
+          <div className="shrink-0 flex items-center gap-2">
+            <Link
+              href="/paw-sultation"
+              className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold whitespace-nowrap transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+              style={{
+                background: "linear-gradient(135deg, #00D1FF 0%, #0099CC 100%)",
+                color: "#0A2540",
+                fontFamily: "Montserrat, sans-serif",
+                boxShadow: "0 4px 16px rgba(0,209,255,0.35)",
+              }}
+            >
+              🐾 Claim Your Free SEO Audit
+            </Link>
+            <Link
+              href="/paw-sultation"
+              className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-semibold whitespace-nowrap border-2 transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+              style={{
+                borderColor: "#00D1FF",
+                color: "#00D1FF",
+                fontFamily: "Montserrat, sans-serif",
+                background: "transparent",
+              }}
+            >
+              Talk to Stephen
             </Link>
           </div>
         </div>
@@ -173,7 +196,7 @@ export default function Navigation() {
           <div className="flex items-center gap-3">
             {/* CTA */}
             <Link href="/paw-sultation" className="btn-primary text-xs px-3 py-2 min-h-[44px] min-w-[44px] flex items-center justify-center">
-              Book Free Audit
+              Free Audit
             </Link>
             {/* Hamburger */}
             <button
@@ -201,9 +224,21 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <div className="px-6 py-6">
+            <div className="px-6 py-6 flex flex-col gap-3">
               <Link href="/paw-sultation" className="btn-primary w-full justify-center text-base">
-                Claim Your Free SEO Audit
+                🐾 Claim Your Free SEO Audit
+              </Link>
+              <Link
+                href="/paw-sultation"
+                className="w-full inline-flex items-center justify-center rounded-full px-7 py-3.5 text-base font-semibold border-2 transition-all duration-200"
+                style={{
+                  borderColor: "#00D1FF",
+                  color: "#00D1FF",
+                  background: "transparent",
+                  fontFamily: "Montserrat, sans-serif",
+                }}
+              >
+                Talk to Stephen
               </Link>
             </div>
           </nav>
