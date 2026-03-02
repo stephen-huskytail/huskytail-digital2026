@@ -136,6 +136,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "files.manuscdn.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
     ],
   },
   compress: true,

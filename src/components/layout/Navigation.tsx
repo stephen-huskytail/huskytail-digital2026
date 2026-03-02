@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Menu, X, ChevronDown, Briefcase, DollarSign, Newspaper, BarChart2 } from "lucide-react";
+import { Menu, X, ChevronDown, Briefcase, DollarSign, BarChart2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { NAV_CITIES, NAV_INDUSTRIES, NAV_BLOG_CATS } from "@/lib/constants";
+import { NAV_CITIES, NAV_INDUSTRIES } from "@/lib/constants";
 
 // Paw icon SVG
 function PawIcon({ className }: { className?: string }) {
@@ -23,14 +23,12 @@ const HAMBURGER_ITEMS = [
   { label: "Industries", href: "/industries" },
   { label: "Pricing", href: "/pricing" },
   { label: "Results", href: "/results" },
-  { label: "Articles", href: "/articles" },
 ];
 
 const MOBILE_BOTTOM_ITEMS = [
   { label: "Home", href: "/", Icon: PawIcon },
   { label: "Industries", href: "/industries", Icon: Briefcase },
   { label: "Pricing", href: "/pricing", Icon: DollarSign },
-  { label: "Articles", href: "/articles", Icon: Newspaper },
   { label: "Results", href: "/results", Icon: BarChart2 },
 ];
 
@@ -147,8 +145,6 @@ export default function Navigation() {
             <Link href="/results" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
               Results
             </Link>
-            <DesktopDropdown label="Articles" href="/articles" items={NAV_BLOG_CATS} />
-
           </nav>
 
           {/* Phone stacked above CTA buttons — right-aligned column */}

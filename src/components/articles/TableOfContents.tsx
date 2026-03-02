@@ -27,6 +27,15 @@ function extractH2sFromBody(body: any[]): TocItem[] {
     .filter((item) => item.text.length > 0);
 }
 
+// Scroll to heading with offset to clear the fixed nav bar (88px) + extra breathing room
+function scrollToHeading(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const NAV_HEIGHT = 96; // 88px nav + 8px breathing room
+  const top = el.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT;
+  window.scrollTo({ top, behavior: "smooth" });
+}
+
 interface TableOfContentsProps {
   body: any[];
   variant?: "inline" | "sidebar";
@@ -37,11 +46,13 @@ export default function TableOfContents({ body, variant = "inline" }: TableOfCon
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
-    // Add IDs to the rendered H2 elements
+    // Add IDs to the rendered H2 elements and set scroll-margin-top
     const headings = document.querySelectorAll("article h2");
     headings.forEach((el, i) => {
       if (items[i]) {
         el.id = items[i].id;
+        // Ensure native anchor scrolling also clears the nav
+        (el as HTMLElement).style.scrollMarginTop = "96px";
       }
     });
 
@@ -54,7 +65,7 @@ export default function TableOfContents({ body, variant = "inline" }: TableOfCon
           }
         });
       },
-      { rootMargin: "-20% 0% -70% 0%", threshold: 0 }
+      { rootMargin: "-10% 0% -80% 0%", threshold: 0 }
     );
 
     headings.forEach((el) => observer.observe(el));
@@ -83,7 +94,7 @@ export default function TableOfContents({ body, variant = "inline" }: TableOfCon
                   }}
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                    scrollToHeading(item.id);
                   }}
                 >
                   {item.text}
@@ -129,7 +140,7 @@ export default function TableOfContents({ body, variant = "inline" }: TableOfCon
                 className="text-sm text-white/70 hover:text-[#00D1FF] transition-colors leading-snug"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  scrollToHeading(item.id);
                 }}
               >
                 {item.text}
