@@ -11,6 +11,8 @@ import { formatDate, calcReadTime } from "@/sanity/lib/readTime";
 import { ASSETS, SITE_URL } from "@/lib/constants";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import ReadingProgressBar from "@/components/articles/ReadingProgressBar";
+import TableOfContents from "@/components/articles/TableOfContents";
 
 // ─── Static params ────────────────────────────────────────────────────────────
 
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       : undefined;
 
     return {
-      title: `${title} | HuskyTail Digital`,
+      title,  // root layout template appends " | HuskyTail Digital" — do not add it here
       description,
       keywords: article.focusKeyword ? [article.focusKeyword] : undefined,
       robots: article.noIndex ? "noindex, nofollow" : "index, follow",
@@ -304,6 +306,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <ReadingProgressBar />
       <Navigation />
       <main className="min-h-screen" style={{ background: "#0A0F1E" }}>
 
@@ -317,25 +320,18 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
           )}
 
           <div className={`max-w-4xl mx-auto px-4 ${mainImageUrl ? "-mt-20 relative z-10" : "pt-8"} pb-8`}>
-            {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-xs text-white/40 mb-5">
+             {/* Breadcrumb — Home / Articles / Category (no duplicate) */}
+            <nav className="flex items-center gap-2 text-xs text-white/40 mb-6">
               <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
               <span>/</span>
               <Link href="/articles" className="hover:text-white/70 transition-colors">Articles</Link>
               {primaryCategory && (
                 <>
                   <span>/</span>
-                  <Link href={`/articles?category=${primaryCategory.slug.current}`} className="hover:text-white/70 transition-colors">{primaryCategory.title}</Link>
+                  <span className="text-white/60">{primaryCategory.title}</span>
                 </>
               )}
             </nav>
-
-            {/* Category badge */}
-            {primaryCategory && (
-              <Link href={`/articles?category=${primaryCategory.slug.current}`} className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4 transition-opacity hover:opacity-80" style={{ background: "rgba(0,209,255,0.12)", color: "#00D1FF", border: "1px solid rgba(0,209,255,0.3)" }}>
-                {primaryCategory.title}
-              </Link>
-            )}
 
             {/* Title */}
             <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-5" style={{ fontFamily: "Montserrat, sans-serif" }}>
@@ -365,18 +361,24 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
           </div>
         </section>
 
-        {/* ── Body + Sidebar ── */}
+          {/* ── Body + Sidebar ── */}
         <section className="max-w-6xl mx-auto px-4 py-10">
           <div className="flex flex-col lg:flex-row gap-12">
-
             {/* Article Body */}
             <article className="flex-1 min-w-0">
+              {/* Featured image — shown here if no hero image, or always as article image */}
+              {!mainImageUrl && (
+                <div className="w-full h-48 md:h-64 rounded-2xl overflow-hidden mb-8 flex items-center justify-center" style={{ background: "linear-gradient(135deg, #0A2540 0%, #0D1B2E 100%)", border: "1px solid rgba(0,209,255,0.15)" }}>
+                  <Image src={ASSETS.everestRock} alt="HuskyTail Digital Marketing" width={120} height={120} className="opacity-25" />
+                </div>
+              )}
               {article.excerpt && (
                 <p className="text-lg text-white/60 leading-relaxed mb-8 pb-8 border-b border-white/10 italic">
                   {article.excerpt}
                 </p>
               )}
-
+              {/* Inline Table of Contents */}
+              {article.body && <TableOfContents body={article.body} variant="inline" />}
               {article.body && (
                 <div className="prose-custom">
                   <PortableText value={article.body} components={ptComponents} />
@@ -423,7 +425,8 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
 
             {/* Sidebar */}
             <aside className="lg:w-72 shrink-0 space-y-6">
-
+              {/* Sidebar Table of Contents */}
+              {article.body && <TableOfContents body={article.body} variant="sidebar" />}
               {/* CTA Card */}
               <div className="rounded-2xl p-6 text-center sticky top-24" style={{ background: "linear-gradient(135deg, #0A2540 0%, #0D1B2E 100%)", border: "1px solid rgba(200,168,75,0.3)" }}>
                 <Image src={ASSETS.everestSitting} alt="Everest the HuskyTail mascot" width={56} height={56} className="mx-auto mb-3" />

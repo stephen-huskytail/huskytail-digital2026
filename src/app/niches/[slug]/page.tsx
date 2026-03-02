@@ -339,7 +339,7 @@ export default async function NicheCityPage({ params }: Props) {
       "telephone": "+17027861309",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "10120 W Flamingo Rd Ste 4 #1166",
+        "streetAddress": "10120 W Flamingo Rd Ste 4-1166",
         "addressLocality": "Las Vegas",
         "addressRegion": "NV",
         "addressCountry": "US",

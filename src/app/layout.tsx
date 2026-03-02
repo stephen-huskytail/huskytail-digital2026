@@ -119,7 +119,7 @@ const organizationSchema = {
     "AI-powered local SEO agency in Las Vegas, NV. Specializing in Google Maps optimization, GEO, and local search domination for Las Vegas businesses.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "10120 W Flamingo Rd Ste 4 #1166",
+    streetAddress: "10120 W Flamingo Rd Ste 4-1166",
     addressLocality: "Las Vegas",
     addressRegion: "NV",
     addressCountry: "US",

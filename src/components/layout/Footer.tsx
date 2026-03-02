@@ -58,7 +58,7 @@ export default function Footer() {
               <p className="text-xs font-montserrat font-semibold text-ice-blue mb-2">📍 Contact</p>
               <p className="text-[10px] text-husky-white/60 font-inter leading-relaxed mb-2">
                 10120 W Flamingo Rd<br />
-                Ste 4 #1166<br />
+                Ste 4-1166<br />
                 Las Vegas, NV 89147
               </p>
               <a href="tel:+1-702-786-1309" className="text-[10px] text-electric-blue hover:text-ice-blue transition-colors font-inter font-medium">
@@ -94,13 +94,6 @@ export default function Footer() {
           <div>
             <h3 className="font-orbitron font-bold text-sm text-ice-blue mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-2">
-              {SERVICES.map(s => (
-                <li key={s.slug}>
-                  <Link href={`/services/${s.slug}`} className="text-sm text-husky-white/60 hover:text-ice-blue transition-colors font-inter">
-                    {s.name}
-                  </Link>
-                </li>
-              ))}
               <li><Link href="/pricing" className="text-sm text-husky-white/60 hover:text-ice-blue transition-colors font-inter">Pricing</Link></li>
               <li><Link href="/paw-sultation" className="text-sm text-electric-blue hover:text-ice-blue transition-colors font-inter font-medium">Free Audit →</Link></li>
             </ul>
@@ -143,7 +136,7 @@ export default function Footer() {
                 { label: "Why We Wag", href: "/why-we-wag" },
                 { label: "Results", href: "/results" },
                 { label: "Case Studies", href: "/case-studies" },
-                { label: "Blog", href: "/blog" },
+                { label: "Articles", href: "/articles" },
                 { label: "Free Tools", href: "/free-seo-tools" },
                 { label: "Recommended Tools", href: "/recommended-tools" },
                 { label: "Media", href: "/media" },
