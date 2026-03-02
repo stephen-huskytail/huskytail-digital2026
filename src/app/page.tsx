@@ -242,7 +242,8 @@ export default function HomePage() {
                 color: "#0A2540",
               }}
             >
-              Everything You Need to Rank — Included in Every Plan
+              Everything You Need to Rank<br className="hidden sm:block" />
+              <span style={{ color: "#c8a84b" }}>— Included in Every Plan</span>
             </h2>
             <p
               className="mt-4 max-w-2xl mx-auto"

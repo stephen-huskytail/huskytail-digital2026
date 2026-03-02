@@ -14,11 +14,12 @@ export default function CookiePolicyPage() {
       <Navigation />
       <main className="pt-[var(--desktop-nav-height)] min-h-screen bg-deep-navy text-husky-white">
         <div className="section-container py-16">
-          <h1 className="font-orbitron font-bold text-3xl md:text-4xl text-husky-white mb-8">
-            Cookie Policy
-          </h1>
           <div className="prose prose-invert max-w-none font-inter">
-            <div id="termageddon-cookie-policy"></div>
+            <div
+              id="policy"
+              data-policy-key="T0U5cWRXOWtRbkJ0YVZBNWFsRTlQUT09"
+              data-extra="h-align=left&table-style=accordion"
+            ></div>
           </div>
         </div>
       </main>

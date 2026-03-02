@@ -14,11 +14,12 @@ export default function PrivacyPolicyPage() {
       <Navigation />
       <main className="pt-[var(--desktop-nav-height)] min-h-screen bg-deep-navy text-husky-white">
         <div className="section-container py-16">
-          <h1 className="font-orbitron font-bold text-3xl md:text-4xl text-husky-white mb-8">
-            Privacy Policy
-          </h1>
           <div className="prose prose-invert max-w-none font-inter">
-            <div id="termageddon-privacy-policy"></div>
+            <div
+              id="policy"
+              data-policy-key="T0U1UmVFZ3djVFZ0Y0RSVE5XYzlQUT09"
+              data-extra="h-align=left&table-style=accordion"
+            ></div>
           </div>
         </div>
       </main>

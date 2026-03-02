@@ -4,8 +4,8 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | HuskyTail Digital Marketing",
-  description: "Terms of Service for HuskyTail Digital Marketing. Read our terms and conditions for using our services.",
+  title: "Terms & Conditions | HuskyTail Digital Marketing",
+  description: "Terms and Conditions for HuskyTail Digital Marketing. Read our terms for using our services.",
 };
 
 export default function TermsPage() {
@@ -14,11 +14,12 @@ export default function TermsPage() {
       <Navigation />
       <main className="pt-[var(--desktop-nav-height)] min-h-screen bg-deep-navy text-husky-white">
         <div className="section-container py-16">
-          <h1 className="font-orbitron font-bold text-3xl md:text-4xl text-husky-white mb-8">
-            Terms of Service
-          </h1>
           <div className="prose prose-invert max-w-none font-inter">
-            <div id="termageddon-terms-of-service"></div>
+            <div
+              id="policy"
+              data-policy-key="TnpndmRsTmpjV0pSYWs1eFMzYzlQUT09"
+              data-extra="h-align=left&table-style=accordion"
+            ></div>
           </div>
         </div>
       </main>
