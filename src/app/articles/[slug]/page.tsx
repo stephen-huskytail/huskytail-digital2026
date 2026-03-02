@@ -23,9 +23,10 @@ export async function generateStaticParams() {
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
   try {
-    const article = await sanityClientServer.fetch<SanityArticle>(articleBySlugQuery, { slug: params.slug });
+    const article = await sanityClientServer.fetch<SanityArticle>(articleBySlugQuery, { slug });
     if (!article) return { title: "Article Not Found" };
 
     const title = article.metaTitle || article.title;
@@ -42,12 +43,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       keywords: article.focusKeyword ? [article.focusKeyword] : undefined,
       robots: article.noIndex ? "noindex, nofollow" : "index, follow",
       alternates: {
-        canonical: article.canonicalUrl || `${SITE_URL}/articles/${params.slug}`,
+        canonical: article.canonicalUrl || `${SITE_URL}/articles/${slug}`,
       },
       openGraph: {
         title,
         description,
-        url: `${SITE_URL}/articles/${params.slug}`,
+        url: `${SITE_URL}/articles/${slug}`,
         type: "article",
         publishedTime: article.publishedAt,
         modifiedTime: article.updatedAt,
@@ -222,12 +223,13 @@ function RelatedArticles({ articles }: { articles: ArticleCard[] }) {
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
-export default async function ArticleDetailPage({ params }: { params: { slug: string } }) {
+export default async function ArticleDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   let article: SanityArticle | null = null;
   let relatedArticles: ArticleCard[] = [];
 
   try {
-    article = await sanityClientServer.fetch<SanityArticle>(articleBySlugQuery, { slug: params.slug });
+    article = await sanityClientServer.fetch<SanityArticle>(articleBySlugQuery, { slug });
   } catch (err) {
     console.error("Failed to fetch article:", err);
   }
@@ -244,7 +246,7 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
     } else if (primaryCategory) {
       relatedArticles = await sanityClientServer.fetch<ArticleCard[]>(relatedArticlesByCategoryQuery, {
         categorySlug: primaryCategory.slug.current,
-        currentSlug: params.slug,
+        currentSlug: slug,
       });
     }
   } catch {}
@@ -263,7 +265,7 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription || article.excerpt,
-    "url": `${SITE_URL}/articles/${params.slug}`,
+    "url": `${SITE_URL}/articles/${slug}`,
     "datePublished": article.publishedAt,
     "dateModified": article.updatedAt || article.publishedAt,
     "author": {
