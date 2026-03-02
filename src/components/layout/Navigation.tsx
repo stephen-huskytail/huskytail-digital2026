@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Menu, X, ChevronDown, MapPin, Map, Briefcase, DollarSign, Home, Newspaper, Wrench, Phone } from "lucide-react";
+import { Menu, X, ChevronDown, MapPin, Map, Briefcase, DollarSign, Home, Newspaper, Wrench } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_CITIES, NAV_INDUSTRIES, NAV_BLOG_CATS, SERVICES } from "@/lib/constants";
 
@@ -26,7 +26,6 @@ const HAMBURGER_ITEMS = [
   { label: "Blog", href: "/blog" },
   { label: "Free Tools", href: "/free-seo-tools" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const MOBILE_BOTTOM_ITEMS = [
@@ -34,7 +33,6 @@ const MOBILE_BOTTOM_ITEMS = [
   { label: "Services", href: "/services", Icon: Map },
   { label: "Industries", href: "/industries", Icon: Briefcase },
   { label: "Pricing", href: "/pricing", Icon: DollarSign },
-  { label: "Contact", href: "/contact", Icon: Phone },
 ];
 
 interface DropdownProps {
@@ -151,9 +149,6 @@ export default function Navigation() {
             </Link>
             <Link href="/pricing" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
               Pricing
-            </Link>
-            <Link href="/contact" className="text-sm font-medium text-husky-white/90 hover:text-ice-blue transition-colors px-2 font-inter whitespace-nowrap flex items-center h-full">
-              Contact
             </Link>
           </nav>
 

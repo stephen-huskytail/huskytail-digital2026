@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.huskytaildigital.com/industries" },
 };
 
-const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
   Heart,
   Home,
   Scale,
