@@ -83,7 +83,7 @@ export default function PawSultationPage() {
 
         {/* Two-column main section */}
         <section className="pb-20 px-4 lg:px-8">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-start">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Audit Form */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
@@ -236,8 +236,8 @@ export default function PawSultationPage() {
             </div>
 
             {/* RIGHT: Calendly */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
-              <div className="px-8 pt-8 pb-2">
+            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden flex flex-col">
+              <div className="px-8 pt-8 pb-2 shrink-0">
                 <p className="text-[#C8A84B] text-xs font-bold uppercase tracking-widest mb-3">
                   Option 2
                 </p>
@@ -250,9 +250,9 @@ export default function PawSultationPage() {
                 </p>
               </div>
               <div
-                className="calendly-inline-widget"
+                className="calendly-inline-widget flex-1"
                 data-url="https://calendly.com/stephen-huskytaildigital/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=162233&text_color=ffffff&primary_color=c8a84b"
-                style={{ minWidth: "320px", height: "700px" }}
+                style={{ minWidth: "320px", minHeight: "600px" }}
               />
               <Script
                 src="https://assets.calendly.com/assets/external/widget.js"
