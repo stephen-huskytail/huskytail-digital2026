@@ -140,6 +140,22 @@ const nextConfig: NextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  async headers() {
+    // On Vercel preview/staging deployments, add X-Robots-Tag: noindex, nofollow
+    // to every response so crawlers ignore the *.vercel.app URL entirely.
+    // VERCEL_ENV is only "production" on the live production deployment.
+    if (process.env.VERCEL_ENV !== "production") {
+      return [
+        {
+          source: "/(.*)",
+          headers: [
+            { key: "X-Robots-Tag", value: "noindex, nofollow" },
+          ],
+        },
+      ];
+    }
+    return [];
+  },
   async rewrites() {
     // /{city}-seo → /seo/{city}
     const cityRewrites = CITY_SLUGS.map((slug) => ({
