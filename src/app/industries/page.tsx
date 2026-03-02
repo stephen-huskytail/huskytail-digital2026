@@ -94,7 +94,7 @@ export default function IndustriesPage() {
                     className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
                     style={{ backgroundColor: "rgba(0,209,255,0.1)" }}
                   >
-                    <Icon className="w-6 h-6" style={{ color: "#00D1FF" }} />
+                    <Icon className="w-6 h-6 text-[#00D1FF]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h2
