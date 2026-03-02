@@ -127,39 +127,48 @@ export default function PawSultationPage() {
         <section className="pb-12 px-4 lg:px-8">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-stretch">
 
-            {/* LEFT: Audit Form — position:relative so Everest can overflow the top */}
-            <div className="relative pt-20">
-              {/* Everest peeking over the top edge — centered, paws resting on card top border */}
-              {/* The image is 2048x2048: roughly top 60% is head/ears, bottom 40% is paws+ledge line */}
-              {/* We position so the ledge line in the image aligns with the card top border */}
-              <div
-                className="absolute left-1/2 -translate-x-1/2 z-10"
-                style={{ top: "-88px", width: "180px" }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={EVEREST_SRC}
-                  alt="Everest the HuskyTail mascot peeking over the form card"
-                  className="w-full h-auto object-contain drop-shadow-xl"
-                />
-              </div>
+            {/* LEFT: Audit Form */}
+            {/* Outer wrapper just provides the top spacing so the card doesn't clip Everest */}
+            <div className="pt-16">
+              {/* Card is position:relative — Everest is anchored to THIS element */}
+              <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 h-full">
 
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-8 h-full">
-                {/* Caption just inside the top of the card, below where Everest peeks */}
-                <p className="text-center text-xs text-gray-500 italic mb-6">
-                  &ldquo;No spam. Just strategy.&rdquo; &mdash; Everest 🐾
-                </p>
+                {/* Everest — absolute to the card, top:0 translateY(-50%) straddles the top border */}
+                {/* left-[25%] places her left-of-center on the card */}
+                <div
+                  className="absolute z-10"
+                  style={{
+                    top: 0,
+                    left: "25%",
+                    transform: "translate(-50%, -50%)",
+                    width: "160px",
+                  }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={EVEREST_SRC}
+                    alt="Everest the HuskyTail mascot peeking over the form card"
+                    className="w-full h-auto object-contain drop-shadow-xl"
+                  />
+                </div>
 
-                <p className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest mb-3">
-                  Option 1
-                </p>
-                <h2 className="text-2xl font-black text-white mb-2">
-                  Request Your Free SEO Audit
-                </h2>
-                <p className="text-gray-400 text-sm mb-8 leading-relaxed">
-                  Fill out the form and we&apos;ll deliver your personalized audit within 24 hours.
-                  No fluff, just a clear picture of where you stand and what it&apos;ll take to rank.
-                </p>
+                {/* Caption sits just inside the card top, directly below Everest's paws */}
+                {/* pt-10 gives clearance so caption appears below the paw overlap zone */}
+                <div className="pt-10">
+                  <p className="text-center text-xs text-gray-500 italic mb-6">
+                    &ldquo;No spam. Just strategy.&rdquo; &mdash; Everest 🐾
+                  </p>
+
+                  <p className="text-[#c8a84b] text-xs font-bold uppercase tracking-widest mb-3">
+                    Option 1
+                  </p>
+                  <h2 className="text-2xl font-black text-white mb-2">
+                    Request Your Free SEO Audit
+                  </h2>
+                  <p className="text-gray-400 text-sm mb-8 leading-relaxed">
+                    Fill out the form and we&apos;ll deliver your personalized audit within 24 hours.
+                    No fluff, just a clear picture of where you stand and what it&apos;ll take to rank.
+                  </p>
 
                 {submitted ? (
                   <div className="text-center py-12">
@@ -296,8 +305,9 @@ export default function PawSultationPage() {
                     </p>
                   </form>
                 )}
-              </div>
-            </div>
+                </div>{/* end pt-10 content wrapper */}
+              </div>{/* end card */}
+            </div>{/* end outer pt-16 wrapper */}
 
             {/* RIGHT: Calendly */}
             <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden flex flex-col">
