@@ -6,43 +6,16 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import Script from "next/script";
 
-const INDUSTRY_GROUPS = [
-  {
-    label: "Healthcare",
-    options: ["Dentist","Chiropractor","Optometrist","Orthodontist","Dermatologist","Therapist","Pediatrician","Plastic Surgeon","Urgent Care","Physical Therapist","Podiatrist","Cardiologist","Gastroenterologist","Neurologist","Psychiatrist","Veterinarian","Oral Surgeon","OB-GYN","Weight Loss Clinic","Addiction Treatment","Med Spa"],
-  },
-  {
-    label: "Home Services",
-    options: ["Plumber","Electrician","HVAC","Roofer","Painter","Locksmith","Landscaper","Cleaning Service","Pest Control","Pool Service","Garage Door","Flooring","Window Treatment","Handyman","Remodeling","Solar","Moving Company","Junk Removal","Fence Company","Tree Service","Appliance Repair","Carpet Cleaning","General Contractor","Concrete Contractor"],
-  },
-  {
-    label: "Legal",
-    options: ["Attorney","Personal Injury","Family Law","Criminal Defense","Immigration","Real Estate Attorney","Bankruptcy Attorney","DUI Attorney","Estate Planning Attorney","Workers' Comp Attorney","Business Attorney"],
-  },
-  {
-    label: "Beauty & Wellness",
-    options: ["Hair Salon","Spa","Nail Salon","Barber","Tattoo Shop","Lash Studio","Massage Therapist","Microblading","Gym","Personal Trainer","Yoga Studio","Martial Arts","Pilates Studio","Dance Studio"],
-  },
-  {
-    label: "Automotive",
-    options: ["Mechanic","Auto Body","Car Dealership","Towing","Auto Detailing","Window Tinting","Tire Shop"],
-  },
-  {
-    label: "Professional Services",
-    options: ["Accountant","Financial Advisor","Mortgage Broker","Insurance Agent","Tax Preparer","Realtor","Property Manager","Real Estate Agent","Home Inspector","IT Support","Web Design"],
-  },
-  {
-    label: "Events & Entertainment",
-    options: ["Event Planner","Wedding Venue","Wedding Planner","Florist","Limo Service","Photographer","Wedding Photographer","Videographer","Catering"],
-  },
-  {
-    label: "Family Services",
-    options: ["Daycare","Tutoring","Driving School","Pet Groomer","Dog Trainer"],
-  },
-  {
-    label: "Other",
-    options: ["Restaurant","Other"],
-  },
+const INDUSTRIES = [
+  "Healthcare",
+  "Home Services",
+  "Legal",
+  "Beauty & Wellness",
+  "Automotive",
+  "Professional Services",
+  "Events & Entertainment",
+  "Family Services",
+  "Other",
 ];
 
 export default function PawSultationPage() {
@@ -213,13 +186,9 @@ export default function PawSultationPage() {
                         onChange={(e) => setFormData({ ...formData, niche: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0d1f3c] text-white text-sm focus:outline-none focus:border-[#C8A84B] focus:ring-1 focus:ring-[#C8A84B] transition-colors"
                       >
-                        <option value="">Select your business type</option>
-                        {INDUSTRY_GROUPS.map((group) => (
-                          <optgroup key={group.label} label={group.label}>
-                            {group.options.map((n) => (
-                              <option key={n} value={n}>{n}</option>
-                            ))}
-                          </optgroup>
+                        <option value="">Select your industry</option>
+                        {INDUSTRIES.map((n) => (
+                          <option key={n} value={n}>{n}</option>
                         ))}
                       </select>
                     </div>
