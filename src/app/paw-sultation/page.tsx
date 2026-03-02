@@ -128,10 +128,10 @@ export default function PawSultationPage() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Audit Form */}
-            {/* Outer wrapper just provides the top spacing so the card doesn't clip Everest */}
-            <div className="pt-16">
+            {/* Outer wrapper: pt-16 for Everest clearance, flex-col so card stretches full height */}
+            <div className="pt-16 flex flex-col">
               {/* Card is position:relative — Everest is anchored to THIS element */}
-              <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 h-full">
+              <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col flex-1">
 
                 {/* Everest — absolute to the card, top:0 translateY(-50%) straddles the top border */}
                 {/* left-[25%] places her left-of-center on the card */}
@@ -154,7 +154,7 @@ export default function PawSultationPage() {
 
                 {/* Caption sits just inside the card top, directly below Everest's paws */}
                 {/* pt-10 gives clearance so caption appears below the paw overlap zone */}
-                <div className="pt-10">
+                <div className="pt-10 flex flex-col flex-1">
                   <p className="text-center text-xs text-gray-500 italic mb-6">
                     &ldquo;No spam. Just strategy.&rdquo; &mdash; Everest 🐾
                   </p>
@@ -182,7 +182,7 @@ export default function PawSultationPage() {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-5">
+                  <form onSubmit={handleSubmit} className="space-y-5 flex flex-col flex-1">
                     {/* Name + Email */}
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
@@ -286,6 +286,7 @@ export default function PawSultationPage() {
                       <p className="text-red-400 text-sm">{error}</p>
                     )}
 
+                    <div className="mt-auto pt-4">
                     <button
                       type="submit"
                       disabled={loading}
@@ -303,6 +304,7 @@ export default function PawSultationPage() {
                     <p className="text-center text-xs text-gray-500">
                       No spam. No sales calls unless you ask. Just your audit, delivered in 24 hours.
                     </p>
+                    </div>{/* end mt-auto button wrapper */}
                   </form>
                 )}
                 </div>{/* end pt-10 content wrapper */}
