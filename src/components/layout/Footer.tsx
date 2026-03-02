@@ -28,7 +28,7 @@ export default function Footer() {
 
       {/* Main Footer Grid */}
       <div className="section-container py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
@@ -88,15 +88,6 @@ export default function Footer() {
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
             </div>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-orbitron font-bold text-sm text-ice-blue mb-4 uppercase tracking-wider">Services</h3>
-            <ul className="space-y-2">
-              <li><Link href="/pricing" className="text-sm text-husky-white/60 hover:text-ice-blue transition-colors font-inter">Pricing</Link></li>
-              <li><Link href="/paw-sultation" className="text-sm text-electric-blue hover:text-ice-blue transition-colors font-inter font-medium">Free Audit →</Link></li>
-            </ul>
           </div>
 
           {/* Cities */}
