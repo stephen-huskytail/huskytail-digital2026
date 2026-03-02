@@ -58,7 +58,7 @@ export default function Footer() {
               <p className="text-xs font-montserrat font-semibold text-ice-blue mb-2">📍 Contact</p>
               <p className="text-[10px] text-husky-white/60 font-inter leading-relaxed mb-2">
                 10120 W Flamingo Rd<br />
-                Ste 4-1166<br />
+                Ste 4 #1166<br />
                 Las Vegas, NV 89147
               </p>
               <a href="tel:+1-702-786-1309" className="text-[10px] text-electric-blue hover:text-ice-blue transition-colors font-inter font-medium">

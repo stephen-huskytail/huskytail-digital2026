@@ -338,18 +338,21 @@ export default async function NicheCityPage({ params }: Props) {
       "telephone": "+17027861309",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "10120 W Flamingo Rd Ste 4 #1166",
         "addressLocality": "Las Vegas",
         "addressRegion": "NV",
         "addressCountry": "US",
+        "postalCode": "89147",
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "12",
+        "reviewCount": "21",
         "bestRating": "5",
         "worstRating": "1",
       },
       "sameAs": [
+        "https://www.google.com/maps/place/HuskyTail+Digital+Marketing/@36.1163938,-115.3136191,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8bf3e01c452f9:0x6348e3e318fdcb59!8m2!3d36.1163938!4d-115.3136191!16s%2Fg%2F11x30wkpv9",
         "https://www.linkedin.com/company/huskytail-digital",
         "https://www.instagram.com/huskytaildigital",
         "https://www.facebook.com/huskytaildigital",

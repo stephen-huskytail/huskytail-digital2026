@@ -119,15 +119,24 @@ const organizationSchema = {
     "AI-powered local SEO agency in Las Vegas, NV. Specializing in Google Maps optimization, GEO, and local search domination for Las Vegas businesses.",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "10120 W Flamingo Rd Ste 4 #1166",
     addressLocality: "Las Vegas",
     addressRegion: "NV",
     addressCountry: "US",
-    postalCode: "89101",
+    postalCode: "89147",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 36.1699,
-    longitude: -115.1398,
+    latitude: 36.1163938,
+    longitude: -115.3136191,
+  },
+  hasMap: "https://maps.app.goo.gl/huskytaildigital",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "21",
+    bestRating: "5",
+    worstRating: "1",
   },
   areaServed: [
     { "@type": "City", name: "Las Vegas", containedInPlace: { "@type": "State", name: "Nevada" } },
@@ -139,7 +148,7 @@ const organizationSchema = {
   ],
   priceRange: "$$",
   email: "everest@huskytaildigital.com",
-  telephone: "+1-702-555-0100",
+  telephone: "+17027861309",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -191,6 +200,7 @@ const organizationSchema = {
     ],
   },
   sameAs: [
+    "https://www.google.com/maps/place/HuskyTail+Digital+Marketing/@36.1163938,-115.3136191,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8bf3e01c452f9:0x6348e3e318fdcb59!8m2!3d36.1163938!4d-115.3136191!16s%2Fg%2F11x30wkpv9",
     "https://www.linkedin.com/company/huskytail-digital",
     "https://www.facebook.com/huskytaildigital",
   ],

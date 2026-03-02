@@ -27,9 +27,11 @@ export default function AboutPage() {
     },
     address: {
       "@type": "PostalAddress",
+      streetAddress: "10120 W Flamingo Rd Ste 4 #1166",
       addressLocality: "Las Vegas",
       addressRegion: "NV",
       addressCountry: "US",
+      postalCode: "89147",
     },
     description:
       "Stephen Gardner is the founder of HuskyTail Digital Marketing, an AI-powered SEO agency serving Las Vegas businesses. He specializes in local SEO, Google Business Profile optimization, and GEO (Generative Engine Optimization).",

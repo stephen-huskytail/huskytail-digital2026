@@ -151,24 +151,18 @@ export default function HomePage() {
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-3">
                   {[
-                    { initials: "MR", bg: "rgba(0,209,255,0.25)" },
-                    { initials: "CL", bg: "rgba(255,215,0,0.2)" },
-                    { initials: "JT", bg: "rgba(0,209,255,0.25)" },
-                    { initials: "DM", bg: "rgba(255,215,0,0.2)" },
+                    { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/matthew_vinciguerra_fd5a75c6.jpg", name: "Matthew V." },
+                    { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/amber_riggs_cbfb3e89.jpg", name: "Amber R." },
+                    { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/roseann_capanna_hodge_a350f1f4.jpg", name: "Roseann C." },
+                    { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/jacqueline_marie_df372109.jpg", name: "Jacqueline M." },
                   ].map((a) => (
-                    <div
-                      key={a.initials}
-                      className="w-9 h-9 rounded-full border-2 flex items-center justify-center text-xs font-bold"
-                      style={{
-                        backgroundColor: a.bg,
-                        borderColor: "rgba(0,209,255,0.6)",
-                        color: "#F8FAFC",
-                        backdropFilter: "blur(4px)",
-                        fontFamily: "Montserrat, sans-serif",
-                      }}
-                    >
-                      {a.initials}
-                    </div>
+                    <img
+                      key={a.name}
+                      src={a.src}
+                      alt={a.name}
+                      className="w-9 h-9 rounded-full object-cover border-2"
+                      style={{ borderColor: "rgba(0,209,255,0.6)" }}
+                    />
                   ))}
                 </div>
                 <div>
@@ -470,7 +464,11 @@ export default function HomePage() {
                   border: "1px solid rgba(165,216,255,0.1)",
                 }}
               >
-                <div className="text-sm mb-4" style={{ color: "#FFD700" }}>★★★★★</div>
+                {/* Google badge */}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="text-sm" style={{ color: "#FFD700" }}>★★★★★</div>
+                  <span className="text-xs font-semibold" style={{ color: "rgba(248,250,252,0.4)", fontFamily: "Inter, sans-serif" }}>Google Review</span>
+                </div>
                 <p
                   className="mb-6"
                   style={{
@@ -483,13 +481,23 @@ export default function HomePage() {
                 >
                   &ldquo;{t.text}&rdquo;
                 </p>
-                <div>
-                  <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#F8FAFC", fontSize: "0.9rem" }}>
-                    {t.name}
-                  </p>
-                  <p style={{ color: "rgba(0,209,255,0.8)", fontSize: "0.8rem", fontFamily: "Inter, sans-serif" }}>
-                    {t.business} · {t.city}
-                  </p>
+                <div className="flex items-center gap-3">
+                  {t.avatar && (
+                    <img
+                      src={t.avatar}
+                      alt={t.name}
+                      className="w-10 h-10 rounded-full object-cover shrink-0"
+                      style={{ border: "2px solid rgba(0,209,255,0.4)" }}
+                    />
+                  )}
+                  <div>
+                    <p style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#F8FAFC", fontSize: "0.9rem" }}>
+                      {t.name}
+                    </p>
+                    <p style={{ color: "rgba(0,209,255,0.8)", fontSize: "0.8rem", fontFamily: "Inter, sans-serif" }}>
+                      {t.business}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

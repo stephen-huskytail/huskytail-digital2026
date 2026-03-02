@@ -174,25 +174,28 @@ export const TRUST_STATS = [
 
 export const TESTIMONIALS = [
   {
-    name: "Maria R.",
-    business: "Henderson Family Law",
-    city: "Henderson, NV",
-    rating: 5,
-    text: "We went from page 3 to the Google Maps 3-Pack in 60 days. The phone hasn't stopped ringing. Stephen and his team are the real deal.",
-  },
-  {
-    name: "Carlos M.",
-    business: "Vegas Plumbing Pros",
+    name: "Matthew Vinciguerra",
+    business: "Local Guide · 25 Reviews",
     city: "Las Vegas, NV",
     rating: 5,
-    text: "I was skeptical about SEO, but HuskyTail Digital proved me wrong. We're now the #1 plumber in our area on Google Maps. Worth every penny.",
+    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/matthew_vinciguerra_fd5a75c6.jpg",
+    text: "I highly recommend Stephen at Husky Tail Digital. He recently rebuilt my website and took over my SEO management, and the results have been fantastic. Stephen is incredibly responsive — the minute something needs to be done, he's on it.",
   },
   {
-    name: "Jennifer T.",
-    business: "Summerlin Med Spa",
-    city: "Summerlin, NV",
+    name: "Amber Riggs",
+    business: "Verified Google Reviewer",
+    city: "Las Vegas, NV",
     rating: 5,
-    text: "The AI-powered content strategy they built for us is incredible. We're ranking for keywords our competitors don't even know exist yet.",
+    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/amber_riggs_cbfb3e89.jpg",
+    text: "Stephen and the team at Husky Tail have been incredible to work with. Their customer service is outstanding — responsive, professional, and genuinely helpful every step of the way.",
+  },
+  {
+    name: "Roseann Capanna-Hodge",
+    business: "Verified Google Reviewer",
+    city: "Las Vegas, NV",
+    rating: 5,
+    avatar: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030307747/NnNepTYrVhxN4PqR3Vk26S/roseann_capanna_hodge_a350f1f4.jpg",
+    text: "Working with Husky Tail Digital Marketing was refreshing. Their honest, expert approach — something that's hard to find in this industry — made all the difference.",
   },
 ];
 
