@@ -282,8 +282,8 @@ export default function PawSultationPage() {
               </div>
               <div
                 className="calendly-inline-widget"
-                data-url="https://calendly.com/stephen-huskytaildigital/30min?background_color=0d1f3c&text_color=ffffff&primary_color=c8a84b&hide_event_type_details=1&hide_gdpr_banner=1"
-                style={{ minWidth: "320px", height: "660px" }}
+                data-url="https://calendly.com/stephen-huskytaildigital/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=162233&text_color=ffffff&primary_color=c8a84b"
+                style={{ minWidth: "320px", height: "700px" }}
               />
               <Script
                 src="https://assets.calendly.com/assets/external/widget.js"
