@@ -159,7 +159,7 @@ export default function HomePage() {
                     <img
                       key={a.name}
                       src={a.src}
-                      alt={a.name}
+                      alt={`${a.name} — Google reviewer, HuskyTail Digital Marketing Las Vegas`}
                       className="w-9 h-9 rounded-full object-cover border-2"
                       style={{ borderColor: "rgba(0,209,255,0.6)" }}
                     />
@@ -209,7 +209,7 @@ export default function HomePage() {
         >
           <Image
             src={ASSETS.everestRock}
-            alt="Everest the Husky — HuskyTail Digital Mascot"
+            alt="Everest the Husky — HuskyTail Digital Marketing mascot, Las Vegas SEO agency"
             width={180}
             height={220}
             className="w-full h-auto object-cover"
@@ -485,7 +485,7 @@ export default function HomePage() {
                   {t.avatar && (
                     <img
                       src={t.avatar}
-                      alt={t.name}
+                      alt={`${t.name} — Google review for HuskyTail Digital Marketing, Las Vegas SEO`}
                       className="w-10 h-10 rounded-full object-cover shrink-0"
                       style={{ border: "2px solid rgba(0,209,255,0.4)" }}
                     />

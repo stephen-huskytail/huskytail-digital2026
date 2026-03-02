@@ -123,7 +123,7 @@ export default function AboutPage() {
               >
                 <Image
                   src={STEPHEN_HEADSHOT}
-                  alt="Stephen Gardner — Founder of HuskyTail Digital Marketing"
+                  alt="Stephen Gardner — Founder of HuskyTail Digital Marketing, Las Vegas SEO & AI Marketing Consultant"
                   width={480}
                   height={560}
                   className="w-full object-cover"
@@ -215,7 +215,7 @@ export default function AboutPage() {
               >
                 <Image
                   src={EVEREST_SITTING}
-                  alt="Everest the Husky — HuskyTail Digital mascot"
+                  alt="Everest the Husky — HuskyTail Digital Marketing mascot, Las Vegas SEO agency"
                   width={480}
                   height={480}
                   className="w-full object-cover"

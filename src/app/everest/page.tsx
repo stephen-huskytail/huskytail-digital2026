@@ -204,7 +204,7 @@ export default function EverestPage() {
               >
                 <Image
                   src={ASSETS.everestSitting}
-                  alt="Everest the Husky — HuskyTail Digital Mascot sitting on a rock"
+                  alt="Everest the Husky sitting on a rock — HuskyTail Digital Marketing mascot, Las Vegas SEO"
                   width={600}
                   height={750}
                   className="w-full h-auto object-cover"
@@ -264,7 +264,7 @@ export default function EverestPage() {
               <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
                 <Image
                   src={ASSETS.everestRock}
-                  alt="Everest the Husky lying regally on a stone wall"
+                  alt="Everest the Husky on a stone wall — HuskyTail Digital Marketing, Las Vegas AI SEO agency"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -288,7 +288,7 @@ export default function EverestPage() {
               <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
                 <Image
                   src={ASSETS.everestGrass}
-                  alt="Everest the Husky happy and smiling on the grass with a tennis ball"
+                  alt="Everest the Husky happy on the grass with a tennis ball — HuskyTail Digital Marketing mascot"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -318,7 +318,7 @@ export default function EverestPage() {
               <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
                 <Image
                   src={ASSETS.everestSitting}
-                  alt="Everest the Husky sitting attentively on a rock with her pink collar"
+                  alt="Everest the Husky sitting attentively — HuskyTail Digital Marketing, Las Vegas SEO consultant"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -629,7 +629,7 @@ export default function EverestPage() {
               >
                 <Image
                   src={ASSETS.stephenHeadshot}
-                  alt="Stephen Gardner — Founder of HuskyTail Digital"
+                  alt="Stephen Gardner — Founder of HuskyTail Digital Marketing, Las Vegas SEO & AI Marketing Consultant"
                   width={300}
                   height={380}
                   className="w-full h-auto object-cover"
@@ -644,7 +644,7 @@ export default function EverestPage() {
               >
                 <Image
                   src={ASSETS.everestGrass}
-                  alt="Everest the Husky — HuskyTail Digital Mascot"
+                  alt="Everest the Husky — HuskyTail Digital Marketing mascot, Las Vegas SEO agency"
                   width={300}
                   height={380}
                   className="w-full h-auto object-cover"

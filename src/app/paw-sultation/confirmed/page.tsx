@@ -24,7 +24,7 @@ export default function PawSultationConfirmedPage() {
             <div className="absolute inset-0 rounded-full bg-[#C8A84B]/10 blur-3xl scale-110" />
             <Image
               src={EVEREST_LEAP}
-              alt="Everest the Husky celebrating your booking"
+              alt="Everest the Husky celebrating your SEO consultation booking — HuskyTail Digital Marketing, Las Vegas"
               fill
               className="object-contain drop-shadow-[0_0_30px_rgba(200,168,75,0.6)]"
               sizes="256px"

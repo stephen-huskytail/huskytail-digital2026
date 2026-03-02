@@ -132,7 +132,7 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8 h-full flex items-center gap-4 w-full">
           {/* Logo — fixed width anchors the left side */}
           <Link href="/" className="flex items-center gap-2 shrink-0 min-h-0">
-            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/XwegoxlTucekNaXJ.webp" alt="HuskyTail Digital" className="h-12" />
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/XwegoxlTucekNaXJ.webp" alt="HuskyTail Digital Marketing — Las Vegas SEO Agency Logo" className="h-12" />
           </Link>
 
           {/* Nav Links — flex-1 centers them between logo and CTA */}
