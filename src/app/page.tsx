@@ -155,19 +155,25 @@ export default function HomePage() {
             {/* Social proof strip */}
             <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  {["M", "C", "J", "D"].map((l) => (
+                <div className="flex -space-x-3">
+                  {[
+                    { initials: "MR", bg: "rgba(0,209,255,0.25)" },
+                    { initials: "CL", bg: "rgba(255,215,0,0.2)" },
+                    { initials: "JT", bg: "rgba(0,209,255,0.25)" },
+                    { initials: "DM", bg: "rgba(255,215,0,0.2)" },
+                  ].map((a) => (
                     <div
-                      key={l}
+                      key={a.initials}
                       className="w-9 h-9 rounded-full border-2 flex items-center justify-center text-xs font-bold"
                       style={{
-                        backgroundColor: "rgba(165,216,255,0.3)",
-                        borderColor: "rgba(0,209,255,0.5)",
+                        backgroundColor: a.bg,
+                        borderColor: "rgba(0,209,255,0.6)",
                         color: "#F8FAFC",
                         backdropFilter: "blur(4px)",
+                        fontFamily: "Montserrat, sans-serif",
                       }}
                     >
-                      {l}
+                      {a.initials}
                     </div>
                   ))}
                 </div>
@@ -556,8 +562,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {PRICING_TIERS.map((tier) => (
+          {/* Standard + Pro — 2 column */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {PRICING_TIERS.filter((t) => t.name !== "Enterprise").map((tier) => (
               <div
                 key={tier.name}
                 className="rounded-2xl p-8 relative"
@@ -595,8 +602,8 @@ export default function HomePage() {
                     color: tier.popular ? "#00D1FF" : "#0A2540",
                   }}
                 >
-                  {tier.price}
-                  <span style={{ fontSize: "1rem",                  color: tier.popular ? "rgba(165,216,255,0.6)" : "rgba(10,37,64,0.4)" }}>/mo</span>
+                  ${tier.price}
+                  <span style={{ fontSize: "1rem", color: tier.popular ? "rgba(165,216,255,0.6)" : "rgba(10,37,64,0.4)" }}>/mo</span>
                 </p>
                 <ul className="space-y-3 mb-8">
                   {tier.features.map((f) => (
@@ -616,6 +623,39 @@ export default function HomePage() {
                 </Link>
               </div>
             ))}
+          </div>
+
+          {/* Enterprise — custom quote banner */}
+          <div
+            className="mt-6 max-w-3xl mx-auto rounded-2xl px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4"
+            style={{
+              backgroundColor: "rgba(10,37,64,0.04)",
+              border: "1px solid rgba(10,37,64,0.1)",
+            }}
+          >
+            <div>
+              <h3
+                style={{
+                  fontFamily: "Orbitron, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "1rem",
+                  color: "#0A2540",
+                  marginBottom: "0.25rem",
+                }}
+              >
+                Enterprise
+              </h3>
+              <p style={{ color: "rgba(10,37,64,0.6)", fontFamily: "Inter, sans-serif", fontSize: "0.9rem" }}>
+                Multi-location, franchise, or agency? We build a custom strategy around your goals.
+              </p>
+            </div>
+            <Link
+              href="/pricing"
+              className="btn-secondary whitespace-nowrap px-6 py-3"
+              style={{ flexShrink: 0 }}
+            >
+              Get a Custom Quote →
+            </Link>
           </div>
 
           <div className="text-center mt-8">
