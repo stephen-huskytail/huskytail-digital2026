@@ -147,12 +147,12 @@ export default function Navigation() {
             </Link>
           </nav>
 
-          {/* Phone stacked above CTA buttons — right-aligned column */}
-          <div className="shrink-0 flex flex-col items-end justify-center gap-1">
+          {/* Phone stacked above CTA buttons — right-aligned column, fits within 88px nav */}
+          <div className="shrink-0 flex flex-col items-end justify-center" style={{ gap: "4px" }}>
             {/* Phone number — own line, right-aligned, above buttons */}
             <a
               href="tel:+17027861309"
-              className="text-[11px] font-medium tracking-wide transition-colors no-underline hidden lg:block"
+              className="text-[11px] font-medium tracking-wide transition-colors no-underline hidden lg:block leading-none"
               style={{ color: "rgba(255,255,255,0.45)" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#c8a84b")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
@@ -163,24 +163,28 @@ export default function Navigation() {
             <div className="flex items-center gap-2">
               <Link
                 href="/paw-sultation"
-                className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold whitespace-nowrap transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 text-xs font-bold whitespace-nowrap transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
                 style={{
                   background: "linear-gradient(135deg, #00D1FF 0%, #0099CC 100%)",
                   color: "#0A2540",
                   fontFamily: "Montserrat, sans-serif",
                   boxShadow: "0 4px 16px rgba(0,209,255,0.35)",
+                  paddingTop: "7px",
+                  paddingBottom: "7px",
                 }}
               >
                 🐾 Claim Your Free SEO Audit
               </Link>
               <Link
                 href="/paw-sultation"
-                className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 py-2 text-xs lg:text-sm font-semibold whitespace-nowrap border-2 transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center rounded-full px-4 lg:px-5 text-xs font-semibold whitespace-nowrap border-2 transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
                 style={{
                   borderColor: "#00D1FF",
                   color: "#00D1FF",
                   fontFamily: "Montserrat, sans-serif",
                   background: "transparent",
+                  paddingTop: "7px",
+                  paddingBottom: "7px",
                 }}
               >
                 Talk to Stephen

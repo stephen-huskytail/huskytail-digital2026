@@ -90,7 +90,7 @@ function ArticleCardItem({ article }: { article: ArticleCard }) {
 
 function FeaturedArticle({ article }: { article: ArticleCard }) {
   const imageUrl = article.mainImage
-    ? urlFor(article.mainImage).width(1200).height(600).fit("crop").url()
+    ? urlFor(article.mainImage).width(800).height(600).fit("crop").url()
     : null;
   const category = article.categories?.[0];
 

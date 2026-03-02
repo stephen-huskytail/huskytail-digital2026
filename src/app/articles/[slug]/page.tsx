@@ -311,17 +311,19 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
       <main className="min-h-screen" style={{ background: "#0A0F1E" }}>
 
         {/* ── Hero ── */}
-        <section className="relative pt-20 pb-0" style={{ background: "linear-gradient(180deg, #0A2540 0%, #0A0F1E 100%)" }}>
+        <section style={{ background: "#0A0F1E" }}>
+          {/* Featured image — full width, sits directly below nav, no text overlap */}
           {mainImageUrl && (
-            <div className="relative w-full h-64 md:h-96 overflow-hidden">
-              <Image src={mainImageUrl} alt={article.mainImage?.alt || article.title} fill className="object-cover" priority />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1E] via-[#0A0F1E]/40 to-transparent" />
+            <div className="relative w-full overflow-hidden" style={{ height: "clamp(220px, 40vw, 480px)", marginTop: "var(--desktop-nav-height, 88px)" }}>
+              <Image src={mainImageUrl} alt={article.mainImage?.alt || article.title} fill className="object-cover object-top" priority />
+              {/* Subtle bottom fade to blend into the title area */}
+              <div className="absolute inset-x-0 bottom-0 h-24" style={{ background: "linear-gradient(to bottom, transparent, #0A0F1E)" }} />
             </div>
           )}
-
-          <div className={`max-w-4xl mx-auto px-4 ${mainImageUrl ? "-mt-20 relative z-10" : "pt-8"} pb-8`}>
-             {/* Breadcrumb — Home / Articles / Category (no duplicate) */}
-            <nav className="flex items-center gap-2 text-xs text-white/40 mb-6">
+          {/* Title block — always below the image on solid dark background */}
+          <div className={`max-w-4xl mx-auto px-4 pb-8 ${mainImageUrl ? "pt-6" : "pt-28"}`}>
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-2 text-xs text-white/40 mb-4">
               <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
               <span>/</span>
               <Link href="/articles" className="hover:text-white/70 transition-colors">Articles</Link>
@@ -332,12 +334,10 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
                 </>
               )}
             </nav>
-
             {/* Title */}
             <h1 className="text-3xl md:text-5xl font-black text-white leading-tight mb-5" style={{ fontFamily: "Montserrat, sans-serif" }}>
               {article.title}
             </h1>
-
             {/* Meta row */}
             <div className="flex flex-wrap items-center gap-4 text-sm text-white/50">
               {article.author && (
