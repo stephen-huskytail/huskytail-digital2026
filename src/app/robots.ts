@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/", "/admin/"],
       },
     ],
-    sitemap: "https://huskytaildigital.com/sitemap.xml",
-    host: "https://huskytaildigital.com",
+    sitemap: "https://www.huskytaildigital.com/sitemap.xml",
+    host: "https://www.huskytaildigital.com",
   };
 }
