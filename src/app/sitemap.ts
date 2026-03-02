@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const industryHubPages: MetadataRoute.Sitemap = INDUSTRY_HUBS.map((hub) => ({
-    url: `${BASE_URL}/${hub}`,
+    url: `${BASE_URL}/industries/${hub}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
