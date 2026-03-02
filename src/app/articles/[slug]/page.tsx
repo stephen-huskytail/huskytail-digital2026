@@ -9,6 +9,8 @@ import { articleBySlugQuery, articleSlugsQuery, relatedArticlesByCategoryQuery }
 import type { SanityArticle, ArticleCard, FaqItem } from "@/sanity/lib/types";
 import { formatDate, calcReadTime } from "@/sanity/lib/readTime";
 import { ASSETS, SITE_URL } from "@/lib/constants";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 
 // ─── Static params ────────────────────────────────────────────────────────────
 
@@ -302,7 +304,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
-
+      <Navigation />
       <main className="min-h-screen" style={{ background: "#0A0F1E" }}>
 
         {/* ── Hero ── */}
@@ -494,6 +496,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
         </section>
 
       </main>
+      <Footer />
     </>
   );
 }

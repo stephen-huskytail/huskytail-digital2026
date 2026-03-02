@@ -10,6 +10,8 @@ import { allArticlesQuery, allCategoriesQuery } from "@/sanity/lib/queries";
 import type { ArticleCard, SanityCategory } from "@/sanity/lib/types";
 import { formatDate } from "@/sanity/lib/readTime";
 import { ASSETS } from "@/lib/constants";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 
 // ─── Article Card Component ───────────────────────────────────────────────────
 
@@ -260,7 +262,7 @@ function ArticlesPageContent() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-
+      <Navigation />
       <main className="min-h-screen" style={{ background: "#0A0F1E" }}>
 
         {/* ── Hero ── */}
@@ -349,6 +351,7 @@ function ArticlesPageContent() {
         </section>
 
       </main>
+      <Footer />
     </>
   );
 }
@@ -356,9 +359,13 @@ function ArticlesPageContent() {
 export default function ArticlesPage() {
   return (
     <Suspense fallback={
-      <main className="min-h-screen flex items-center justify-center" style={{ background: "#0A0F1E" }}>
-        <div className="text-white/40 text-sm animate-pulse">Loading articles...</div>
-      </main>
+      <>
+        <Navigation />
+        <main className="min-h-screen flex items-center justify-center" style={{ background: "#0A0F1E" }}>
+          <div className="text-white/40 text-sm animate-pulse">Loading articles...</div>
+        </main>
+        <Footer />
+      </>
     }>
       <ArticlesPageContent />
     </Suspense>
